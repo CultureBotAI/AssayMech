@@ -98,3 +98,20 @@ def test_cmm_bibliography_must_match_primary_identity(seed_inputs):
     source["locators"]["/sources/2"]["url"] = "https://doi.org/10.1128/AEM.71.2.876-882.2005"
     with pytest.raises(ValueError, match="bibliography"):
         audit(*seed_inputs)
+
+
+@pytest.mark.parametrize("field", ["description", "method", "measurement", "control"])
+def test_concept_field_evidence_selects_own_assay(seed_inputs, field):
+    record = next(r for r in seed_inputs[0] if r["id"] == "AssayMech:catalase-test")
+    if field == "control":
+        # A synthetic fixture exercises the optional field; it is not seed science.
+        record["controls"] = [{"description": "Binding-only control fixture.",
+                               "evidence": deepcopy(record["evidence"])}]
+        entries = record["controls"][0]["evidence"]
+    else:
+        entries = record["evidence"] if field == "description" else record[field]["evidence"]
+    assert audit(*seed_inputs)["records"] == 9
+    entries[0]["locator"] = "/graphs/0/nodes/1400"  # Actual indole-test node.
+    assert record["ontology_groundings"][0]["term_id"] == "METPO:1007080"
+    with pytest.raises(ValueError, match="own assay identity"):
+        audit(*seed_inputs)

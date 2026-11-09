@@ -151,6 +151,15 @@ def audit(records, catalogue, projections, roles, selection):
             require(any(g["relation"] == "ASSAY_IDENTITY"
                         for g in record.get("ontology_groundings", [])), "assay identity missing")
             require(rid not in bindings, "operational seed declared as ontology concept")
+            own_locations = {(g["source_url"], row_by_id[g["term_id"]]["source_locator"])
+                             for g in record["ontology_groundings"]
+                             if g["relation"] == "ASSAY_IDENTITY"}
+            parts = [record] + [record[name] for name in ("method", "measurement")
+                                if name in record] + record.get("controls", [])
+            for part in parts:
+                require(any((entry["reference"], entry["locator"]) in own_locations
+                            for entry in part["evidence"]),
+                        "ontology field evidence does not select its own assay identity")
         else:
             require(rid in bindings, "operational seed has no reviewed study binding")
             binding = bindings[rid]

@@ -79,7 +79,8 @@ repository. Their digests make the reviewed input explicit; projection hashes
 check local integrity, not remote authenticity.
 
 `just audit-seed` runs offline. It checks the reviewed initial identity set,
-source roles, exact term/target evidence binding, CMM bibliography-to-primary-
+source roles, per-field ontology-concept identity binding, exact target evidence
+binding, CMM bibliography-to-primary-
 study correspondence, source licences, selected study scopes and source
 projection hashes. It rejects real outcome/phenotype classes used as assay
 identity, unrelated valid study citations, substituted CMM targets and
