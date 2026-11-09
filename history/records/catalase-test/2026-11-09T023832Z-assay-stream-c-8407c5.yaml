@@ -1,0 +1,27 @@
+{
+  "history_version": 1,
+  "target": {
+    "kind": "record",
+    "path": "data/assays/catalase-test.yaml",
+    "slug": "catalase-test"
+  },
+  "session": {
+    "id": "2026-11-09T023832Z-assay-stream-c-8407c5",
+    "timestamp": "2026-11-09T02:38:32Z",
+    "actors": [
+      {
+        "type": "ai_agent",
+        "name": "assay-stream-c",
+        "agent_tool": "codex"
+      }
+    ]
+  },
+  "events": [
+    {
+      "type": "CREATE",
+      "outcome": "changed",
+      "summary": "Curate initial sourced assay concept or scoped operational assay",
+      "details": "Initial seed retains exact METPO class/property roles at commit 800c9d27913158efdf466edf2cd710dbf1ce893f, selected CMM mechanisms at df061de720fb9884dcc6e41369a3049cef52a059, primary-method evidence, source-specific licences, explicit protocol gaps and no imported organism outcomes. See docs/seed-provenance.md."
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "source_id": "marecos2025",
+  "reference": "https://www.nature.com/articles/s42003-025-08061-4",
+  "projection_notice": "Curator paraphrases of selected primary-source facts; not a verbatim article or an independent scientific validation. Exact sections must be checked against the cited source during review.",
+  "locators": {
+    "html:#Sec4": {
+      "section_title": "Genome-scale screen of QC collection identifies 68 genes not previously implicated in REE-bioleaching",
+      "facts": [
+        "Mon2 consists of monazite-Nd and rhabdophane-Nd, in contrast to Mon1, which also contains neodymium oxyphosphate."
+      ]
+    },
+    "html:#Sec16": {
+      "section_title": "Direct REE-bioleaching measurements",
+      "facts": [
+        "Gluconobacter oxydans B58-derived cultures produced biolixiviant for synthetic Mon2 phosphate feed, a monazite-Nd/rhabdophane-Nd mixture.",
+        "Post-contact leachates passed through 0.45 micrometre filters. Cell removal before mineral contact was not specified.",
+        "Diluted acidified filtrates were measured using an Agilent 7800 ICP-MS, with rare-earth calibration mix and rhodium internal standard (m/z 103).",
+        "Wild-type, proxy wild-type and no-bacteria controls were prepared; selected bacterial strains had three biological replicates.",
+        "Laboratory solubilization is the measured operation; no purified Nd recovery or industrial transfer is established."
+      ]
+    }
+  }
+}
