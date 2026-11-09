@@ -1,0 +1,31 @@
+set shell := ["bash", "-euo", "pipefail", "-c"]
+
+default:
+    @just --list
+
+check: lint validate test
+
+lint:
+    uv run --locked ruff check src tests/test_native.py
+
+validate:
+    uv run --locked assaymech validate
+
+validate-schema:
+    uv run --locked assaymech validate-schema
+
+validate-data: validate
+
+validate-all: validate
+
+test:
+    uv run --locked pytest -q
+
+check-vendored:
+    bash scripts/check_vendored_sync.sh
+
+new-history *args:
+    uv run --locked assaymech new-history {{args}}
+
+validate-history:
+    uv run --locked assaymech validate

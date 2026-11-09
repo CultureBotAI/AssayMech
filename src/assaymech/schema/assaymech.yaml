@@ -1,0 +1,244 @@
+id: https://w3id.org/assaymech/schema
+name: assaymech
+title: AssayMech evidence-backed microbial and critical-materials assays
+license: CC0-1.0
+prefixes:
+  linkml: https://w3id.org/linkml/
+  AssayMech: https://w3id.org/assaymech/record/
+  METPO: https://w3id.org/metpo/
+default_prefix: AssayMech
+default_range: string
+imports:
+  - linkml:types
+  - mech_shared
+  - history
+enums:
+  AssayCategory:
+    permissible_values:
+      MICROBIAL_CHARACTERIZATION:
+      BIOPROCESSING:
+      BIOTRANSFORMATION:
+      BIOACCUMULATION:
+  RecordKind:
+    permissible_values:
+      ONTOLOGY_ASSAY_CONCEPT:
+      OPERATIONAL_ASSAY:
+  OntologyEntityType:
+    permissible_values:
+      CLASS:
+      OBJECT_PROPERTY:
+  GroundingRelation:
+    permissible_values:
+      ASSAY_IDENTITY:
+      MEASURES_PHENOTYPE:
+      TESTS_PREDICATE:
+  LinkCorpus:
+    permissible_values:
+      cmmmech:
+  LinkRelation:
+    permissible_values:
+      MEASURES_PROCESS:
+      MEASURES_CAPABILITY:
+  GapScope:
+    permissible_values:
+      metpo:
+      cmmmech:
+      method:
+      measurement:
+      controls:
+      protocol_parameters:
+  CurationAction:
+    permissible_values:
+      CREATE:
+      EDIT:
+      REVIEW:
+      AUDIT:
+classes:
+  AssayRecord:
+    tree_root: true
+    description: An assay concept or sourced operational assay, never an organism-level result.
+    attributes:
+      id:
+        identifier: true
+        required: true
+        pattern: '^AssayMech:[a-z0-9]+(?:-[a-z0-9]+)*$'
+      name:
+        required: true
+      record_kind:
+        range: RecordKind
+        required: true
+      categories:
+        range: AssayCategory
+        required: true
+        multivalued: true
+        minimum_cardinality: 1
+      description:
+        required: true
+      limitations:
+        description: Explicit scope limits; curator-identified missing protocol detail is not an experimental finding.
+        required: true
+        multivalued: true
+        minimum_cardinality: 1
+      evidence:
+        range: EvidenceItem
+        required: true
+        multivalued: true
+        minimum_cardinality: 1
+        inlined_as_list: true
+      ontology_groundings:
+        range: OntologyGrounding
+        multivalued: true
+        inlined_as_list: true
+      method:
+        range: AssayMethod
+        inlined: true
+      measurement:
+        range: AssayMeasurement
+        inlined: true
+      controls:
+        range: AssayControl
+        multivalued: true
+        inlined_as_list: true
+      related_records:
+        range: AssayCrossCorpusLink
+        multivalued: true
+        inlined_as_list: true
+      research_gaps:
+        range: ResearchGap
+        multivalued: true
+        inlined_as_list: true
+      curation_history:
+        range: CurationEvent
+        required: true
+        multivalued: true
+        minimum_cardinality: 1
+        inlined_as_list: true
+  EvidenceItem:
+    description: Source supporting the accompanying claim, with a precise locator.
+    attributes:
+      reference:
+        required: true
+        pattern: '^https://[^ ]+$'
+      title:
+        required: true
+      claim:
+        required: true
+      locator:
+        required: true
+      source_license:
+        description: Licence verified for the cited source; omit if not established.
+  OntologyGrounding:
+    description: A versioned METPO entity with an explicit relationship to the assay.
+    attributes:
+      term_id:
+        required: true
+        pattern: '^METPO:[0-9]{7}$'
+      term_name:
+        required: true
+      entity_type:
+        range: OntologyEntityType
+        required: true
+      relation:
+        range: GroundingRelation
+        required: true
+      source_version:
+        required: true
+        pattern: '^[0-9a-f]{40}$'
+      source_path:
+        required: true
+      source_url:
+        required: true
+        pattern: '^https://github.com/[^ ]+$'
+      evidence:
+        range: EvidenceItem
+        required: true
+        multivalued: true
+        minimum_cardinality: 1
+        inlined_as_list: true
+  AssayMethod:
+    attributes:
+      summary:
+        required: true
+      evidence:
+        range: EvidenceItem
+        required: true
+        multivalued: true
+        minimum_cardinality: 1
+        inlined_as_list: true
+  AssayMeasurement:
+    attributes:
+      target:
+        required: true
+      readout:
+        required: true
+      interpretation:
+      unit:
+        description: Omit for categorical outcomes or when the source does not establish a unit.
+      evidence:
+        range: EvidenceItem
+        required: true
+        multivalued: true
+        minimum_cardinality: 1
+        inlined_as_list: true
+  AssayControl:
+    attributes:
+      description:
+        required: true
+      evidence:
+        range: EvidenceItem
+        required: true
+        multivalued: true
+        minimum_cardinality: 1
+        inlined_as_list: true
+  AssayCrossCorpusLink:
+    is_a: CrossCorpusLink
+    description: A CMM target mechanism or capability measured within the stated assay scope.
+    slot_usage:
+      corpus:
+        range: LinkCorpus
+      relation:
+        range: LinkRelation
+      source_version:
+        required: true
+        pattern: '^[0-9a-f]{40}$'
+    attributes:
+      source_path:
+        required: true
+      source_url:
+        required: true
+        pattern: '^https://github.com/[^ ]+$'
+      target_locator:
+        description: A JSON Pointer locating the actual target mechanism or capability in the source record.
+        required: true
+        pattern: '^/[^ ]+$'
+      scope:
+        description: The biological system and measured endpoint supported by the source, without generalization to an entire material.
+        required: true
+      evidence:
+        range: EvidenceItem
+        required: true
+        multivalued: true
+        minimum_cardinality: 1
+        inlined_as_list: true
+  ResearchGap:
+    attributes:
+      scope:
+        range: GapScope
+        required: true
+      reason:
+        required: true
+  CurationEvent:
+    attributes:
+      timestamp:
+        required: true
+        pattern: '^20[0-9]{2}-'
+      curator:
+        required: true
+      action:
+        range: CurationAction
+        required: true
+      summary:
+        required: true
+      history_file:
+        description: Canonical append-only HistoryRecord sidecar for this event.
+        required: true
