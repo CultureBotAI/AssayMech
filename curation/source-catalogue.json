@@ -1,0 +1,113 @@
+{
+  "format_version": 1,
+  "access_date": "2026-11-09",
+  "sources": [
+    {
+      "source_id": "metpo",
+      "reference": "https://github.com/berkeleybop/metpo/blob/800c9d27913158efdf466edf2cd710dbf1ce893f/metpo.json",
+      "source_version": "800c9d27913158efdf466edf2cd710dbf1ce893f",
+      "source_path": "metpo.json",
+      "source_license": "CC-BY-4.0",
+      "original_sha256": "24fbb07b0e3e4594155750add1e15c77faeadc24e909cdfc8632105687b59946",
+      "original_bytes": 1047983,
+      "projection": "curation/sources/metpo.json",
+      "projection_kind": "verbatim selected JSON objects at original JSON Pointers",
+      "projection_sha256": "53dd75f4e296752e63092d25b52e131059460079a77c7f8c2b154e343c982fad"
+    },
+    {
+      "source_id": "cmm-neodymium",
+      "reference": "https://github.com/CultureBotAI/CMMMech/blob/df061de720fb9884dcc6e41369a3049cef52a059/data/records/neodymium.yaml",
+      "source_version": "df061de720fb9884dcc6e41369a3049cef52a059",
+      "source_path": "data/records/neodymium.yaml",
+      "source_license": "CC-BY-4.0",
+      "original_sha256": "91a74a542eb1dbd45aeb4cbd24f3ced3f382854dc7e7e3d2292effcded89341f",
+      "original_bytes": 26357,
+      "projection": "curation/sources/cmm-neodymium.json",
+      "projection_kind": "selected YAML object fields at original JSON Pointers; protein_examples intentionally omitted",
+      "projection_sha256": "0ae1e3f8bc6f48886edd41f6d32a59e8a5a5061f5531abae65fdfc8df76c4b23"
+    },
+    {
+      "source_id": "cmm-iron",
+      "reference": "https://github.com/CultureBotAI/CMMMech/blob/df061de720fb9884dcc6e41369a3049cef52a059/data/records/iron.yaml",
+      "source_version": "df061de720fb9884dcc6e41369a3049cef52a059",
+      "source_path": "data/records/iron.yaml",
+      "source_license": "CC-BY-4.0",
+      "original_sha256": "92f6792df8c1b65d3377d91b9cf7817b42a4558cb0618e4db8f2f97382aad62d",
+      "original_bytes": 9400,
+      "projection": "curation/sources/cmm-iron.json",
+      "projection_kind": "selected YAML object fields at original JSON Pointers; protein_examples intentionally omitted",
+      "projection_sha256": "5804ac25875e1132c98c84d01b1d201cab6f3d526060f43f2cacf48c345fa9cc"
+    },
+    {
+      "source_id": "cmm-ferrihydrite",
+      "reference": "https://github.com/CultureBotAI/CMMMech/blob/df061de720fb9884dcc6e41369a3049cef52a059/data/records/ferrihydrite.yaml",
+      "source_version": "df061de720fb9884dcc6e41369a3049cef52a059",
+      "source_path": "data/records/ferrihydrite.yaml",
+      "source_license": "CC-BY-4.0",
+      "original_sha256": "4ef266f47c11833c25999d545382bdc9831259541c720884bd07330f05ee1de3",
+      "original_bytes": 9230,
+      "projection": "curation/sources/cmm-ferrihydrite.json",
+      "projection_kind": "selected YAML object fields at original JSON Pointers; protein_examples intentionally omitted",
+      "projection_sha256": "86a3b386236c3c69711d68d8b3a51ee215a9926c0a0cc17b626710bb845673c5"
+    },
+    {
+      "source_id": "cmm-bismuth",
+      "reference": "https://github.com/CultureBotAI/CMMMech/blob/df061de720fb9884dcc6e41369a3049cef52a059/data/records/bismuth.yaml",
+      "source_version": "df061de720fb9884dcc6e41369a3049cef52a059",
+      "source_path": "data/records/bismuth.yaml",
+      "source_license": "CC-BY-4.0",
+      "original_sha256": "1df7276c9545a4cc13a9a289e3aca1bb68da4794f59034c04a625cb1f86984ea",
+      "original_bytes": 7168,
+      "projection": "curation/sources/cmm-bismuth.json",
+      "projection_kind": "selected YAML object fields at original JSON Pointers; protein_examples intentionally omitted",
+      "projection_sha256": "b4003813be7ab2cc6ce4ee50e3cdd5e559629de562ddedd386330fc47ee0e745"
+    },
+    {
+      "source_id": "marecos2025",
+      "reference": "https://www.nature.com/articles/s42003-025-08061-4",
+      "original_sha256": "49ae89a60c59dcbe69e5607f741cf949a00daac9753651a16c55face20dcdd26",
+      "original_bytes": 566453,
+      "projection": "curation/sources/marecos2025.json",
+      "projection_kind": "curator paraphrases and precise primary-source locators",
+      "cmm_source_id": "marecos2025",
+      "doi": "10.1038/s42003-025-08061-4",
+      "source_license": "CC-BY-4.0",
+      "projection_sha256": "f0ecc12ffbb70c9b23007bf07e2039e4ac025cd3ceb9dde7b82025f6f837c3c6"
+    },
+    {
+      "source_id": "marecos2025_data4",
+      "reference": "https://media.springernature.com/original/springer-static/esm/art%3A10.1038%2Fs42003-025-08061-4/MediaObjects/42003_2025_8061_MOESM6_ESM.xlsx",
+      "original_sha256": "3e9725efe640ee5a510a5f0f733145172b7473c586a54e4fb1b1f2bcd685d07c",
+      "original_bytes": 17520,
+      "projection": "curation/sources/marecos2025_data4.json",
+      "projection_kind": "curator paraphrases and precise primary-source locators",
+      "cmm_source_id": "marecos2025_data4",
+      "source_license": "CC-BY-4.0",
+      "projection_sha256": "7736628b88257cc7605eda334f683686dc34e5d3eb85165d49b0110c1cb1afba"
+    },
+    {
+      "source_id": "sklute2023",
+      "reference": "https://www.frontiersin.org/journals/microbiology/articles/10.3389/fmicb.2023.1272245/full",
+      "original_sha256": "f7f211b7ad2dda867976e492a8ae0290237e68fc73e6d2006a72c71e1e35076e",
+      "original_bytes": 959593,
+      "projection": "curation/sources/sklute2023.json",
+      "projection_kind": "curator paraphrases and precise primary-source locators",
+      "cmm_source_id": "sklute2023",
+      "doi": "10.3389/fmicb.2023.1272245",
+      "source_license": "CC-BY-4.0",
+      "projection_sha256": "f1ce356d0bb89d87a9f22c941c5f4c59bc73b06f7ed7c4dd16ad303992d6c18e"
+    },
+    {
+      "source_id": "dodge2005",
+      "reference": "https://pmc.ncbi.nlm.nih.gov/articles/PMC546758/",
+      "original_sha256": "c372ba2b122ced03b0fd188b0ff92d0f4daf819dbbdcbc86672b13a1f2511959",
+      "original_bytes": 171800,
+      "projection": "curation/sources/dodge2005.json",
+      "projection_kind": "curator paraphrases and precise primary-source locators",
+      "cmm_source_id": "dodge_2005",
+      "doi": "10.1128/AEM.71.2.876-882.2005",
+      "rights_note": "Copyright 2005 American Society for Microbiology; no CC licence established. Citation and factual paraphrase only; original full text remains outside this repository.",
+      "projection_sha256": "04c71e3ebe2a26f3fde9a06e7412a48cefac17efd5a525a7d6acbd96f4f9d5e1"
+    }
+  ]
+}

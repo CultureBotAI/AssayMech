@@ -1,0 +1,714 @@
+{
+  "source_id": "metpo",
+  "reference": "https://github.com/berkeleybop/metpo/blob/800c9d27913158efdf466edf2cd710dbf1ce893f/metpo.json",
+  "locators": {
+    "/graphs/0/nodes/1207": {
+      "id": "https://w3id.org/metpo/1000697",
+      "lbl": "gram stain",
+      "type": "CLASS",
+      "meta": {
+        "definition": {
+          "val": "A phenotype where microorganisms are grouped based on their ability to retain crystal violet dye in the Gram staining procedure.",
+          "meta": {
+            "basicPropertyValues": [
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000119",
+                "val": "http://purl.obolibrary.org/obo/OMP_0000191"
+              }
+            ]
+          }
+        },
+        "synonyms": [
+          {
+            "pred": "hasRelatedSynonym",
+            "val": "Morphology.cell morphology.gram stain",
+            "meta": {
+              "basicPropertyValues": [
+                {
+                  "pred": "http://purl.obolibrary.org/obo/IAO_0000119",
+                  "val": "https://bacdive.dsmz.de/"
+                }
+              ]
+            }
+          },
+          {
+            "pred": "hasRelatedSynonym",
+            "val": "gram_stain",
+            "meta": {
+              "basicPropertyValues": [
+                {
+                  "pred": "http://purl.obolibrary.org/obo/IAO_0000119",
+                  "val": "https://github.com/jmadin/bacteria_archaea_traits"
+                }
+              ]
+            }
+          }
+        ],
+        "basicPropertyValues": [
+          {
+            "pred": "http://purl.obolibrary.org/obo/IAO_0000117",
+            "val": "Jed Dongjin Kim-Ozaeta"
+          },
+          {
+            "pred": "http://purl.obolibrary.org/obo/IAO_0000117",
+            "val": "Luke Wang"
+          }
+        ]
+      }
+    },
+    "/graphs/0/nodes/1400": {
+      "id": "https://w3id.org/metpo/1005010",
+      "lbl": "indole test",
+      "type": "CLASS",
+      "meta": {
+        "definition": {
+          "val": "An assay that tests the ability of an organism to produce indole from tryptophan.",
+          "meta": {
+            "basicPropertyValues": [
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000119",
+                "val": "http://purl.obolibrary.org/obo/MICRO_0000430"
+              }
+            ]
+          }
+        },
+        "synonyms": [
+          {
+            "pred": "hasRelatedSynonym",
+            "val": "indole test",
+            "meta": {
+              "basicPropertyValues": [
+                {
+                  "pred": "http://purl.obolibrary.org/obo/IAO_0000119",
+                  "val": "https://metatraits.embl.de/"
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    "/graphs/0/nodes/1401": {
+      "id": "https://w3id.org/metpo/1005011",
+      "lbl": "indole test positive",
+      "type": "CLASS",
+      "meta": {
+        "definition": {
+          "val": "A phenotype in which an organism tests positive in the indole test, indicating it produces indole from tryptophan."
+        },
+        "synonyms": [
+          {
+            "pred": "hasRelatedSynonym",
+            "val": "indole test",
+            "meta": {
+              "basicPropertyValues": [
+                {
+                  "pred": "http://purl.obolibrary.org/obo/IAO_0000119",
+                  "val": "https://metatraits.embl.de/"
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    "/graphs/0/nodes/1402": {
+      "id": "https://w3id.org/metpo/1005012",
+      "lbl": "indole test negative",
+      "type": "CLASS",
+      "meta": {
+        "definition": {
+          "val": "A phenotype in which an organism tests negative in the indole test, indicating it does not produce indole from tryptophan."
+        }
+      }
+    },
+    "/graphs/0/nodes/1403": {
+      "id": "https://w3id.org/metpo/1005013",
+      "lbl": "methyl red test",
+      "type": "CLASS",
+      "meta": {
+        "definition": {
+          "val": "An assay that tests the ability of an organism to produce and maintain stable acid end products from glucose fermentation.",
+          "meta": {
+            "basicPropertyValues": [
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000119",
+                "val": "SNOMED:5894006"
+              }
+            ]
+          }
+        },
+        "synonyms": [
+          {
+            "pred": "hasRelatedSynonym",
+            "val": "methyl red test",
+            "meta": {
+              "basicPropertyValues": [
+                {
+                  "pred": "http://purl.obolibrary.org/obo/IAO_0000119",
+                  "val": "https://metatraits.embl.de/"
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    "/graphs/0/nodes/1404": {
+      "id": "https://w3id.org/metpo/1005014",
+      "lbl": "methyl red test positive",
+      "type": "CLASS",
+      "meta": {
+        "definition": {
+          "val": "A phenotype in which an organism tests positive in the methyl red test, indicating mixed acid fermentation."
+        },
+        "synonyms": [
+          {
+            "pred": "hasRelatedSynonym",
+            "val": "methyl red test",
+            "meta": {
+              "basicPropertyValues": [
+                {
+                  "pred": "http://purl.obolibrary.org/obo/IAO_0000119",
+                  "val": "https://metatraits.embl.de/"
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    "/graphs/0/nodes/1405": {
+      "id": "https://w3id.org/metpo/1005015",
+      "lbl": "methyl red test negative",
+      "type": "CLASS",
+      "meta": {
+        "definition": {
+          "val": "A phenotype in which an organism tests negative in the methyl red test."
+        }
+      }
+    },
+    "/graphs/0/nodes/1406": {
+      "id": "https://w3id.org/metpo/1005016",
+      "lbl": "Voges-Proskauer test",
+      "type": "CLASS",
+      "meta": {
+        "definition": {
+          "val": "An assay that tests the ability of an organism to produce acetoin from glucose via the butanediol fermentation pathway.",
+          "meta": {
+            "basicPropertyValues": [
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000119",
+                "val": "SNOMED:66592006"
+              }
+            ]
+          }
+        },
+        "synonyms": [
+          {
+            "pred": "hasRelatedSynonym",
+            "val": "voges-proskauer test",
+            "meta": {
+              "basicPropertyValues": [
+                {
+                  "pred": "http://purl.obolibrary.org/obo/IAO_0000119",
+                  "val": "https://metatraits.embl.de/"
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    "/graphs/0/nodes/1407": {
+      "id": "https://w3id.org/metpo/1005017",
+      "lbl": "Voges-Proskauer test positive",
+      "type": "CLASS",
+      "meta": {
+        "definition": {
+          "val": "A phenotype in which an organism tests positive in the Voges-Proskauer test, indicating acetoin production."
+        },
+        "synonyms": [
+          {
+            "pred": "hasRelatedSynonym",
+            "val": "voges-proskauer test",
+            "meta": {
+              "basicPropertyValues": [
+                {
+                  "pred": "http://purl.obolibrary.org/obo/IAO_0000119",
+                  "val": "https://metatraits.embl.de/"
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    "/graphs/0/nodes/1408": {
+      "id": "https://w3id.org/metpo/1005018",
+      "lbl": "Voges-Proskauer test negative",
+      "type": "CLASS",
+      "meta": {
+        "definition": {
+          "val": "A phenotype in which an organism tests negative in the Voges-Proskauer test."
+        }
+      }
+    },
+    "/graphs/0/nodes/1440": {
+      "id": "https://w3id.org/metpo/1007080",
+      "lbl": "catalase test",
+      "type": "CLASS",
+      "meta": {
+        "definition": {
+          "val": "A biochemical test that detects catalase enzyme activity by exposing cells to hydrogen peroxide and observing for visible bubbling. The test outcome (positive or negative) is captured by its child classes; this class itself does not assert that the organism has catalase activity.",
+          "meta": {
+            "basicPropertyValues": [
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000119",
+                "val": "http://purl.obolibrary.org/obo/OMP_0000218"
+              }
+            ]
+          }
+        },
+        "comments": [
+          "subset=metpo_proposal_2026_04; priority=MEDIUM"
+        ],
+        "synonyms": [
+          {
+            "pred": "hasExactSynonym",
+            "val": "catalase activity test"
+          },
+          {
+            "pred": "hasExactSynonym",
+            "val": "catalase assay"
+          }
+        ],
+        "basicPropertyValues": [
+          {
+            "pred": "http://purl.obolibrary.org/obo/IAO_0000117",
+            "val": "Marcin Joachimiak"
+          }
+        ]
+      }
+    },
+    "/graphs/0/nodes/1441": {
+      "id": "https://w3id.org/metpo/1007081",
+      "lbl": "oxidase test",
+      "type": "CLASS",
+      "meta": {
+        "definition": {
+          "val": "A biochemical test that detects cytochrome c oxidase activity using a redox indicator. The test outcome (positive or negative) is captured by its child classes; this class itself does not assert oxidase activity.",
+          "meta": {
+            "basicPropertyValues": [
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000119",
+                "val": "http://purl.obolibrary.org/obo/OMP_0000220"
+              }
+            ]
+          }
+        },
+        "comments": [
+          "subset=metpo_proposal_2026_04; priority=MEDIUM"
+        ],
+        "synonyms": [
+          {
+            "pred": "hasExactSynonym",
+            "val": "cytochrome oxidase test"
+          },
+          {
+            "pred": "hasExactSynonym",
+            "val": "oxidase activity test"
+          }
+        ],
+        "basicPropertyValues": [
+          {
+            "pred": "http://purl.obolibrary.org/obo/IAO_0000117",
+            "val": "Marcin Joachimiak"
+          }
+        ]
+      }
+    },
+    "/graphs/0/nodes/1442": {
+      "id": "https://w3id.org/metpo/1007082",
+      "lbl": "urease test",
+      "type": "CLASS",
+      "meta": {
+        "definition": {
+          "val": "A biochemical test that detects urease enzyme activity by observing urea hydrolysis (typically via a pH-indicator color change). The test outcome (positive or negative) is captured by its child classes; this class itself does not assert urease activity.",
+          "meta": {
+            "basicPropertyValues": [
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000119",
+                "val": "http://purl.obolibrary.org/obo/OMP_0000222"
+              }
+            ]
+          }
+        },
+        "comments": [
+          "subset=metpo_proposal_2026_04; priority=MEDIUM"
+        ],
+        "synonyms": [
+          {
+            "pred": "hasExactSynonym",
+            "val": "urea hydrolysis test"
+          },
+          {
+            "pred": "hasExactSynonym",
+            "val": "urease activity test"
+          }
+        ],
+        "basicPropertyValues": [
+          {
+            "pred": "http://purl.obolibrary.org/obo/IAO_0000117",
+            "val": "Marcin Joachimiak"
+          }
+        ]
+      }
+    },
+    "/graphs/0/nodes/1443": {
+      "id": "https://w3id.org/metpo/1007083",
+      "lbl": "catalase positive",
+      "type": "CLASS",
+      "meta": {
+        "definition": {
+          "val": "Test-outcome phenotype where the catalase test yields a positive result (visible bubbling on H2O2). The underlying enzyme-organism relation should additionally be asserted via <organism> METPO:2000302 'shows activity of' GO:0004096 'catalase activity'.",
+          "meta": {
+            "basicPropertyValues": [
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000119",
+                "val": "http://purl.obolibrary.org/obo/OMP_0000194"
+              }
+            ]
+          }
+        },
+        "comments": [
+          "subset=metpo_proposal_2026_04; priority=MEDIUM; xrefs=GO:0004096"
+        ],
+        "synonyms": [
+          {
+            "pred": "hasExactSynonym",
+            "val": "catalase +"
+          },
+          {
+            "pred": "hasExactSynonym",
+            "val": "catalase test positive"
+          }
+        ],
+        "basicPropertyValues": [
+          {
+            "pred": "http://purl.obolibrary.org/obo/IAO_0000117",
+            "val": "Marcin Joachimiak"
+          }
+        ]
+      }
+    },
+    "/graphs/0/nodes/1444": {
+      "id": "https://w3id.org/metpo/1007084",
+      "lbl": "catalase negative",
+      "type": "CLASS",
+      "meta": {
+        "definition": {
+          "val": "Test-outcome phenotype where the catalase test yields a negative result (no bubbling on H2O2). The underlying enzyme-organism relation should additionally be asserted via <organism> METPO:2000303 'does not show activity of' GO:0004096 'catalase activity'.",
+          "meta": {
+            "basicPropertyValues": [
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000119",
+                "val": "http://purl.obolibrary.org/obo/OMP_0000198"
+              }
+            ]
+          }
+        },
+        "comments": [
+          "subset=metpo_proposal_2026_04; priority=MEDIUM"
+        ],
+        "synonyms": [
+          {
+            "pred": "hasExactSynonym",
+            "val": "catalase -"
+          },
+          {
+            "pred": "hasExactSynonym",
+            "val": "catalase test negative"
+          }
+        ],
+        "basicPropertyValues": [
+          {
+            "pred": "http://purl.obolibrary.org/obo/IAO_0000117",
+            "val": "Marcin Joachimiak"
+          }
+        ]
+      }
+    },
+    "/graphs/0/nodes/1445": {
+      "id": "https://w3id.org/metpo/1007085",
+      "lbl": "oxidase positive",
+      "type": "CLASS",
+      "meta": {
+        "definition": {
+          "val": "Test-outcome phenotype where the oxidase test yields a positive result. The underlying enzyme-organism relation should additionally be asserted via <organism> METPO:2000302 'shows activity of' GO:0004129 'cytochrome-c oxidase activity'.",
+          "meta": {
+            "basicPropertyValues": [
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000119",
+                "val": "http://purl.obolibrary.org/obo/OMP_0006085"
+              }
+            ]
+          }
+        },
+        "comments": [
+          "subset=metpo_proposal_2026_04; priority=MEDIUM; xrefs=GO:0004129"
+        ],
+        "synonyms": [
+          {
+            "pred": "hasExactSynonym",
+            "val": "oxidase +"
+          },
+          {
+            "pred": "hasExactSynonym",
+            "val": "oxidase test positive"
+          }
+        ],
+        "basicPropertyValues": [
+          {
+            "pred": "http://purl.obolibrary.org/obo/IAO_0000117",
+            "val": "Marcin Joachimiak"
+          }
+        ]
+      }
+    },
+    "/graphs/0/nodes/1446": {
+      "id": "https://w3id.org/metpo/1007086",
+      "lbl": "oxidase negative",
+      "type": "CLASS",
+      "meta": {
+        "definition": {
+          "val": "Test-outcome phenotype where the oxidase test yields a negative result. The underlying enzyme-organism relation should additionally be asserted via <organism> METPO:2000303 'does not show activity of' GO:0004129 'cytochrome-c oxidase activity'.",
+          "meta": {
+            "basicPropertyValues": [
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000119",
+                "val": "http://purl.obolibrary.org/obo/OMP_0006084"
+              }
+            ]
+          }
+        },
+        "comments": [
+          "subset=metpo_proposal_2026_04; priority=MEDIUM"
+        ],
+        "synonyms": [
+          {
+            "pred": "hasExactSynonym",
+            "val": "oxidase -"
+          },
+          {
+            "pred": "hasExactSynonym",
+            "val": "oxidase test negative"
+          }
+        ],
+        "basicPropertyValues": [
+          {
+            "pred": "http://purl.obolibrary.org/obo/IAO_0000117",
+            "val": "Marcin Joachimiak"
+          }
+        ]
+      }
+    },
+    "/graphs/0/nodes/1447": {
+      "id": "https://w3id.org/metpo/1007087",
+      "lbl": "urease positive",
+      "type": "CLASS",
+      "meta": {
+        "definition": {
+          "val": "Test-outcome phenotype where the urease test yields a positive result. The underlying enzyme-organism relation should additionally be asserted via <organism> METPO:2000302 'shows activity of' GO:0009039 'urease activity'.",
+          "meta": {
+            "basicPropertyValues": [
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000119",
+                "val": "http://purl.obolibrary.org/obo/OMP_0006089"
+              }
+            ]
+          }
+        },
+        "comments": [
+          "subset=metpo_proposal_2026_04; priority=MEDIUM; xrefs=GO:0009039"
+        ],
+        "synonyms": [
+          {
+            "pred": "hasExactSynonym",
+            "val": "urease +"
+          },
+          {
+            "pred": "hasExactSynonym",
+            "val": "urease test positive"
+          }
+        ],
+        "basicPropertyValues": [
+          {
+            "pred": "http://purl.obolibrary.org/obo/IAO_0000117",
+            "val": "Marcin Joachimiak"
+          }
+        ]
+      }
+    },
+    "/graphs/0/nodes/1448": {
+      "id": "https://w3id.org/metpo/1007088",
+      "lbl": "urease negative",
+      "type": "CLASS",
+      "meta": {
+        "definition": {
+          "val": "Test-outcome phenotype where the urease test yields a negative result. The underlying enzyme-organism relation should additionally be asserted via <organism> METPO:2000303 'does not show activity of' GO:0009039 'urease activity'.",
+          "meta": {
+            "basicPropertyValues": [
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000119",
+                "val": "http://purl.obolibrary.org/obo/OMP_0006090"
+              }
+            ]
+          }
+        },
+        "comments": [
+          "subset=metpo_proposal_2026_04; priority=MEDIUM"
+        ],
+        "synonyms": [
+          {
+            "pred": "hasExactSynonym",
+            "val": "urease -"
+          },
+          {
+            "pred": "hasExactSynonym",
+            "val": "urease test negative"
+          }
+        ],
+        "basicPropertyValues": [
+          {
+            "pred": "http://purl.obolibrary.org/obo/IAO_0000117",
+            "val": "Marcin Joachimiak"
+          }
+        ]
+      }
+    },
+    "/graphs/0/nodes/1472": {
+      "id": "https://w3id.org/metpo/2000017",
+      "lbl": "reduces",
+      "type": "PROPERTY",
+      "propertyType": "OBJECT",
+      "meta": {
+        "synonyms": [
+          {
+            "pred": "hasRelatedSynonym",
+            "val": "reduction",
+            "meta": {
+              "basicPropertyValues": [
+                {
+                  "pred": "http://purl.obolibrary.org/obo/IAO_0000119",
+                  "val": "https://bacdive.dsmz.de/"
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    "/graphs/0/nodes/1530": {
+      "id": "https://w3id.org/metpo/2000210",
+      "lbl": "accumulates",
+      "type": "PROPERTY",
+      "propertyType": "OBJECT"
+    },
+    "/graphs/0/edges/1212": {
+      "sub": "https://w3id.org/metpo/1000697",
+      "pred": "is_a",
+      "obj": "https://w3id.org/metpo/1000059"
+    },
+    "/graphs/0/edges/1405": {
+      "sub": "https://w3id.org/metpo/1005010",
+      "pred": "is_a",
+      "obj": "https://w3id.org/metpo/1000059"
+    },
+    "/graphs/0/edges/1406": {
+      "sub": "https://w3id.org/metpo/1005011",
+      "pred": "is_a",
+      "obj": "https://w3id.org/metpo/1005010"
+    },
+    "/graphs/0/edges/1407": {
+      "sub": "https://w3id.org/metpo/1005012",
+      "pred": "is_a",
+      "obj": "https://w3id.org/metpo/1005010"
+    },
+    "/graphs/0/edges/1408": {
+      "sub": "https://w3id.org/metpo/1005013",
+      "pred": "is_a",
+      "obj": "https://w3id.org/metpo/1000059"
+    },
+    "/graphs/0/edges/1409": {
+      "sub": "https://w3id.org/metpo/1005014",
+      "pred": "is_a",
+      "obj": "https://w3id.org/metpo/1005013"
+    },
+    "/graphs/0/edges/1410": {
+      "sub": "https://w3id.org/metpo/1005015",
+      "pred": "is_a",
+      "obj": "https://w3id.org/metpo/1005013"
+    },
+    "/graphs/0/edges/1411": {
+      "sub": "https://w3id.org/metpo/1005016",
+      "pred": "is_a",
+      "obj": "https://w3id.org/metpo/1000059"
+    },
+    "/graphs/0/edges/1412": {
+      "sub": "https://w3id.org/metpo/1005017",
+      "pred": "is_a",
+      "obj": "https://w3id.org/metpo/1005016"
+    },
+    "/graphs/0/edges/1413": {
+      "sub": "https://w3id.org/metpo/1005018",
+      "pred": "is_a",
+      "obj": "https://w3id.org/metpo/1005016"
+    },
+    "/graphs/0/edges/1453": {
+      "sub": "https://w3id.org/metpo/1007080",
+      "pred": "is_a",
+      "obj": "https://w3id.org/metpo/1000059"
+    },
+    "/graphs/0/edges/1454": {
+      "sub": "https://w3id.org/metpo/1007081",
+      "pred": "is_a",
+      "obj": "https://w3id.org/metpo/1000059"
+    },
+    "/graphs/0/edges/1455": {
+      "sub": "https://w3id.org/metpo/1007082",
+      "pred": "is_a",
+      "obj": "https://w3id.org/metpo/1000059"
+    },
+    "/graphs/0/edges/1456": {
+      "sub": "https://w3id.org/metpo/1007083",
+      "pred": "is_a",
+      "obj": "https://w3id.org/metpo/1007080"
+    },
+    "/graphs/0/edges/1457": {
+      "sub": "https://w3id.org/metpo/1007084",
+      "pred": "is_a",
+      "obj": "https://w3id.org/metpo/1007080"
+    },
+    "/graphs/0/edges/1458": {
+      "sub": "https://w3id.org/metpo/1007085",
+      "pred": "is_a",
+      "obj": "https://w3id.org/metpo/1007081"
+    },
+    "/graphs/0/edges/1459": {
+      "sub": "https://w3id.org/metpo/1007086",
+      "pred": "is_a",
+      "obj": "https://w3id.org/metpo/1007081"
+    },
+    "/graphs/0/edges/1460": {
+      "sub": "https://w3id.org/metpo/1007087",
+      "pred": "is_a",
+      "obj": "https://w3id.org/metpo/1007082"
+    },
+    "/graphs/0/edges/1461": {
+      "sub": "https://w3id.org/metpo/1007088",
+      "pred": "is_a",
+      "obj": "https://w3id.org/metpo/1007082"
+    }
+  }
+}

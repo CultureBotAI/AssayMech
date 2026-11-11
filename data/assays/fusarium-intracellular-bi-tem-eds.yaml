@@ -1,0 +1,141 @@
+{
+  "id": "AssayMech:fusarium-intracellular-bi-tem-eds",
+  "name": "TEM-EDS localization assay for intracellular Bi in Fusarium sp. BI",
+  "record_kind": "OPERATIONAL_ASSAY",
+  "categories": [
+    "BIOACCUMULATION"
+  ],
+  "description": "Use thin-section TEM with energy-dispersive X-ray spectroscopy to assess intracellular Bi localization in Fusarium sp. BI exposed to bismuth subsalicylate.",
+  "limitations": [
+    "This is qualitative spatial localization, not bulk biomass uptake capacity, uptake rate, or whole-feed recovery.",
+    "The EDS beam is larger than the granules; the spectrum includes adjacent cellular material.",
+    "Element co-localization does not establish a unique Bi-polyphosphate molecular structure, crystalline phase, oxidation state or transport route.",
+    "The experiment concerns the unresolved Fusarium sp. BI isolate and defined laboratory feed; no other strain, ore or industrial process is implied."
+  ],
+  "evidence": [
+    {
+      "reference": "https://pmc.ncbi.nlm.nih.gov/articles/PMC546758/",
+      "title": "Metabolism of Bismuth Subsalicylate and Intracellular Accumulation of Bismuth by Fusarium sp. Strain BI",
+      "claim": "Primary methods prepare washed 96-hour biomass from bismuth-subsalicylate and salicylate cultures for TEM-EDS of 60 nm sections.",
+      "locator": "html:#sec7"
+    },
+    {
+      "reference": "https://pmc.ncbi.nlm.nih.gov/articles/PMC546758/",
+      "title": "Metabolism of Bismuth Subsalicylate and Intracellular Accumulation of Bismuth by Fusarium sp. Strain BI",
+      "claim": "The localization analysis compares intracellular granules with the salicylate control and warns that the EDS beam samples surrounding material.",
+      "locator": "html:#sec15"
+    }
+  ],
+  "ontology_groundings": [
+    {
+      "term_id": "METPO:2000210",
+      "term_name": "accumulates",
+      "entity_type": "OBJECT_PROPERTY",
+      "relation": "TESTS_PREDICATE",
+      "source_version": "800c9d27913158efdf466edf2cd710dbf1ce893f",
+      "source_path": "metpo.json",
+      "source_url": "https://github.com/berkeleybop/metpo/blob/800c9d27913158efdf466edf2cd710dbf1ce893f/metpo.json",
+      "evidence": [
+        {
+          "reference": "https://github.com/berkeleybop/metpo/blob/800c9d27913158efdf466edf2cd710dbf1ce893f/metpo.json",
+          "title": "METPO ontology at commit 800c9d27913158efdf466edf2cd710dbf1ce893f",
+          "claim": "METPO accumulates is an object property; intracellular localization provides scoped evidence relevant to accumulation, not an ontology assay identity.",
+          "locator": "/graphs/0/nodes/1530",
+          "source_license": "CC-BY-4.0"
+        }
+      ]
+    }
+  ],
+  "method": {
+    "summary": "Wash and prepare 96-hour biomass grown with 1.5 mM bismuth subsalicylate or 1.5 mM salicylate; examine approximately 60 nm sections by TEM and obtain EDS spectra from selected intracellular regions.",
+    "evidence": [
+      {
+        "reference": "https://pmc.ncbi.nlm.nih.gov/articles/PMC546758/",
+        "title": "Metabolism of Bismuth Subsalicylate and Intracellular Accumulation of Bismuth by Fusarium sp. Strain BI",
+        "claim": "Primary methods prepare washed 96-hour biomass from bismuth-subsalicylate and salicylate cultures for TEM-EDS of 60 nm sections.",
+        "locator": "html:#sec7"
+      }
+    ]
+  },
+  "measurement": {
+    "target": "Bi signal associated with intracellular phosphorus-rich granules.",
+    "readout": "Spatially targeted elemental EDS signal interpreted alongside TEM morphology and the salicylate-grown control.",
+    "interpretation": "Supports localization when Bi is detected in the intracellular regions; does not quantify total uptake or uniquely identify the Bi-containing chemical species.",
+    "evidence": [
+      {
+        "reference": "https://pmc.ncbi.nlm.nih.gov/articles/PMC546758/",
+        "title": "Metabolism of Bismuth Subsalicylate and Intracellular Accumulation of Bismuth by Fusarium sp. Strain BI",
+        "claim": "Primary methods prepare washed 96-hour biomass from bismuth-subsalicylate and salicylate cultures for TEM-EDS of 60 nm sections.",
+        "locator": "html:#sec7"
+      },
+      {
+        "reference": "https://pmc.ncbi.nlm.nih.gov/articles/PMC546758/",
+        "title": "Metabolism of Bismuth Subsalicylate and Intracellular Accumulation of Bismuth by Fusarium sp. Strain BI",
+        "claim": "The localization analysis compares intracellular granules with the salicylate control and warns that the EDS beam samples surrounding material.",
+        "locator": "html:#sec15"
+      }
+    ]
+  },
+  "controls": [
+    {
+      "description": "Salicylate-grown biomass processed for the same microscopy/elemental comparison; its granules lacked detected Bi in the reported comparison.",
+      "evidence": [
+        {
+          "reference": "https://pmc.ncbi.nlm.nih.gov/articles/PMC546758/",
+          "title": "Metabolism of Bismuth Subsalicylate and Intracellular Accumulation of Bismuth by Fusarium sp. Strain BI",
+          "claim": "Primary methods prepare washed 96-hour biomass from bismuth-subsalicylate and salicylate cultures for TEM-EDS of 60 nm sections.",
+          "locator": "html:#sec7"
+        },
+        {
+          "reference": "https://pmc.ncbi.nlm.nih.gov/articles/PMC546758/",
+          "title": "Metabolism of Bismuth Subsalicylate and Intracellular Accumulation of Bismuth by Fusarium sp. Strain BI",
+          "claim": "The localization analysis compares intracellular granules with the salicylate control and warns that the EDS beam samples surrounding material.",
+          "locator": "html:#sec15"
+        }
+      ]
+    }
+  ],
+  "related_records": [
+    {
+      "corpus": "cmmmech",
+      "identifier": "cmmmech:bismuth",
+      "relation": "MEASURES_PROCESS",
+      "basis": "The target mechanism explicitly cites Dodge 2005 intracellular TEM-EDS localization; this assay scopes the link to that component of accumulation evidence.",
+      "source_version": "df061de720fb9884dcc6e41369a3049cef52a059",
+      "source_path": "data/records/bismuth.yaml",
+      "source_url": "https://github.com/CultureBotAI/CMMMech/blob/df061de720fb9884dcc6e41369a3049cef52a059/data/records/bismuth.yaml",
+      "target_locator": "/mechanisms/0",
+      "scope": "Fusarium sp. BI; intracellular Bi localization by thin-section TEM-EDS, not the paper's separate soluble-Bi time course.",
+      "evidence": [
+        {
+          "reference": "https://github.com/CultureBotAI/CMMMech/blob/df061de720fb9884dcc6e41369a3049cef52a059/data/records/bismuth.yaml",
+          "title": "CMMMech bismuth mechanism at df061de720fb9884dcc6e41369a3049cef52a059",
+          "claim": "The target mechanism explicitly cites Dodge 2005 intracellular TEM-EDS localization; this assay scopes the link to that component of accumulation evidence.",
+          "locator": "/mechanisms/0",
+          "source_license": "CC-BY-4.0"
+        },
+        {
+          "reference": "https://pmc.ncbi.nlm.nih.gov/articles/PMC546758/",
+          "title": "Metabolism of Bismuth Subsalicylate and Intracellular Accumulation of Bismuth by Fusarium sp. Strain BI",
+          "claim": "The localization analysis compares intracellular granules with the salicylate control and warns that the EDS beam samples surrounding material.",
+          "locator": "html:#sec15"
+        }
+      ]
+    }
+  ],
+  "research_gaps": [
+    {
+      "scope": "protocol_parameters",
+      "reason": "This summary does not establish a quantitative detection limit, independent culture replicate count or calibrated mass-uptake conversion for TEM-EDS."
+    }
+  ],
+  "curation_history": [
+    {
+      "timestamp": "2026-11-09T02:38:32Z",
+      "curator": "assay-stream-c",
+      "action": "CREATE",
+      "summary": "Curate initial sourced assay concept or scoped operational assay",
+      "history_file": "history/records/fusarium-intracellular-bi-tem-eds/2026-11-09T023832Z-assay-stream-c-a2281d.yaml"
+    }
+  ]
+}

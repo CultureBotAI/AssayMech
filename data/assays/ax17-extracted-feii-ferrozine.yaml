@@ -1,0 +1,171 @@
+{
+  "id": "AssayMech:ax17-extracted-feii-ferrozine",
+  "name": "Oxalate-extracted Fe(II) ferrozine assay in Ax17 ferrihydrite cultures",
+  "record_kind": "OPERATIONAL_ASSAY",
+  "categories": [
+    "BIOTRANSFORMATION"
+  ],
+  "description": "Measure extraction-defined Fe(II) during laboratory growth of D. ferrireducens Ax17 with synthetic two-line ferrihydrite, using ferrozine spectrophotometry after oxalate dissolution.",
+  "limitations": [
+    "Oxalate extraction measures an operational Fe(II) pool; the unfiltered preparation is not a dissolved-iron measurement.",
+    "Ferrozine Fe(II) alone cannot identify magnetite or another mineral phase; the paper uses separate complementary mineral analyses.",
+    "Added FeCl2 and cysteine create a background requiring the matched abiotic controls.",
+    "The iron and ferrihydrite links describe the same experiment and do not constitute independent replication.",
+    "The Methods specifies 0.22 micrometre filtration, whereas the Results uses 0.2 micrometre wording; this record preserves the Methods value without inferring equivalence."
+  ],
+  "evidence": [
+    {
+      "reference": "https://www.frontiersin.org/journals/microbiology/articles/10.3389/fmicb.2023.1272245/full",
+      "title": "Fe(III) (oxyhydr)oxide reduction by the thermophilic iron-reducing bacterium Desulfovulcanus ferrireducens",
+      "claim": "Primary methods measure Fe(II) with ferrozine after oxalate dissolution, including unfiltered and pre-dissolution-filtered fractions and uninoculated controls.",
+      "locator": "html:#s2",
+      "source_license": "CC-BY-4.0"
+    },
+    {
+      "reference": "https://www.frontiersin.org/journals/microbiology/articles/10.3389/fmicb.2023.1272245/full",
+      "title": "Fe(III) (oxyhydr)oxide reduction by the thermophilic iron-reducing bacterium Desulfovulcanus ferrireducens",
+      "claim": "The results report extracted Fe(II) in millimolar units; this is not a direct mineral identification.",
+      "locator": "html:#s3",
+      "source_license": "CC-BY-4.0"
+    }
+  ],
+  "ontology_groundings": [
+    {
+      "term_id": "METPO:2000017",
+      "term_name": "reduces",
+      "entity_type": "OBJECT_PROPERTY",
+      "relation": "TESTS_PREDICATE",
+      "source_version": "800c9d27913158efdf466edf2cd710dbf1ce893f",
+      "source_path": "metpo.json",
+      "source_url": "https://github.com/berkeleybop/metpo/blob/800c9d27913158efdf466edf2cd710dbf1ce893f/metpo.json",
+      "evidence": [
+        {
+          "reference": "https://github.com/berkeleybop/metpo/blob/800c9d27913158efdf466edf2cd710dbf1ce893f/metpo.json",
+          "title": "METPO ontology at commit 800c9d27913158efdf466edf2cd710dbf1ce893f",
+          "claim": "METPO reduces is an object property; the controlled Fe(II) assay can assess the scoped iron-redox process but is not identical to that predicate.",
+          "locator": "/graphs/0/nodes/1472",
+          "source_license": "CC-BY-4.0"
+        }
+      ]
+    }
+  ],
+  "method": {
+    "summary": "Dissolve samples with oxalate before ferrozine spectrophotometry; compare unfiltered preparations with preparations passed through 0.22 micrometre PES filters before dissolution.",
+    "evidence": [
+      {
+        "reference": "https://www.frontiersin.org/journals/microbiology/articles/10.3389/fmicb.2023.1272245/full",
+        "title": "Fe(III) (oxyhydr)oxide reduction by the thermophilic iron-reducing bacterium Desulfovulcanus ferrireducens",
+        "claim": "Primary methods measure Fe(II) with ferrozine after oxalate dissolution, including unfiltered and pre-dissolution-filtered fractions and uninoculated controls.",
+        "locator": "html:#s2",
+        "source_license": "CC-BY-4.0"
+      }
+    ]
+  },
+  "measurement": {
+    "target": "Oxalate-extractable Fe(II) in the selected sample fraction.",
+    "readout": "Ferrozine spectrophotometric response reported as Fe(II) concentration.",
+    "unit": "mmol/L",
+    "interpretation": "Interpret against matched uninoculated controls; extraction and filtration define the measured fraction, without assigning mineral identity.",
+    "evidence": [
+      {
+        "reference": "https://www.frontiersin.org/journals/microbiology/articles/10.3389/fmicb.2023.1272245/full",
+        "title": "Fe(III) (oxyhydr)oxide reduction by the thermophilic iron-reducing bacterium Desulfovulcanus ferrireducens",
+        "claim": "Primary methods measure Fe(II) with ferrozine after oxalate dissolution, including unfiltered and pre-dissolution-filtered fractions and uninoculated controls.",
+        "locator": "html:#s2",
+        "source_license": "CC-BY-4.0"
+      },
+      {
+        "reference": "https://www.frontiersin.org/journals/microbiology/articles/10.3389/fmicb.2023.1272245/full",
+        "title": "Fe(III) (oxyhydr)oxide reduction by the thermophilic iron-reducing bacterium Desulfovulcanus ferrireducens",
+        "claim": "The results report extracted Fe(II) in millimolar units; this is not a direct mineral identification.",
+        "locator": "html:#s3",
+        "source_license": "CC-BY-4.0"
+      }
+    ]
+  },
+  "controls": [
+    {
+      "description": "Composition-matched uninoculated treatments incubated at 55 degrees Celsius and at room temperature.",
+      "evidence": [
+        {
+          "reference": "https://www.frontiersin.org/journals/microbiology/articles/10.3389/fmicb.2023.1272245/full",
+          "title": "Fe(III) (oxyhydr)oxide reduction by the thermophilic iron-reducing bacterium Desulfovulcanus ferrireducens",
+          "claim": "Primary methods measure Fe(II) with ferrozine after oxalate dissolution, including unfiltered and pre-dissolution-filtered fractions and uninoculated controls.",
+          "locator": "html:#s2",
+          "source_license": "CC-BY-4.0"
+        }
+      ]
+    }
+  ],
+  "related_records": [
+    {
+      "corpus": "cmmmech",
+      "identifier": "cmmmech:iron",
+      "relation": "MEASURES_PROCESS",
+      "basis": "The selected Ax17 mechanism explicitly cites Sklute 2023 and the extraction-based ferrozine endpoint; this measures its Fe-redox component only.",
+      "source_version": "df061de720fb9884dcc6e41369a3049cef52a059",
+      "source_path": "data/records/iron.yaml",
+      "source_url": "https://github.com/CultureBotAI/CMMMech/blob/df061de720fb9884dcc6e41369a3049cef52a059/data/records/iron.yaml",
+      "target_locator": "/mechanisms/0",
+      "scope": "D. ferrireducens Ax17 (DSM 111878), synthetic two-line ferrihydrite; oxalate-extractable Fe(II) with matched abiotic controls.",
+      "evidence": [
+        {
+          "reference": "https://github.com/CultureBotAI/CMMMech/blob/df061de720fb9884dcc6e41369a3049cef52a059/data/records/iron.yaml",
+          "title": "CMMMech iron mechanism at df061de720fb9884dcc6e41369a3049cef52a059",
+          "claim": "The selected Ax17 mechanism explicitly cites Sklute 2023 and the extraction-based ferrozine endpoint; this measures its Fe-redox component only.",
+          "locator": "/mechanisms/0",
+          "source_license": "CC-BY-4.0"
+        },
+        {
+          "reference": "https://www.frontiersin.org/journals/microbiology/articles/10.3389/fmicb.2023.1272245/full",
+          "title": "Fe(III) (oxyhydr)oxide reduction by the thermophilic iron-reducing bacterium Desulfovulcanus ferrireducens",
+          "claim": "Primary methods measure Fe(II) with ferrozine after oxalate dissolution, including unfiltered and pre-dissolution-filtered fractions and uninoculated controls.",
+          "locator": "html:#s2",
+          "source_license": "CC-BY-4.0"
+        }
+      ]
+    },
+    {
+      "corpus": "cmmmech",
+      "identifier": "cmmmech:ferrihydrite",
+      "relation": "MEASURES_PROCESS",
+      "basis": "The selected Ax17 mechanism explicitly cites Sklute 2023 and the extraction-based ferrozine endpoint; this measures its Fe-redox component only.",
+      "source_version": "df061de720fb9884dcc6e41369a3049cef52a059",
+      "source_path": "data/records/ferrihydrite.yaml",
+      "source_url": "https://github.com/CultureBotAI/CMMMech/blob/df061de720fb9884dcc6e41369a3049cef52a059/data/records/ferrihydrite.yaml",
+      "target_locator": "/mechanisms/0",
+      "scope": "D. ferrireducens Ax17 (DSM 111878), synthetic two-line ferrihydrite; oxalate-extractable Fe(II) with matched abiotic controls.",
+      "evidence": [
+        {
+          "reference": "https://github.com/CultureBotAI/CMMMech/blob/df061de720fb9884dcc6e41369a3049cef52a059/data/records/ferrihydrite.yaml",
+          "title": "CMMMech ferrihydrite mechanism at df061de720fb9884dcc6e41369a3049cef52a059",
+          "claim": "The selected Ax17 mechanism explicitly cites Sklute 2023 and the extraction-based ferrozine endpoint; this measures its Fe-redox component only.",
+          "locator": "/mechanisms/0",
+          "source_license": "CC-BY-4.0"
+        },
+        {
+          "reference": "https://www.frontiersin.org/journals/microbiology/articles/10.3389/fmicb.2023.1272245/full",
+          "title": "Fe(III) (oxyhydr)oxide reduction by the thermophilic iron-reducing bacterium Desulfovulcanus ferrireducens",
+          "claim": "Primary methods measure Fe(II) with ferrozine after oxalate dissolution, including unfiltered and pre-dissolution-filtered fractions and uninoculated controls.",
+          "locator": "html:#s2",
+          "source_license": "CC-BY-4.0"
+        }
+      ]
+    }
+  ],
+  "research_gaps": [
+    {
+      "scope": "protocol_parameters",
+      "reason": "A complete ferrozine reagent/calibration recipe is not reproduced; the cited primary method and its referenced analytical protocol are required for execution."
+    }
+  ],
+  "curation_history": [
+    {
+      "timestamp": "2026-11-09T02:38:32Z",
+      "curator": "assay-stream-c",
+      "action": "CREATE",
+      "summary": "Curate initial sourced assay concept or scoped operational assay",
+      "history_file": "history/records/ax17-extracted-feii-ferrozine/2026-11-09T023832Z-assay-stream-c-381808.yaml"
+    }
+  ]
+}

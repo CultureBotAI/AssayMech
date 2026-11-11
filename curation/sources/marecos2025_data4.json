@@ -1,0 +1,15 @@
+{
+  "source_id": "marecos2025_data4",
+  "reference": "https://media.springernature.com/original/springer-static/esm/art%3A10.1038%2Fs42003-025-08061-4/MediaObjects/42003_2025_8061_MOESM6_ESM.xlsx",
+  "projection_notice": "Curator paraphrases of selected primary-source facts; not a verbatim article or an independent scientific validation. Exact sections must be checked against the cited source during review.",
+  "locators": {
+    "xlsx:4A!C2": {
+      "cell_value": "Final pH",
+      "interpretation": "The spreadsheet reports final pH as an outcome; no common fixed pH treatment is inferred."
+    },
+    "xlsx:4A!B2": {
+      "cell_value": "Extraction Efficiency (μg Nd per g of NdPO4)",
+      "interpretation": "The source labels the reported response as mass of Nd per mass of NdPO4, not percent recovery. The feed in the methods is the synthetic Mon2 phase mixture."
+    }
+  }
+}

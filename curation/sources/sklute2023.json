@@ -1,0 +1,23 @@
+{
+  "source_id": "sklute2023",
+  "reference": "https://www.frontiersin.org/journals/microbiology/articles/10.3389/fmicb.2023.1272245/full",
+  "projection_notice": "Curator paraphrases of selected primary-source facts; not a verbatim article or an independent scientific validation. Exact sections must be checked against the cited source during review.",
+  "locators": {
+    "html:#s2": {
+      "section_title": "Materials and methods",
+      "facts": [
+        "Desulfovulcanus ferrireducens Ax17 (DSM 111878) was cultured with synthetic two-line ferrihydrite.",
+        "Ferrozine spectrophotometry followed oxalate dissolution. Samples were measured unfiltered and after 0.22 micrometre PES filtration before dissolution.",
+        "Matched uninoculated treatments were incubated at 55 degrees Celsius or room temperature.",
+        "FeCl2 and cysteine were present, so abiotic reduction/background requires controls."
+      ]
+    },
+    "html:#s3": {
+      "section_title": "Results, Cell growth on ferrihydrite",
+      "facts": [
+        "Extracted Fe(II) is reported in mM. This assay measures an extraction-defined Fe(II) pool, not a mineral-phase identity.",
+        "No numerical organism outcome is imported into the assay record."
+      ]
+    }
+  }
+}

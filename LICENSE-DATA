@@ -1,0 +1,35 @@
+SPDX-License-Identifier: CC-BY-4.0
+
+Original AssayMech curated scientific records, factual paraphrases, selection
+inventories and annotations are licensed under Creative Commons Attribution 4.0
+International: https://creativecommons.org/licenses/by/4.0/
+
+Attribution and upstream rights are retained:
+
+* METPO contributors, berkeleybop/metpo, commit
+  800c9d27913158efdf466edf2cd710dbf1ce893f, CC-BY-4.0. Selected ontology
+  objects retain their source identifiers, labels, definitions and attribution
+  metadata. Original license:
+  https://github.com/berkeleybop/metpo/blob/800c9d27913158efdf466edf2cd710dbf1ce893f/LICENSE
+* CultureBotAI/CMMMech contributors, commit
+  df061de720fb9884dcc6e41369a3049cef52a059, scientific data CC-BY-4.0.
+  Selected mechanism fields and bibliography retain exact source paths.
+  https://github.com/CultureBotAI/CMMMech/blob/df061de720fb9884dcc6e41369a3049cef52a059/LICENSE-DATA
+* Marecos et al. (2025), Direct genome-scale screening of Gluconobacter
+  oxydans B58 for rare earth element bioleaching, and Supplementary Data 4.
+  https://doi.org/10.1038/s42003-025-08061-4 (CC-BY-4.0).
+* Sklute et al. (2023), Fe(III) (oxyhydr)oxide reduction by the thermophilic
+  iron-reducing bacterium Desulfovulcanus ferrireducens.
+  https://doi.org/10.3389/fmicb.2023.1272245 (CC-BY-4.0).
+* Dodge and Wackett (2005), Metabolism of Bismuth Subsalicylate and
+  Intracellular Accumulation of Bismuth by Fusarium sp. Strain BI.
+  https://doi.org/10.1128/AEM.71.2.876-882.2005. Copyright 2005 American
+  Society for Microbiology. No Creative Commons license was established for
+  this primary article. AssayMech retains citations and original factual
+  paraphrases only; it does not redistribute the article or figures and
+  does not relicense its content. CMMMech's license is not applied to it.
+
+The source catalogue records each source's rights separately. A license for an
+AssayMech annotation does not change the rights of the cited source. Original
+software and schema retain the repository's separate code license. Individual
+vendored or imported artifacts retain their existing notices.

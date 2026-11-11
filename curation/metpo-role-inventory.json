@@ -1,0 +1,232 @@
+{
+  "scope": "Six named assay parents selected from the pinned METPO ontology, their twelve outcome children, the Gram-stain phenotype counterexample, and two process predicates. This is a bounded curation inventory, not an exhaustive assay count for all METPO.",
+  "source_reference": "https://github.com/berkeleybop/metpo/blob/800c9d27913158efdf466edf2cd710dbf1ce893f/metpo.json",
+  "rows": [
+    {
+      "term_id": "METPO:1000697",
+      "term_name": "gram stain",
+      "source_locator": "/graphs/0/nodes/1207",
+      "source_entity_type": "CLASS",
+      "property_type": null,
+      "curated_role": "MEASURES_PHENOTYPE",
+      "disposition": "CONTEXT_ONLY",
+      "seed_ids": []
+    },
+    {
+      "term_id": "METPO:1005010",
+      "term_name": "indole test",
+      "source_locator": "/graphs/0/nodes/1400",
+      "source_entity_type": "CLASS",
+      "property_type": null,
+      "curated_role": "ASSAY_IDENTITY",
+      "disposition": "SEEDED",
+      "seed_ids": [
+        "AssayMech:indole-test"
+      ]
+    },
+    {
+      "term_id": "METPO:1005011",
+      "term_name": "indole test positive",
+      "source_locator": "/graphs/0/nodes/1401",
+      "source_entity_type": "CLASS",
+      "property_type": null,
+      "curated_role": "OUTCOME_CONCEPT",
+      "disposition": "CONTEXT_ONLY",
+      "seed_ids": []
+    },
+    {
+      "term_id": "METPO:1005012",
+      "term_name": "indole test negative",
+      "source_locator": "/graphs/0/nodes/1402",
+      "source_entity_type": "CLASS",
+      "property_type": null,
+      "curated_role": "OUTCOME_CONCEPT",
+      "disposition": "CONTEXT_ONLY",
+      "seed_ids": []
+    },
+    {
+      "term_id": "METPO:1005013",
+      "term_name": "methyl red test",
+      "source_locator": "/graphs/0/nodes/1403",
+      "source_entity_type": "CLASS",
+      "property_type": null,
+      "curated_role": "ASSAY_IDENTITY",
+      "disposition": "SEEDED",
+      "seed_ids": [
+        "AssayMech:methyl-red-test"
+      ]
+    },
+    {
+      "term_id": "METPO:1005014",
+      "term_name": "methyl red test positive",
+      "source_locator": "/graphs/0/nodes/1404",
+      "source_entity_type": "CLASS",
+      "property_type": null,
+      "curated_role": "OUTCOME_CONCEPT",
+      "disposition": "CONTEXT_ONLY",
+      "seed_ids": []
+    },
+    {
+      "term_id": "METPO:1005015",
+      "term_name": "methyl red test negative",
+      "source_locator": "/graphs/0/nodes/1405",
+      "source_entity_type": "CLASS",
+      "property_type": null,
+      "curated_role": "OUTCOME_CONCEPT",
+      "disposition": "CONTEXT_ONLY",
+      "seed_ids": []
+    },
+    {
+      "term_id": "METPO:1005016",
+      "term_name": "Voges-Proskauer test",
+      "source_locator": "/graphs/0/nodes/1406",
+      "source_entity_type": "CLASS",
+      "property_type": null,
+      "curated_role": "ASSAY_IDENTITY",
+      "disposition": "SEEDED",
+      "seed_ids": [
+        "AssayMech:voges-proskauer-test"
+      ]
+    },
+    {
+      "term_id": "METPO:1005017",
+      "term_name": "Voges-Proskauer test positive",
+      "source_locator": "/graphs/0/nodes/1407",
+      "source_entity_type": "CLASS",
+      "property_type": null,
+      "curated_role": "OUTCOME_CONCEPT",
+      "disposition": "CONTEXT_ONLY",
+      "seed_ids": []
+    },
+    {
+      "term_id": "METPO:1005018",
+      "term_name": "Voges-Proskauer test negative",
+      "source_locator": "/graphs/0/nodes/1408",
+      "source_entity_type": "CLASS",
+      "property_type": null,
+      "curated_role": "OUTCOME_CONCEPT",
+      "disposition": "CONTEXT_ONLY",
+      "seed_ids": []
+    },
+    {
+      "term_id": "METPO:1007080",
+      "term_name": "catalase test",
+      "source_locator": "/graphs/0/nodes/1440",
+      "source_entity_type": "CLASS",
+      "property_type": null,
+      "curated_role": "ASSAY_IDENTITY",
+      "disposition": "SEEDED",
+      "seed_ids": [
+        "AssayMech:catalase-test"
+      ]
+    },
+    {
+      "term_id": "METPO:1007081",
+      "term_name": "oxidase test",
+      "source_locator": "/graphs/0/nodes/1441",
+      "source_entity_type": "CLASS",
+      "property_type": null,
+      "curated_role": "ASSAY_IDENTITY",
+      "disposition": "SEEDED",
+      "seed_ids": [
+        "AssayMech:oxidase-test"
+      ]
+    },
+    {
+      "term_id": "METPO:1007082",
+      "term_name": "urease test",
+      "source_locator": "/graphs/0/nodes/1442",
+      "source_entity_type": "CLASS",
+      "property_type": null,
+      "curated_role": "ASSAY_IDENTITY",
+      "disposition": "SEEDED",
+      "seed_ids": [
+        "AssayMech:urease-test"
+      ]
+    },
+    {
+      "term_id": "METPO:1007083",
+      "term_name": "catalase positive",
+      "source_locator": "/graphs/0/nodes/1443",
+      "source_entity_type": "CLASS",
+      "property_type": null,
+      "curated_role": "OUTCOME_CONCEPT",
+      "disposition": "CONTEXT_ONLY",
+      "seed_ids": []
+    },
+    {
+      "term_id": "METPO:1007084",
+      "term_name": "catalase negative",
+      "source_locator": "/graphs/0/nodes/1444",
+      "source_entity_type": "CLASS",
+      "property_type": null,
+      "curated_role": "OUTCOME_CONCEPT",
+      "disposition": "CONTEXT_ONLY",
+      "seed_ids": []
+    },
+    {
+      "term_id": "METPO:1007085",
+      "term_name": "oxidase positive",
+      "source_locator": "/graphs/0/nodes/1445",
+      "source_entity_type": "CLASS",
+      "property_type": null,
+      "curated_role": "OUTCOME_CONCEPT",
+      "disposition": "CONTEXT_ONLY",
+      "seed_ids": []
+    },
+    {
+      "term_id": "METPO:1007086",
+      "term_name": "oxidase negative",
+      "source_locator": "/graphs/0/nodes/1446",
+      "source_entity_type": "CLASS",
+      "property_type": null,
+      "curated_role": "OUTCOME_CONCEPT",
+      "disposition": "CONTEXT_ONLY",
+      "seed_ids": []
+    },
+    {
+      "term_id": "METPO:1007087",
+      "term_name": "urease positive",
+      "source_locator": "/graphs/0/nodes/1447",
+      "source_entity_type": "CLASS",
+      "property_type": null,
+      "curated_role": "OUTCOME_CONCEPT",
+      "disposition": "CONTEXT_ONLY",
+      "seed_ids": []
+    },
+    {
+      "term_id": "METPO:1007088",
+      "term_name": "urease negative",
+      "source_locator": "/graphs/0/nodes/1448",
+      "source_entity_type": "CLASS",
+      "property_type": null,
+      "curated_role": "OUTCOME_CONCEPT",
+      "disposition": "CONTEXT_ONLY",
+      "seed_ids": []
+    },
+    {
+      "term_id": "METPO:2000017",
+      "term_name": "reduces",
+      "source_locator": "/graphs/0/nodes/1472",
+      "source_entity_type": "PROPERTY",
+      "property_type": "OBJECT",
+      "curated_role": "TESTS_PREDICATE",
+      "disposition": "SEEDED",
+      "seed_ids": [
+        "AssayMech:ax17-extracted-feii-ferrozine"
+      ]
+    },
+    {
+      "term_id": "METPO:2000210",
+      "term_name": "accumulates",
+      "source_locator": "/graphs/0/nodes/1530",
+      "source_entity_type": "PROPERTY",
+      "property_type": "OBJECT",
+      "curated_role": "TESTS_PREDICATE",
+      "disposition": "SEEDED",
+      "seed_ids": [
+        "AssayMech:fusarium-intracellular-bi-tem-eds"
+      ]
+    }
+  ]
+}

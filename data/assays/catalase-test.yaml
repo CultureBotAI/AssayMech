@@ -1,0 +1,91 @@
+{
+  "id": "AssayMech:catalase-test",
+  "name": "catalase test",
+  "record_kind": "ONTOLOGY_ASSAY_CONCEPT",
+  "categories": [
+    "MICROBIAL_CHARACTERIZATION"
+  ],
+  "description": "An ontology assay concept for testing catalase activity using hydrogen peroxide and visible gas formation.",
+  "limitations": [
+    "This is an assay concept, with no organism or strain result asserted.",
+    "METPO supplies a conceptual definition, not a complete executable protocol, validated threshold or performance estimate."
+  ],
+  "evidence": [
+    {
+      "reference": "https://github.com/berkeleybop/metpo/blob/800c9d27913158efdf466edf2cd710dbf1ce893f/metpo.json",
+      "title": "METPO ontology at commit 800c9d27913158efdf466edf2cd710dbf1ce893f",
+      "claim": "The selected class defines the named assay; its identity alone is not an organism-level positive or negative result.",
+      "locator": "/graphs/0/nodes/1440",
+      "source_license": "CC-BY-4.0"
+    }
+  ],
+  "ontology_groundings": [
+    {
+      "term_id": "METPO:1007080",
+      "term_name": "catalase test",
+      "entity_type": "CLASS",
+      "relation": "ASSAY_IDENTITY",
+      "source_version": "800c9d27913158efdf466edf2cd710dbf1ce893f",
+      "source_path": "metpo.json",
+      "source_url": "https://github.com/berkeleybop/metpo/blob/800c9d27913158efdf466edf2cd710dbf1ce893f/metpo.json",
+      "evidence": [
+        {
+          "reference": "https://github.com/berkeleybop/metpo/blob/800c9d27913158efdf466edf2cd710dbf1ce893f/metpo.json",
+          "title": "METPO ontology at commit 800c9d27913158efdf466edf2cd710dbf1ce893f",
+          "claim": "The pinned node is the named assay parent, distinct from its positive and negative outcome classes.",
+          "locator": "/graphs/0/nodes/1440",
+          "source_license": "CC-BY-4.0"
+        }
+      ]
+    }
+  ],
+  "research_gaps": [
+    {
+      "scope": "cmmmech",
+      "reason": "No source-backed correspondence between this assay concept and a specific CMM mechanism was established for this seed."
+    },
+    {
+      "scope": "controls",
+      "reason": "The selected METPO definition does not establish an assay-specific positive/negative control protocol."
+    },
+    {
+      "scope": "protocol_parameters",
+      "reason": "Reagent concentrations, incubation conditions, decision thresholds and performance characteristics require a separately sourced operational protocol."
+    }
+  ],
+  "method": {
+    "summary": "Expose cells to hydrogen peroxide and observe visible bubbling.",
+    "evidence": [
+      {
+        "reference": "https://github.com/berkeleybop/metpo/blob/800c9d27913158efdf466edf2cd710dbf1ce893f/metpo.json",
+        "title": "METPO ontology at commit 800c9d27913158efdf466edf2cd710dbf1ce893f",
+        "claim": "The selected class defines the named assay; its identity alone is not an organism-level positive or negative result.",
+        "locator": "/graphs/0/nodes/1440",
+        "source_license": "CC-BY-4.0"
+      }
+    ]
+  },
+  "measurement": {
+    "target": "Catalase activity",
+    "readout": "Visible bubbling as a qualitative test response.",
+    "interpretation": "A response must be interpreted under a separately specified protocol and controls; this record assigns no outcome to an organism.",
+    "evidence": [
+      {
+        "reference": "https://github.com/berkeleybop/metpo/blob/800c9d27913158efdf466edf2cd710dbf1ce893f/metpo.json",
+        "title": "METPO ontology at commit 800c9d27913158efdf466edf2cd710dbf1ce893f",
+        "claim": "The selected class defines the named assay; its identity alone is not an organism-level positive or negative result.",
+        "locator": "/graphs/0/nodes/1440",
+        "source_license": "CC-BY-4.0"
+      }
+    ]
+  },
+  "curation_history": [
+    {
+      "timestamp": "2026-11-09T02:38:32Z",
+      "curator": "assay-stream-c",
+      "action": "CREATE",
+      "summary": "Curate initial sourced assay concept or scoped operational assay",
+      "history_file": "history/records/catalase-test/2026-11-09T023832Z-assay-stream-c-8407c5.yaml"
+    }
+  ]
+}
