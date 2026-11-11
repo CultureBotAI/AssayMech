@@ -1,0 +1,15 @@
+# AssayMech agent instructions
+
+Read the README and `just --list`. This repository owns assay definitions and measurement evidence. It does not own organism-level observations, upstream METPO terms or CMM mechanisms.
+
+- Verify current files and remote revisions before reporting counts or status. Include ignored files in absence searches (`rg --no-ignore --hidden`).
+- Work in isolated clones/worktrees under `~/agent-work/AssayMech/`. Retained reviews, batch state, helper scripts and handoffs live there; never `/tmp`, `/private/tmp` or `$TMPDIR`. Disposable test fixtures are the exception. Push authorized committed work the same day, verify exact remote heads and report failed pushes. Do not force-push.
+- Ground every METPO link to an exact term ID, entity type, source file and immutable commit. `ASSAY_IDENTITY` denotes an assay class; `MEASURES_PHENOTYPE` denotes a measured phenotype class; `TESTS_PREDICATE` denotes an object property tested in the stated scope. A phenotype, positive/negative outcome or object property cannot serve as an assay identity.
+- Separate an ontology test concept from an operational assay. Operational records need a sourced method and measurement readout. Never invent reagent concentrations, controls, units, detection limits or experimental results to complete a record. Missing information is an explicit gap.
+- CMM links require an actual target record and nested mechanism/capability locator at an immutable commit, plus evidence supporting the measurement relationship. State organism, material and endpoint limits. Bulk depletion alone does not prove intracellular bioaccumulation; growth, survival and uptake are different endpoints.
+- Preserve source licences and exact provenance. Structural validation and source existence do not establish scientific support. Review each changed record and the candidate exclusions.
+- Add or append history through `just new-history`; preserve existing inline events and sidecars. The command validates a dry run and requires `--apply` for the repository-locked recoverable transaction. Native records use deterministic JSON as a YAML subset; shared YAML serialization remains unverified.
+- Governed files and their pin are immutable locally. Use claw's supported `kg-microbe-governance sync` from a published immutable revision. Update the claw dependency and lockfile with the pin; never patch governed tests or payloads to obtain a pass.
+- Run `just check` and `just check-vendored`. Repaired failure modes need regression tests and a fresh-process mutation proving the test fails without the fix.
+- Every PR requires independent adversarial review, issues for confirmed findings, fixes, re-review and green checks. Stop before merge; the user decides. Never enable auto-merge, send input to other sessions or use at-mentions.
+- Scientific reviews follow `docs/record-reviews.md` and `docs/record-review-profile.md`; persist the governed review bundle. No provider or paid research call is authorized by merely installing a workflow.

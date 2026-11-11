@@ -1,0 +1,6 @@
+version: 1
+repository: CultureBotAI/AssayMech
+skills:
+  - .claude/skills/curate-assay/SKILL.md
+rubrics:
+  - docs/record-review-profile.md
