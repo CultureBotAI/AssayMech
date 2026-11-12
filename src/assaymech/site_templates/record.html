@@ -1,0 +1,28 @@
+{% extends "base.html" %}{% from "evidence.html" import evidence %}
+{% block title %}{{ record.name }} | {{ project }}{% endblock %}
+{% block content %}
+<p><a href="../../index.html">← Assay catalogue</a></p>
+<section class="hero"><p class="eyebrow">{{ record.record_kind|label }}</p>
+<h1>{{ record.name }}</h1><p class="identifiers"><code>{{ record.id }}</code></p>
+<p>{% for category in record.categories %}<span class="badge">{{ category|label }}</span>{% endfor %}</p><p>{{ record.description }}</p>
+<p><a href="../../sources/{{ record.slug }}.yaml">Download source YAML</a> · <a href="{{ github }}/blob/{{ revision }}/{{ record.source_path }}">View source at this revision</a></p>
+{% if record.record_kind == 'ONTOLOGY_ASSAY_CONCEPT' %}<p class="notice">Ontology assay concept. Any recorded method summary describes the concept's scope; it does not supply a complete executable laboratory protocol.</p>{% else %}<p class="notice">Scoped operational assay. Consult the sourced method, controls and limitations; missing protocol details remain explicit research gaps.</p>{% endif %}</section>
+<section aria-labelledby="record-evidence"><h2 id="record-evidence">Record evidence</h2>{{ evidence(record.evidence) }}</section>
+<section aria-labelledby="limitations"><h2 id="limitations">Interpretation and limitations</h2><ul>{% for limit in record.limitations %}<li>{{ limit }}</li>{% endfor %}</ul></section>
+<section aria-labelledby="groundings"><h2 id="groundings">Ontology groundings</h2>
+<p>Assay identity, measured phenotype and tested predicate are distinct relations. A property grounding does not turn that property into an assay identity.</p>
+{% for term in record.ontology_groundings|default([]) %}<article class="relation"><h3>{{ term.term_name }} · {{ term.term_id }}</h3>
+<p><span class="badge">{{ term.relation|label }}</span> · Entity type: {{ term.entity_type|label }}</p>
+<p><a href="{{ term.source_url|safe_url }}">Ontology source</a>: <code>{{ term.source_path }}</code><br>Exact source revision: <code>{{ term.source_version }}</code></p>{{ evidence(term.evidence) }}</article>{% else %}<p>No ontology grounding recorded; see research gaps.</p>{% endfor %}</section>
+<section aria-labelledby="method"><h2 id="method">Method summary</h2>{% if record.method is defined %}<p>{{ record.method.summary }}</p>{{ evidence(record.method.evidence) }}{% else %}<p>No method summary recorded.</p>{% endif %}</section>
+<section aria-labelledby="measurement"><h2 id="measurement">Measurement and interpretation</h2>{% if record.measurement is defined %}
+<dl><dt>Target</dt><dd>{{ record.measurement.target }}</dd><dt>Readout</dt><dd>{{ record.measurement.readout }}</dd><dt>Unit</dt><dd>{{ record.measurement.unit|default('No unit recorded') }}</dd><dt>Interpretation</dt><dd>{{ record.measurement.interpretation }}</dd></dl>{{ evidence(record.measurement.evidence) }}{% else %}<p>No measurement specification recorded.</p>{% endif %}</section>
+<section aria-labelledby="controls-title"><h2 id="controls-title">Controls</h2>{% for control in record.controls|default([]) %}<article class="relation"><p>{{ control.description }}</p>{{ evidence(control.evidence) }}</article>{% else %}<p>No controls recorded. This is not a statement that controls are unnecessary.</p>{% endfor %}</section>
+<section aria-labelledby="relationships"><h2 id="relationships">Scoped CMM relationships</h2>
+{% for link in record.related_records|default([]) %}<article class="relation"><h3>{{ link.relation|label }} · {{ link.identifier }}</h3><p>Corpus: {{ link.corpus }}</p>
+<p>{{ link.basis }}</p><p><strong>Scope:</strong> {{ link.scope }}</p><p>Target locator: <code>{{ link.target_locator }}</code></p>
+<p><a href="{{ link.source_url|safe_url }}">Linked source record</a>: <code>{{ link.source_path }}</code><br>Source revision: <code>{{ link.source_version }}</code></p>{{ evidence(link.evidence) }}</article>{% else %}<p>No CMM relationship recorded; no relationship is inferred from a shared assay name.</p>{% endfor %}</section>
+<section aria-labelledby="gaps"><h2 id="gaps">Research gaps</h2><ul>{% for gap in record.research_gaps|default([]) %}<li><strong>{{ gap.scope }}</strong>: {{ gap.reason }}</li>{% else %}<li>No research gaps recorded. This does not establish complete evidence coverage.</li>{% endfor %}</ul></section>
+<section aria-labelledby="history"><h2 id="history">Curation provenance</h2>
+<div class="table-scroll" role="region" aria-label="Curation history table" tabindex="0"><table><caption>Recorded curation events</caption><thead><tr><th scope="col">UTC timestamp</th><th scope="col">Action and curator</th><th scope="col">Summary</th></tr></thead><tbody>{% for event in record.curation_history %}<tr><td><time>{{ event.timestamp }}</time></td><td>{{ event.action }} · {{ event.curator }}</td><td>{{ event.summary }}<br><a href="{{ github }}/blob/{{ revision }}/{{ event.history_file }}">History source</a></td></tr>{% endfor %}</tbody></table></div></section>
+{% endblock %}
