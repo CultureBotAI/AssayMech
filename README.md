@@ -38,3 +38,14 @@ Each PR receives independent review, issue fixes, re-review and green checks bef
 Original code and schemas are CC0. Scientific records are CC-BY-4.0 with source attribution; imported and governed files retain their own licences and notices. The native history command writes deterministic JSON, a strict subset of YAML. Shared `kg_microbe_write.dump_record` intentionally refuses the unverified fleet serialization profile; the native writer owns this representation and does not authorize general cross-corpus reserialization.
 
 See [seed provenance](docs/seed-provenance.md) for exact source pins, method limits and the bounded 21-term inventory. Run `just audit-seed` for the offline source-binding checks. Scientific data attribution is in [LICENSE-DATA](LICENSE-DATA).
+
+## Static catalogue
+
+Run `just build-site` and `just check-site` to generate the complete catalogue and
+record pages under `build/site/`. Search, categories and record-kind filters enhance
+static pages that remain readable without JavaScript. Assay concepts remain
+separate from scoped operational methods; measurement limits, controls, evidence,
+METPO source pins and CMM target locators are displayed without altering data.
+See [site development and deployment](docs/site.md) for the maintained sources,
+browser verification, future Pages configuration and rollback procedure.
+Pages is not enabled or deployed by this preparation.

@@ -1,0 +1,41 @@
+{% extends "base.html" %}
+{% block title %}Assay catalogue | {{ project }}{% endblock %}
+{% block content %}
+<section class="hero">
+  <p class="eyebrow">Microbial characterization · scoped measurement</p>
+  <h1>Assays and what they measure</h1>
+  <p>Explore {{ count }} curated assay records for microbial characterization, bioprocessing, biotransformation and bioaccumulation.</p>
+  <p class="notice">An ontology assay concept is not a complete laboratory protocol. Operational records retain their sourced methods, controls and limits; missing information remains a research gap.</p>
+</section>
+<section aria-labelledby="categories-title">
+  <h2 id="categories-title">Browse categories</h2>
+  <ul class="category-grid">{% for category, total in categories.items() %}<li><strong>{{ category|label }}</strong><span>{{ total }} record{% if total != 1 %}s{% endif %}</span></li>{% endfor %}</ul>
+  <p>{% for kind, total in kinds.items() %}<span class="badge">{{ kind|label }}: {{ total }}</span>{% endfor %}</p>
+  <p class="muted">Category counts can overlap when a record has more than one category. Record kind distinguishes concepts from operational assays.</p>
+</section>
+<section aria-labelledby="catalogue-title">
+  <h2 id="catalogue-title">Record catalogue</h2>
+  <div id="controls" hidden>
+    <form id="search-form" role="search">
+      <div><label for="query">Search names or identifiers</label><input id="query" name="q" type="search" placeholder="Catalase, AssayMech:catalase-test, METPO identifier" aria-describedby="search-help"></div>
+      <div><label for="category">Category</label><select id="category" name="category"><option value="">All categories</option>{% for category in categories %}<option value="{{ category }}">{{ category|label }}</option>{% endfor %}</select></div>
+      <div><label for="kind">Record kind</label><select id="kind" name="kind"><option value="">All record kinds</option>{% for kind in kinds %}<option value="{{ kind }}">{{ kind|label }}</option>{% endfor %}</select></div>
+      <button type="reset">Reset filters</button>
+    </form>
+    <p id="search-help">Matches record names, AssayMech identifiers and grounded METPO identifiers across the complete catalogue.</p>
+  </div>
+  <noscript><p class="notice">All {{ count }} records are shown below. Use your browser’s Find command to search this page; every record and source link works without JavaScript.</p></noscript>
+  <p id="result-count" role="status" aria-live="polite">Showing {{ count }} of {{ count }} records.</p>
+  <p id="no-results" hidden>No matching records. Change your search or reset the filters.</p>
+  <div class="table-scroll" role="region" aria-label="Assay catalogue table" tabindex="0">
+    <table><caption>Complete AssayMech catalogue</caption><thead><tr><th scope="col">Name and record</th><th scope="col">Record kind</th><th scope="col">Categories</th><th scope="col">Ontology identifiers</th></tr></thead>
+      <tbody id="records">{% for record in records %}
+      <tr data-record data-search="{{ record.name }} {{ record.id }} {% for term in record.ontology_groundings|default([]) %}{{ term.term_id }} {% endfor %}" data-categories="{{ record.categories|join('|') }}" data-kind="{{ record.record_kind }}">
+        <th scope="row"><a href="records/{{ record.slug }}/index.html">{{ record.name }}</a><small>{{ record.id }}</small></th>
+        <td>{{ record.record_kind|label }}</td><td>{% for category in record.categories %}<span class="badge">{{ category|label }}</span>{% endfor %}</td>
+        <td>{% for term in record.ontology_groundings|default([]) %}<code>{{ term.term_id }}</code><br>{% else %}No grounding recorded{% endfor %}</td>
+      </tr>{% endfor %}</tbody>
+    </table>
+  </div>
+</section>
+{% endblock %}
