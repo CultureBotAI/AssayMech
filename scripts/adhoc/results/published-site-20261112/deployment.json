@@ -1,0 +1,16 @@
+{
+  "repository": "CultureBotAI/AssayMech",
+  "pr": 8,
+  "approved_head": "bf38ab37c835e4255960fdb5e3437c4eb5f943ae",
+  "merge_sha": "f7d2d79aa00b6e47816f2f7dea8b418ec084b91e",
+  "deployment_id": 7730250313,
+  "run_id": 43168889399,
+  "run_url": "https://github.com/CultureBotAI/AssayMech/actions/runs/43168889399",
+  "url": "https://culturebotai.github.io/AssayMech/",
+  "environment_policy": "main branch only; new environment has no designated reviewer; no existing protections removed",
+  "published_source_changed_by_verification": false,
+  "helpers_sha256": {
+    "verify_published_site.py": "1b787047e45f4b16163596faa26f212ee4ca449847dd9b000e3df6d955db22c5"
+  },
+  "cofactor_canary_evidence_commit": "f45af0185ce00776cf788d4f340a1d0aeedc8fd6"
+}

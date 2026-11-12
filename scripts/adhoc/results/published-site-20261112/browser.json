@@ -1,0 +1,546 @@
+{
+  "archive_inventory_proof": {
+    "all_pages_bytes_equal_review": true,
+    "excluded_review_markers": [
+      ".nojekyll",
+      ".site-generated"
+    ],
+    "packager_exclusion": "--exclude=\".[^/]*\"",
+    "pages_files": [
+      "LICENSE-DATA.txt",
+      "LICENSE.txt",
+      "assets/catalogue.js",
+      "assets/icon.svg",
+      "assets/site.css",
+      "index.html",
+      "records/ax17-extracted-feii-ferrozine/index.html",
+      "records/catalase-test/index.html",
+      "records/fusarium-intracellular-bi-tem-eds/index.html",
+      "records/indole-test/index.html",
+      "records/methyl-red-test/index.html",
+      "records/nd-bioleaching-icp-ms/index.html",
+      "records/oxidase-test/index.html",
+      "records/urease-test/index.html",
+      "records/voges-proskauer-test/index.html",
+      "schema/assaymech.yaml",
+      "schema/history.yaml",
+      "schema/mech_shared.yaml",
+      "site-manifest.json",
+      "sources/ax17-extracted-feii-ferrozine.yaml",
+      "sources/catalase-test.yaml",
+      "sources/fusarium-intracellular-bi-tem-eds.yaml",
+      "sources/indole-test.yaml",
+      "sources/methyl-red-test.yaml",
+      "sources/nd-bioleaching-icp-ms.yaml",
+      "sources/oxidase-test.yaml",
+      "sources/urease-test.yaml",
+      "sources/voges-proskauer-test.yaml"
+    ],
+    "pages_files_sha256": {
+      "LICENSE-DATA.txt": "d03c1cd2f880424abc966230e6d96aa9acaf946cfcaedc933d4c2fef64cbf0a0",
+      "LICENSE.txt": "462e98ea1272204772d8fc06fbfa054319ca32638427b43741353977bccc0823",
+      "assets/catalogue.js": "65fdf93d4dc144b79fae8a345d533fadf28fca846713f6242608fdac130e65a2",
+      "assets/icon.svg": "2062ca46b2a4da0d718fcc1c4d3991bdfe3ceeb72acfad2413b9d97c551d040e",
+      "assets/site.css": "745557d5fa0bbab2a2b0eb74005ea537580c5f5616781ce079d031f7e08f71a1",
+      "index.html": "0bca9f2b2c343c9f3c10ea8bd2d74f5e443d6096c5d0f770678dd7633aac4e72",
+      "records/ax17-extracted-feii-ferrozine/index.html": "18394c758e8acb87c6d4a1c3dda5158d3f4951e6ce0678c26ccbda22e5c434c9",
+      "records/catalase-test/index.html": "19f8278dd8084edad6871f3559a9856ab5830f24d358023f9e74dafa4c2948f9",
+      "records/fusarium-intracellular-bi-tem-eds/index.html": "c3698d3b2174cc36b0b808e37ee9e633cb550972720dae5552b432dfd6fd6add",
+      "records/indole-test/index.html": "76d0bc2e205449adc03d8c4bb59cdea97de8df5777175143f4170b04450ab05a",
+      "records/methyl-red-test/index.html": "76921ac555a9a78d630a6809bc58579ee4f6b9b018916f3201bfbd1dd098a7b3",
+      "records/nd-bioleaching-icp-ms/index.html": "a385e576aab6a1c1fe34eb96887559bbddb3f5e2ba68c13ad2dd732f5e08c964",
+      "records/oxidase-test/index.html": "285b97e137373503e526e7f338e848f5aa6e7abe2cde67ff17328d3e011fdd59",
+      "records/urease-test/index.html": "ecad37423d2fc7e6391ba47ba4a9c51136b328dbeb5f7daaf709b8494c751ec9",
+      "records/voges-proskauer-test/index.html": "554b9dcab05e38a59560aea0900d03e528aac299a493c99b8a5f1b33c57b22fc",
+      "schema/assaymech.yaml": "6c460886731a10e803c2143a04930d9c3791b722f083d243395a918dbf8f3d85",
+      "schema/history.yaml": "b01b06f1b9a37db205c26c31ec0fd910690848507c7e1bfb73b424ac0829c52d",
+      "schema/mech_shared.yaml": "c2e7054fd32635e380c698282bd886a9105861009b9f0474f02bb1b80865e895",
+      "site-manifest.json": "7a38644cc21585046d265d180ca64a30c59080c1e3fb1cf9ecdf1fa1eff117e4",
+      "sources/ax17-extracted-feii-ferrozine.yaml": "4e0a61fffaff977d91ad46eb707988ca4fa178a2fbaedb3c8d315c509c5d9c9e",
+      "sources/catalase-test.yaml": "e44184b81f819fa187508a6125ed3274b53041983dafb524ff3542488459a926",
+      "sources/fusarium-intracellular-bi-tem-eds.yaml": "51aca0631bdeb1336090228e15a7d9a4543c67133b3a3162ed355af57e1d9144",
+      "sources/indole-test.yaml": "161de216a77d6940c32b9894a932b262cf1a4c8432325f8f8e9004a4ea47b62a",
+      "sources/methyl-red-test.yaml": "d93bc3473fead16b5a7e0a9712789a2ad5de3a452870d18f210745857f79d1de",
+      "sources/nd-bioleaching-icp-ms.yaml": "c66523bc1fc115eb64d06ab157a632c8f378e7de7cd426d159430ebf0ec08df6",
+      "sources/oxidase-test.yaml": "3306dc6f23e771e91a7ad01f839ec69780bbfbe749bc2f4e98618efdf38350c5",
+      "sources/urease-test.yaml": "9a6cb54ade2efde3761e1d029f75b01b3ef03d015b427218d0b7c5a61ad478e2",
+      "sources/voges-proskauer-test.yaml": "c18a8d1c9e2ccf7f92a97cc2b67aa16214b1f2c52eddbcdbd58022893435e9ac"
+    },
+    "pages_packager_revision": "7b1f4a764d45c48632c6b24a0339c27f5614fb0b",
+    "review_files": [
+      ".nojekyll",
+      ".site-generated",
+      "LICENSE-DATA.txt",
+      "LICENSE.txt",
+      "assets/catalogue.js",
+      "assets/icon.svg",
+      "assets/site.css",
+      "index.html",
+      "records/ax17-extracted-feii-ferrozine/index.html",
+      "records/catalase-test/index.html",
+      "records/fusarium-intracellular-bi-tem-eds/index.html",
+      "records/indole-test/index.html",
+      "records/methyl-red-test/index.html",
+      "records/nd-bioleaching-icp-ms/index.html",
+      "records/oxidase-test/index.html",
+      "records/urease-test/index.html",
+      "records/voges-proskauer-test/index.html",
+      "schema/assaymech.yaml",
+      "schema/history.yaml",
+      "schema/mech_shared.yaml",
+      "site-manifest.json",
+      "sources/ax17-extracted-feii-ferrozine.yaml",
+      "sources/catalase-test.yaml",
+      "sources/fusarium-intracellular-bi-tem-eds.yaml",
+      "sources/indole-test.yaml",
+      "sources/methyl-red-test.yaml",
+      "sources/nd-bioleaching-icp-ms.yaml",
+      "sources/oxidase-test.yaml",
+      "sources/urease-test.yaml",
+      "sources/voges-proskauer-test.yaml"
+    ]
+  },
+  "at": "2026-11-12T06:36:39.393466+00:00",
+  "browser_version": "157.0.8103.51",
+  "category_guard_fixture": {
+    "corrected_guard_rejects": true,
+    "expected": 1,
+    "fixture": "selected category with no-op filtering; all rows remain visible",
+    "previous_weak_predicate_accepts": true,
+    "selected": "BIOACCUMULATION",
+    "visible": 9
+  },
+  "category_keyboard_sequence": [
+    "b",
+    "Enter"
+  ],
+  "category_selection": {
+    "all_visible_records_belong": true,
+    "expected": 1,
+    "selected": "BIOACCUMULATION",
+    "visible": 1
+  },
+  "checks": [
+    "complete desktop/mobile catalogue",
+    "identifier/name search",
+    "category/record-kind/reset",
+    "METPO identifier search",
+    "all concept/operational routes",
+    "literal query and zero results",
+    "keyboard skip/focus/scroll",
+    "nested catalogue/detail/YAML/evidence links",
+    "no-JS catalogue/detail",
+    "no viewport overflow",
+    "computed text contrast >= 4.5",
+    "no JS/no-JS page, console, HTTP or request errors",
+    "published manifest and public files match deployment artifact",
+    "exact review/Pages archive inventory and byte comparison",
+    "explicit generated-dotfile review-artifact-only exceptions",
+    "category/kind counts and membership; no-op mutations rejected"
+  ],
+  "contrast_probes": [
+    {
+      "background": "rgb(245, 248, 250)",
+      "foreground": "rgb(24, 44, 61)",
+      "ratio": 13.426488596987378,
+      "selector": "body"
+    },
+    {
+      "background": "rgb(224, 237, 247)",
+      "foreground": "rgb(24, 44, 61)",
+      "ratio": 12.019277644123814,
+      "selector": ".hero h1"
+    },
+    {
+      "background": "rgb(245, 248, 250)",
+      "foreground": "rgb(24, 44, 61)",
+      "ratio": 13.426488596987378,
+      "selector": "#search-help"
+    },
+    {
+      "background": "rgb(245, 248, 250)",
+      "foreground": "rgb(35, 92, 134)",
+      "ratio": 6.682306829608496,
+      "selector": ".brand"
+    },
+    {
+      "background": "rgb(255, 255, 255)",
+      "foreground": "rgb(35, 92, 134)",
+      "ratio": 7.126931787637368,
+      "selector": "table a"
+    },
+    {
+      "background": "rgb(224, 237, 247)",
+      "foreground": "rgb(24, 44, 61)",
+      "ratio": 12.019277644123814,
+      "selector": "button"
+    },
+    {
+      "background": "rgb(255, 255, 255)",
+      "foreground": "rgb(66, 90, 109)",
+      "ratio": 7.204261837917761,
+      "selector": "small"
+    },
+    {
+      "background": "rgb(237, 244, 250)",
+      "foreground": "rgb(24, 44, 61)",
+      "ratio": 12.90260165469605,
+      "selector": ".badge"
+    }
+  ],
+  "external_reference_http_status": 200,
+  "failed_requests": [],
+  "http_errors": [],
+  "kind_guard_fixture": {
+    "expected": 6,
+    "fixture": "selected kind with no-op filtering; all rows remain visible",
+    "guard_rejects": true,
+    "selected": "ONTOLOGY_ASSAY_CONCEPT",
+    "visible": 9
+  },
+  "kind_keyboard_sequence": [
+    "o",
+    "Enter"
+  ],
+  "kind_selection": {
+    "all_visible_records_belong": true,
+    "expected": 6,
+    "selected": "ONTOLOGY_ASSAY_CONCEPT",
+    "visible": 6
+  },
+  "manifest_sha256": "7a38644cc21585046d265d180ca64a30c59080c1e3fb1cf9ecdf1fa1eff117e4",
+  "ontology_identifier_search": [
+    {
+      "term_id": "METPO:2000017",
+      "visible": 1
+    }
+  ],
+  "page_errors": [],
+  "passed": true,
+  "project": "AssayMech",
+  "public_files": [
+    {
+      "artifact_sha256": "7a38644cc21585046d265d180ca64a30c59080c1e3fb1cf9ecdf1fa1eff117e4",
+      "bytes": 4770,
+      "path": "site-manifest.json",
+      "served_sha256": "7a38644cc21585046d265d180ca64a30c59080c1e3fb1cf9ecdf1fa1eff117e4",
+      "status": 200,
+      "verification": "public_bytes_identical"
+    },
+    {
+      "artifact_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "path": ".nojekyll",
+      "reason": "Pinned upload-pages-artifact excludes this generated dotfile",
+      "status": 404,
+      "verification": "review_artifact_only"
+    },
+    {
+      "artifact_sha256": "832c24e5c7c23f26be6da6b5574d0e7c71ef5a953568e9d283b662f00e2f7271",
+      "path": ".site-generated",
+      "reason": "Pinned upload-pages-artifact excludes this generated dotfile",
+      "status": 404,
+      "verification": "review_artifact_only"
+    },
+    {
+      "artifact_sha256": "d03c1cd2f880424abc966230e6d96aa9acaf946cfcaedc933d4c2fef64cbf0a0",
+      "bytes": 2112,
+      "path": "LICENSE-DATA.txt",
+      "served_sha256": "d03c1cd2f880424abc966230e6d96aa9acaf946cfcaedc933d4c2fef64cbf0a0",
+      "status": 200,
+      "verification": "public_bytes_identical"
+    },
+    {
+      "artifact_sha256": "462e98ea1272204772d8fc06fbfa054319ca32638427b43741353977bccc0823",
+      "bytes": 567,
+      "path": "LICENSE.txt",
+      "served_sha256": "462e98ea1272204772d8fc06fbfa054319ca32638427b43741353977bccc0823",
+      "status": 200,
+      "verification": "public_bytes_identical"
+    },
+    {
+      "artifact_sha256": "65fdf93d4dc144b79fae8a345d533fadf28fca846713f6242608fdac130e65a2",
+      "bytes": 1851,
+      "path": "assets/catalogue.js",
+      "served_sha256": "65fdf93d4dc144b79fae8a345d533fadf28fca846713f6242608fdac130e65a2",
+      "status": 200,
+      "verification": "public_bytes_identical"
+    },
+    {
+      "artifact_sha256": "2062ca46b2a4da0d718fcc1c4d3991bdfe3ceeb72acfad2413b9d97c551d040e",
+      "bytes": 265,
+      "path": "assets/icon.svg",
+      "served_sha256": "2062ca46b2a4da0d718fcc1c4d3991bdfe3ceeb72acfad2413b9d97c551d040e",
+      "status": 200,
+      "verification": "public_bytes_identical"
+    },
+    {
+      "artifact_sha256": "745557d5fa0bbab2a2b0eb74005ea537580c5f5616781ce079d031f7e08f71a1",
+      "bytes": 3608,
+      "path": "assets/site.css",
+      "served_sha256": "745557d5fa0bbab2a2b0eb74005ea537580c5f5616781ce079d031f7e08f71a1",
+      "status": 200,
+      "verification": "public_bytes_identical"
+    },
+    {
+      "artifact_sha256": "0bca9f2b2c343c9f3c10ea8bd2d74f5e443d6096c5d0f770678dd7633aac4e72",
+      "bytes": 9354,
+      "path": "index.html",
+      "served_sha256": "0bca9f2b2c343c9f3c10ea8bd2d74f5e443d6096c5d0f770678dd7633aac4e72",
+      "status": 200,
+      "verification": "public_bytes_identical"
+    },
+    {
+      "artifact_sha256": "18394c758e8acb87c6d4a1c3dda5158d3f4951e6ce0678c26ccbda22e5c434c9",
+      "bytes": 13280,
+      "path": "records/ax17-extracted-feii-ferrozine/index.html",
+      "served_sha256": "18394c758e8acb87c6d4a1c3dda5158d3f4951e6ce0678c26ccbda22e5c434c9",
+      "status": 200,
+      "verification": "public_bytes_identical"
+    },
+    {
+      "artifact_sha256": "19f8278dd8084edad6871f3559a9856ab5830f24d358023f9e74dafa4c2948f9",
+      "bytes": 7649,
+      "path": "records/catalase-test/index.html",
+      "served_sha256": "19f8278dd8084edad6871f3559a9856ab5830f24d358023f9e74dafa4c2948f9",
+      "status": 200,
+      "verification": "public_bytes_identical"
+    },
+    {
+      "artifact_sha256": "c3698d3b2174cc36b0b808e37ee9e633cb550972720dae5552b432dfd6fd6add",
+      "bytes": 11796,
+      "path": "records/fusarium-intracellular-bi-tem-eds/index.html",
+      "served_sha256": "c3698d3b2174cc36b0b808e37ee9e633cb550972720dae5552b432dfd6fd6add",
+      "status": 200,
+      "verification": "public_bytes_identical"
+    },
+    {
+      "artifact_sha256": "76d0bc2e205449adc03d8c4bb59cdea97de8df5777175143f4170b04450ab05a",
+      "bytes": 6696,
+      "path": "records/indole-test/index.html",
+      "served_sha256": "76d0bc2e205449adc03d8c4bb59cdea97de8df5777175143f4170b04450ab05a",
+      "status": 200,
+      "verification": "public_bytes_identical"
+    },
+    {
+      "artifact_sha256": "76921ac555a9a78d630a6809bc58579ee4f6b9b018916f3201bfbd1dd098a7b3",
+      "bytes": 6741,
+      "path": "records/methyl-red-test/index.html",
+      "served_sha256": "76921ac555a9a78d630a6809bc58579ee4f6b9b018916f3201bfbd1dd098a7b3",
+      "status": 200,
+      "verification": "public_bytes_identical"
+    },
+    {
+      "artifact_sha256": "a385e576aab6a1c1fe34eb96887559bbddb3f5e2ba68c13ad2dd732f5e08c964",
+      "bytes": 11783,
+      "path": "records/nd-bioleaching-icp-ms/index.html",
+      "served_sha256": "a385e576aab6a1c1fe34eb96887559bbddb3f5e2ba68c13ad2dd732f5e08c964",
+      "status": 200,
+      "verification": "public_bytes_identical"
+    },
+    {
+      "artifact_sha256": "285b97e137373503e526e7f338e848f5aa6e7abe2cde67ff17328d3e011fdd59",
+      "bytes": 7632,
+      "path": "records/oxidase-test/index.html",
+      "served_sha256": "285b97e137373503e526e7f338e848f5aa6e7abe2cde67ff17328d3e011fdd59",
+      "status": 200,
+      "verification": "public_bytes_identical"
+    },
+    {
+      "artifact_sha256": "ecad37423d2fc7e6391ba47ba4a9c51136b328dbeb5f7daaf709b8494c751ec9",
+      "bytes": 7676,
+      "path": "records/urease-test/index.html",
+      "served_sha256": "ecad37423d2fc7e6391ba47ba4a9c51136b328dbeb5f7daaf709b8494c751ec9",
+      "status": 200,
+      "verification": "public_bytes_identical"
+    },
+    {
+      "artifact_sha256": "554b9dcab05e38a59560aea0900d03e528aac299a493c99b8a5f1b33c57b22fc",
+      "bytes": 6789,
+      "path": "records/voges-proskauer-test/index.html",
+      "served_sha256": "554b9dcab05e38a59560aea0900d03e528aac299a493c99b8a5f1b33c57b22fc",
+      "status": 200,
+      "verification": "public_bytes_identical"
+    },
+    {
+      "artifact_sha256": "6c460886731a10e803c2143a04930d9c3791b722f083d243395a918dbf8f3d85",
+      "bytes": 6318,
+      "path": "schema/assaymech.yaml",
+      "served_sha256": "6c460886731a10e803c2143a04930d9c3791b722f083d243395a918dbf8f3d85",
+      "status": 200,
+      "verification": "public_bytes_identical"
+    },
+    {
+      "artifact_sha256": "b01b06f1b9a37db205c26c31ec0fd910690848507c7e1bfb73b424ac0829c52d",
+      "bytes": 9649,
+      "path": "schema/history.yaml",
+      "served_sha256": "b01b06f1b9a37db205c26c31ec0fd910690848507c7e1bfb73b424ac0829c52d",
+      "status": 200,
+      "verification": "public_bytes_identical"
+    },
+    {
+      "artifact_sha256": "c2e7054fd32635e380c698282bd886a9105861009b9f0474f02bb1b80865e895",
+      "bytes": 16106,
+      "path": "schema/mech_shared.yaml",
+      "served_sha256": "c2e7054fd32635e380c698282bd886a9105861009b9f0474f02bb1b80865e895",
+      "status": 200,
+      "verification": "public_bytes_identical"
+    },
+    {
+      "artifact_sha256": "4e0a61fffaff977d91ad46eb707988ca4fa178a2fbaedb3c8d315c509c5d9c9e",
+      "bytes": 9940,
+      "path": "sources/ax17-extracted-feii-ferrozine.yaml",
+      "served_sha256": "4e0a61fffaff977d91ad46eb707988ca4fa178a2fbaedb3c8d315c509c5d9c9e",
+      "status": 200,
+      "verification": "public_bytes_identical"
+    },
+    {
+      "artifact_sha256": "e44184b81f819fa187508a6125ed3274b53041983dafb524ff3542488459a926",
+      "bytes": 4044,
+      "path": "sources/catalase-test.yaml",
+      "served_sha256": "e44184b81f819fa187508a6125ed3274b53041983dafb524ff3542488459a926",
+      "status": 200,
+      "verification": "public_bytes_identical"
+    },
+    {
+      "artifact_sha256": "51aca0631bdeb1336090228e15a7d9a4543c67133b3a3162ed355af57e1d9144",
+      "bytes": 7931,
+      "path": "sources/fusarium-intracellular-bi-tem-eds.yaml",
+      "served_sha256": "51aca0631bdeb1336090228e15a7d9a4543c67133b3a3162ed355af57e1d9144",
+      "status": 200,
+      "verification": "public_bytes_identical"
+    },
+    {
+      "artifact_sha256": "161de216a77d6940c32b9894a932b262cf1a4c8432325f8f8e9004a4ea47b62a",
+      "bytes": 3053,
+      "path": "sources/indole-test.yaml",
+      "served_sha256": "161de216a77d6940c32b9894a932b262cf1a4c8432325f8f8e9004a4ea47b62a",
+      "status": 200,
+      "verification": "public_bytes_identical"
+    },
+    {
+      "artifact_sha256": "d93bc3473fead16b5a7e0a9712789a2ad5de3a452870d18f210745857f79d1de",
+      "bytes": 3086,
+      "path": "sources/methyl-red-test.yaml",
+      "served_sha256": "d93bc3473fead16b5a7e0a9712789a2ad5de3a452870d18f210745857f79d1de",
+      "status": 200,
+      "verification": "public_bytes_identical"
+    },
+    {
+      "artifact_sha256": "c66523bc1fc115eb64d06ab157a632c8f378e7de7cd426d159430ebf0ec08df6",
+      "bytes": 8373,
+      "path": "sources/nd-bioleaching-icp-ms.yaml",
+      "served_sha256": "c66523bc1fc115eb64d06ab157a632c8f378e7de7cd426d159430ebf0ec08df6",
+      "status": 200,
+      "verification": "public_bytes_identical"
+    },
+    {
+      "artifact_sha256": "3306dc6f23e771e91a7ad01f839ec69780bbfbe749bc2f4e98618efdf38350c5",
+      "bytes": 4030,
+      "path": "sources/oxidase-test.yaml",
+      "served_sha256": "3306dc6f23e771e91a7ad01f839ec69780bbfbe749bc2f4e98618efdf38350c5",
+      "status": 200,
+      "verification": "public_bytes_identical"
+    },
+    {
+      "artifact_sha256": "9a6cb54ade2efde3761e1d029f75b01b3ef03d015b427218d0b7c5a61ad478e2",
+      "bytes": 4077,
+      "path": "sources/urease-test.yaml",
+      "served_sha256": "9a6cb54ade2efde3761e1d029f75b01b3ef03d015b427218d0b7c5a61ad478e2",
+      "status": 200,
+      "verification": "public_bytes_identical"
+    },
+    {
+      "artifact_sha256": "c18a8d1c9e2ccf7f92a97cc2b67aa16214b1f2c52eddbcdbd58022893435e9ac",
+      "bytes": 3119,
+      "path": "sources/voges-proskauer-test.yaml",
+      "served_sha256": "c18a8d1c9e2ccf7f92a97cc2b67aa16214b1f2c52eddbcdbd58022893435e9ac",
+      "status": 200,
+      "verification": "public_bytes_identical"
+    }
+  ],
+  "public_root": {
+    "sha256": "0bca9f2b2c343c9f3c10ea8bd2d74f5e443d6096c5d0f770678dd7633aac4e72",
+    "status": 200,
+    "url": "https://culturebotai.github.io/AssayMech/"
+  },
+  "public_url": "https://culturebotai.github.io/AssayMech/",
+  "record_count": 9,
+  "record_route_checks": [
+    {
+      "id": "AssayMech:ax17-extracted-feii-ferrozine",
+      "kind": "OPERATIONAL_ASSAY",
+      "passed": true,
+      "source_license_gap_displayed": false
+    },
+    {
+      "id": "AssayMech:catalase-test",
+      "kind": "ONTOLOGY_ASSAY_CONCEPT",
+      "passed": true,
+      "source_license_gap_displayed": false
+    },
+    {
+      "id": "AssayMech:fusarium-intracellular-bi-tem-eds",
+      "kind": "OPERATIONAL_ASSAY",
+      "passed": true,
+      "source_license_gap_displayed": true
+    },
+    {
+      "id": "AssayMech:indole-test",
+      "kind": "ONTOLOGY_ASSAY_CONCEPT",
+      "passed": true,
+      "source_license_gap_displayed": false
+    },
+    {
+      "id": "AssayMech:methyl-red-test",
+      "kind": "ONTOLOGY_ASSAY_CONCEPT",
+      "passed": true,
+      "source_license_gap_displayed": false
+    },
+    {
+      "id": "AssayMech:nd-bioleaching-icp-ms",
+      "kind": "OPERATIONAL_ASSAY",
+      "passed": true,
+      "source_license_gap_displayed": false
+    },
+    {
+      "id": "AssayMech:oxidase-test",
+      "kind": "ONTOLOGY_ASSAY_CONCEPT",
+      "passed": true,
+      "source_license_gap_displayed": false
+    },
+    {
+      "id": "AssayMech:urease-test",
+      "kind": "ONTOLOGY_ASSAY_CONCEPT",
+      "passed": true,
+      "source_license_gap_displayed": false
+    },
+    {
+      "id": "AssayMech:voges-proskauer-test",
+      "kind": "ONTOLOGY_ASSAY_CONCEPT",
+      "passed": true,
+      "source_license_gap_displayed": false
+    }
+  ],
+  "representative_evidence_href": "https://www.frontiersin.org/journals/microbiology/articles/10.3389/fmicb.2023.1272245/full",
+  "revision": "f7d2d79aa00b6e47816f2f7dea8b418ec084b91e",
+  "screenshots_sha256": {
+    "catalogue-desktop.png": "423b75276c5586bf45c9e62b72943003bf14639d5e80cf9672d86fe422ad31d9",
+    "catalogue-mobile.png": "45d6f945662997578673e19a7050bd1e504f7248567d8018348c28f261c4180f",
+    "concept-desktop.png": "8690839a33461953e85259cf0a3b4c8e6aac170b9d69e1ec84a205e568dbb2d2",
+    "record-desktop.png": "7fd532b9e730e2157dabb9d67689be3bbe3723ebac43be6cc8612d1716dd5399",
+    "record-mobile.png": "d9f755f33b65dfa854e5d089a2517a25288050a465a168861254732185bb09b2",
+    "record-nojs-mobile.png": "d9f755f33b65dfa854e5d089a2517a25288050a465a168861254732185bb09b2"
+  },
+  "viewport_probes": [
+    {
+      "headings": [],
+      "scroll": 390,
+      "width": 390
+    },
+    {
+      "headings": [],
+      "scroll": 390,
+      "width": 390
+    }
+  ]
+}

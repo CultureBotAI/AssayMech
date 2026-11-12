@@ -1,0 +1,39 @@
+{
+  "at": "2026-11-12T06:28:37.724428+00:00",
+  "tracking_pr": "https://github.com/CultureBotAI/AssayMech/pull/8",
+  "shared_guard_lesson": "https://github.com/CultureBotAI/CofactorMech/issues/19",
+  "helper_sha256": "1b787047e45f4b16163596faa26f212ee4ca449847dd9b000e3df6d955db22c5",
+  "fixture_source_revision": "bf38ab37c835e4255960fdb5e3437c4eb5f943ae",
+  "category_noop": {
+    "fixture": "selected category with no-op filtering; all rows remain visible",
+    "selected": "BIOACCUMULATION",
+    "visible": 9,
+    "expected": 1,
+    "previous_weak_predicate_accepts": true,
+    "corrected_guard_rejects": true
+  },
+  "kind_noop": {
+    "fixture": "selected kind with no-op filtering; all rows remain visible",
+    "selected": "ONTOLOGY_ASSAY_CONCEPT",
+    "visible": 9,
+    "expected": 6,
+    "guard_rejects": true
+  },
+  "valid_category": {
+    "selected": "BIOACCUMULATION",
+    "expected": 1,
+    "visible": 1,
+    "all_visible_records_belong": true
+  },
+  "valid_kind": {
+    "selected": "ONTOLOGY_ASSAY_CONCEPT",
+    "expected": 6,
+    "visible": 6,
+    "all_visible_records_belong": true
+  },
+  "empty_category_rejected": true,
+  "wrong_category_membership_rejected": true,
+  "empty_kind_rejected": true,
+  "wrong_kind_membership_rejected": true,
+  "all_guard_fixtures_passed": true
+}
