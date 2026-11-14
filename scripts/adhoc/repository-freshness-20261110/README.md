@@ -49,15 +49,34 @@ uv run --locked pytest -q tests/test_freshness_helper_archive.py
 Those checks read bytes without importing or executing archived code. They bind
 all three exact originals and all four unchanged candidates to the recorded
 hashes and fail when an archive is missing or changed. Native repository checks
-remain required. The PR now includes four candidate files plus three archived
-helpers, this README, provenance JSON and the integrity test.
+remain required. The historical archive correction added four candidate files
+plus three archived helpers, this README, provenance JSON and the integrity
+test. The current closeout also includes the separate release verification
+helper, its receipt, tests and documentation linked below.
 
 The public additions were inspected for secrets, email addresses and unrelated
 private-repository data. The two-consumer inventory remains intact because both
 consumers are within the original public preparation scope. No credentials,
 private repository data or raw environment/configuration dumps are included.
 
-Scaffold/base refresh, verified canonical publication and provenance refresh,
-consumer merge, active workflow/profile integration, boundary adoption and
-runtime decisions remain separate outstanding steps. Queue/auto-merge holds
-remain in force. This archive grants no execution or merge authority.
+## Current closeout (2026-11-13 local; 2026-11-14 UTC)
+
+[AssayMech #9](https://github.com/CultureBotAI/AssayMech/issues/9) corrects the
+old present-tense scaffold, unpublished-source and scheduling dependency claims.
+The scaffold and seed are on published main, and this branch incorporates
+`f7d2d79aa00b6e47816f2f7dea8b418ec084b91e`, including the catalogue. Canonical
+claw PR #1128 was released as `repository-freshness-v1.0.0` from
+`e43afbf92e7ae0265943ca8a237efe07ecf074fb`; the native adapter PR #1165 merged
+at `59ad5327c4ba979254e018c51f180505e1f515a4`. These are verified separately in
+[the closeout receipt](../repository-freshness-closeout-20261113/README.md).
+
+The original proposal correctly describes its preparation against an unreleased
+revision. Its four files, this archive's three helper scripts and provenance
+JSON remain unchanged. Released payload equality is additional evidence; it
+does not retroactively change the original source or turn this candidate into
+an adoption. Historical host paths and preparation-order receipts are retained.
+
+No scaffold or canonical-publication dependency remains for this inert
+repository change. Active workflow/profile integration, boundary adoption and
+runtime execution still require separate authorization and validation. The
+archive and the new verification receipt grant no execution authority.
