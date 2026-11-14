@@ -1,0 +1,179 @@
+{
+  "adopted": false,
+  "authority": "verification_only",
+  "canonical_publication": {
+    "asset_id": 733214867,
+    "audit_bytes": 4577,
+    "audit_sha256": "a8851663c30b4e3c684f250f06c59f1223feab6e980653a8344c612a64ad9a55",
+    "native_pr": {
+      "merge_commit": "59ad5327c4ba979254e018c51f180505e1f515a4",
+      "merged_at": "2026-11-11T02:30:36Z",
+      "number": 1165,
+      "reviewed_head": "800cc8f941dcaebbd891d8d390c2c7ebdb5e9b4f"
+    },
+    "observed_main": "3aff2ab37b9881a9a705e642cce6e93517b3dad5",
+    "payloads": {
+      "docs/guides/REPOSITORY_FRESHNESS_RELEASE.md": {
+        "bytes": 5871,
+        "mode": "100644",
+        "sha256": "e8f9bbcd0f034a221f35ebfa43a64d66983375839b3204455734ff78ea7115a1"
+      },
+      "plugins/lock_manager.py": {
+        "bytes": 29225,
+        "mode": "100644",
+        "sha256": "6cf8b187f727d85b500478e9486c7fbc43b42a17b3b08527d9f59d33f85c9059"
+      },
+      "plugins/repository_settings.py": {
+        "bytes": 32503,
+        "mode": "100644",
+        "sha256": "87d099f1787c5c79f2b16f088acf926cce39cec2a939d84df829f338472a4081"
+      },
+      "pyproject.toml": {
+        "bytes": 9303,
+        "mode": "100644",
+        "sha256": "a8569a96dd13a548a5e3c8a5ea017c90b3e6dfbb6b9f0872d8d41d65ee5d0259"
+      },
+      "scripts/fleet_pull.py": {
+        "bytes": 24132,
+        "mode": "100644",
+        "sha256": "ceaa141ed689ff18418f330450eb25b9d215335a8f06ea57565927cef08b09f9"
+      },
+      "scripts/mech_session_supervisor.py": {
+        "bytes": 185917,
+        "mode": "100644",
+        "sha256": "1b4035ff2cf010f3e57549b12c84522f563abdb09d66a0a948eb845da1d57945"
+      },
+      "src/kg_microbe_fleet/__init__.py": {
+        "bytes": 41015,
+        "mode": "100644",
+        "sha256": "8280395a8c3542f3c7c2d1b59ab0cf5790680b6d2124679477fce8073b70a589"
+      },
+      "src/kg_microbe_fleet/fleet.yaml": {
+        "bytes": 123647,
+        "mode": "100644",
+        "sha256": "1cf926eb16d70bfc81e120eb622b16063c4511e9c3d9cb534765a1f67621a91f"
+      },
+      "src/kg_microbe_governance/freshness_candidates.py": {
+        "bytes": 17626,
+        "mode": "100644",
+        "sha256": "355b71aefd69c4e259f489eb168a27bfc5f7fc07a23e046044ddf5847bcd1f49"
+      },
+      "src/kg_microbe_governance/releases/repository-freshness-v1.0.0.json": {
+        "bytes": 306,
+        "mode": "100644",
+        "sha256": "617801895561d16b98682d4eef406c83a1e687d1930c843ca2e6565f9a00ed8f"
+      },
+      "src/kg_microbe_skills/canonical/repository-freshness.md": {
+        "bytes": 5013,
+        "mode": "100644",
+        "sha256": "569c6dc3641ff8014dee1f8b2de76b18b05208911ca1fc95de49f0cc4c2688ab"
+      },
+      "src/kg_microbe_workflows/freshness.py": {
+        "bytes": 25868,
+        "mode": "100644",
+        "sha256": "1de019296a2ecfc3625e0d9b103213374da92c27b5bf1a48435ce0ce2500530a"
+      },
+      "src/kg_microbe_workflows/freshness_cli.py": {
+        "bytes": 19039,
+        "mode": "100644",
+        "sha256": "caeadcd202d10e81e38c66897c7b08ac89684e60fcedbb5271f104de96988dc7"
+      },
+      "src/kg_microbe_workflows/freshness_contract.py": {
+        "bytes": 7508,
+        "mode": "100644",
+        "sha256": "130f81e8f6e0c08ab7ac94196d0bdfcb94b3ecc2b1bf906f5929bb0dfb5fba72"
+      },
+      "src/kg_microbe_workflows/freshness_release.py": {
+        "bytes": 12323,
+        "mode": "100644",
+        "sha256": "3db7c9816755f7d6cdea566599dc06bd37fd1180615b7f1a8f9816bd09b3df3d"
+      },
+      "src/kg_microbe_workflows/schema/repository-freshness-v1.yaml": {
+        "bytes": 1419,
+        "mode": "100644",
+        "sha256": "19f3bd1c4bf051e7a6564bd9ecdfb82ebac7b1f357c9640b958f9575d0e9974d"
+      },
+      "src/kg_microbe_workflows/templates/repository-freshness-v1.yaml": {
+        "bytes": 439,
+        "mode": "100644",
+        "sha256": "1066a37a7d6cb3511ebe24403b61478f55c03a33f3a1d83b9131b0d20f11c54c"
+      },
+      "uv.lock": {
+        "bytes": 669760,
+        "mode": "100644",
+        "sha256": "de1b493ee24c56d9de4f849411a7510b0257d95868219ff7f86d0ee3ef22601a"
+      }
+    },
+    "published_at": "2026-11-10T22:32:19Z",
+    "release_id": 441009518,
+    "release_immutability_claimed": false,
+    "release_immutable_observed": false,
+    "source_commit": "e43afbf92e7ae0265943ca8a237efe07ecf074fb",
+    "source_pr": {
+      "merge_commit": "e43afbf92e7ae0265943ca8a237efe07ecf074fb",
+      "merged_at": "2026-11-10T11:13:16Z",
+      "number": 1128,
+      "reviewed_head": "2ebb7927f818576178172d60be0ca59ac2df1edb"
+    },
+    "source_tree": "60e76331e4c66ce6632b0af88448c5acef536080",
+    "tag": "repository-freshness-v1.0.0",
+    "tag_protection_claimed": false,
+    "url": "https://github.com/CultureBotAI/culturebotai-claw/releases/tag/repository-freshness-v1.0.0"
+  },
+  "canonical_release_prerequisite_satisfied": true,
+  "consumer_preservation": {
+    "active_paths_sha256": {
+      ".claude/skills/repository-freshness/SKILL.md": null,
+      "scripts/.vendored_canon_ref": "96dd83ed191cc422e458391a11351ace7afa2351aaaecdb448375684c05d5bb6",
+      "workflow/mech-workflow.yaml": null,
+      "workflow/parent/mech-cycle.yaml": null,
+      "workflow/parent/workflow.yaml": null
+    },
+    "all_main_blobs_and_modes_preserved": true,
+    "base_commit": "f7d2d79aa00b6e47816f2f7dea8b418ec084b91e",
+    "base_tree": "eb6166964a2703818eaec07aab0666c6a2b47aab",
+    "file_count": 93,
+    "head_at_verification": "ba6fac20cf3d3456bdec03cd530aefc6b6ac5817",
+    "inventory_sha256": "077ddd193124d8bac236831ae978be9346234546358cbe2ad12037d6a91ad4c6"
+  },
+  "helper_sha256": "515a89bcaef809a559013a81f942a59ad9304964b1968873fbe50ba62a59fa47",
+  "historical_candidate": {
+    "archived_head": "64d62515524f49c821b7a0e5e867eeab0fb8e424",
+    "candidate_sha256": {
+      "SKILL.md": "cc82f4edd21f7d6610130185c94373cc75d2a3f2004ee3a188acd956b694fbb9",
+      "contract.yaml": "1066a37a7d6cb3511ebe24403b61478f55c03a33f3a1d83b9131b0d20f11c54c",
+      "proposal.json": "0edddaffe706360619ea874d07c1ae3c069b6d9520925ac9fa1a295132d2bf44",
+      "schema.yaml": "19f3bd1c4bf051e7a6564bd9ecdfb82ebac7b1f357c9640b958f9575d0e9974d"
+    },
+    "helpers_sha256": {
+      "final_inventory.py": "d0a71a26f46bb6f1b7b6d4d38d815be46cb3c79d020fce0178fc1fab6a2284bc",
+      "prepare_consumer.py": "b9730f05b839d29ff002063681579596a44e7b7410107dcacf7ba153948bf76d",
+      "verify_candidate.py": "74695d6ee66a1eb894e0a0ce02b724bacea2486b2135d41b13ccc2daea8a7f1b"
+    },
+    "historical_source_commit": "02554818325cd77ddfb72a45a26b4d1d76d6b136",
+    "historical_source_sha256": {
+      "src/kg_microbe_fleet/__init__.py": "8280395a8c3542f3c7c2d1b59ab0cf5790680b6d2124679477fce8073b70a589",
+      "src/kg_microbe_fleet/fleet.yaml": "1cf926eb16d70bfc81e120eb622b16063c4511e9c3d9cb534765a1f67621a91f",
+      "src/kg_microbe_governance/freshness_candidates.py": "355b71aefd69c4e259f489eb168a27bfc5f7fc07a23e046044ddf5847bcd1f49",
+      "src/kg_microbe_skills/canonical/repository-freshness.md": "569c6dc3641ff8014dee1f8b2de76b18b05208911ca1fc95de49f0cc4c2688ab",
+      "src/kg_microbe_workflows/schema/repository-freshness-v1.yaml": "19f3bd1c4bf051e7a6564bd9ecdfb82ebac7b1f357c9640b958f9575d0e9974d",
+      "src/kg_microbe_workflows/templates/repository-freshness-v1.yaml": "1066a37a7d6cb3511ebe24403b61478f55c03a33f3a1d83b9131b0d20f11c54c"
+    },
+    "proposal_released_preserved": false,
+    "proposal_state_preserved": "blocked_on_canonical_release",
+    "provenance_sha256": "7265c462f99ffd7bf6c4ab4208f1a261c923b35b9ab6e1b4bfc7423ef8bf52be"
+  },
+  "installed": false,
+  "kind": "verified_release_equivalent_inert_candidate",
+  "observed_at": "2026-11-14T03:26:17.588958+00:00",
+  "remaining_requirements": [
+    "independent final-head review and green consumer checks",
+    "reviewed consumer merge",
+    "separate approved immutable boundary adoption",
+    "verified cycle boundary with exact predecessor closure",
+    "separate reviewed live control deployment"
+  ],
+  "repository": "CultureBotAI/AssayMech",
+  "runtime_authority_granted": false,
+  "schema_version": "1.0.0"
+}
