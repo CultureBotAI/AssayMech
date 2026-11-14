@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "repository": "assaymech",
-  "source_ref": "6e7887bf69328e72e950b9adc656b256b1c0e1c1",
+  "source_ref": "f6a00874ed153154feb26918933f2cd8110c5ec8",
   "components": {
     "skill:repository-freshness": {
       "action": "defer",

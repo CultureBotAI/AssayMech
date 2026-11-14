@@ -10,7 +10,7 @@ parent:
   sha256: 0d3e218c22c4ffe4e6dcddce8287d0177aaa52f637e156df1c737e4e7d84f913
   schema_sha256: d09655a47773f78379aeaced45af01a7659987046d32e258f3d74f20fea2b281
   repository: CultureBotAI/culturebotai-claw
-  revision: 6e7887bf69328e72e950b9adc656b256b1c0e1c1
+  revision: f6a00874ed153154feb26918933f2cd8110c5ec8
 stages:
 - stage: 1
   key: open_issue_triage

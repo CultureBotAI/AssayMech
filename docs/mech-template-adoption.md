@@ -1,7 +1,7 @@
 # Mech template candidate
 
 This branch prepares AssayMech's reusable infrastructure from immutable CLAW source
-`6e7887bf69328e72e950b9adc656b256b1c0e1c1`. The adoption receipt records candidate state and exact
+`f6a00874ed153154feb26918933f2cd8110c5ec8`. The adoption receipt records candidate state and exact
 component/configuration hashes. It is not proof of adoption on main or runtime
 installation. New merge, governance release and runtime activation decisions are
 separate.

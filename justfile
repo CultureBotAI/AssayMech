@@ -45,5 +45,5 @@ check-site:
 
 # Template tooling is independently pinned; the governed project dependency is unchanged.
 check-template:
-    uv run --isolated --no-project --with "kg-microbe-orchestration @ git+https://github.com/CultureBotAI/culturebotai-claw.git@6e7887bf69328e72e950b9adc656b256b1c0e1c1" python -m kg_microbe_skills.template_cli check --target-root . --config workflow/mech-template.json
-    uv run --isolated --no-project --with "kg-microbe-orchestration @ git+https://github.com/CultureBotAI/culturebotai-claw.git@6e7887bf69328e72e950b9adc656b256b1c0e1c1" python -m kg_microbe_workflows validate --profile workflow/mech-workflow.yaml --parent workflow/parent/mech-cycle.yaml --schema workflow/parent/workflow.yaml --repository-key assaymech
+    uv run --isolated --no-project --with "kg-microbe-orchestration @ git+https://github.com/CultureBotAI/culturebotai-claw.git@f6a00874ed153154feb26918933f2cd8110c5ec8" python -m kg_microbe_skills.template_cli check --target-root . --config workflow/mech-template.json
+    uv run --isolated --no-project --with "kg-microbe-orchestration @ git+https://github.com/CultureBotAI/culturebotai-claw.git@f6a00874ed153154feb26918933f2cd8110c5ec8" python -m kg_microbe_workflows validate --profile workflow/mech-workflow.yaml --parent workflow/parent/mech-cycle.yaml --schema workflow/parent/workflow.yaml --repository-key assaymech

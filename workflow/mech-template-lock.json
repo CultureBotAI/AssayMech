@@ -2,7 +2,7 @@
   "baseline_sha256": "a6264ee672356de99bc61254250fbbd52d0e0c1fe5024875619bf8ab1fc8ad44",
   "baseline_version": "1.0.0",
   "canonical_source_ref": "ab4d641c1718b1edb4cca8e6a1b38258371e0de0",
-  "config_sha256": "10df2fc44cae64423100be906fad4640aece5237e7387cdb8c0b45adf1f4434c",
+  "config_sha256": "0fc60b16f842b87a15bb6f1c063667c212db10c6692edbd34e116e14f634559b",
   "files": {
     ".claude/skills/evolve-mech-workflow/SKILL.md": {
       "component": "skill:evolve-mech-workflow",
@@ -78,6 +78,6 @@
   },
   "repository": "assaymech",
   "schema_version": 1,
-  "source_ref": "6e7887bf69328e72e950b9adc656b256b1c0e1c1",
+  "source_ref": "f6a00874ed153154feb26918933f2cd8110c5ec8",
   "status": "candidate"
 }
