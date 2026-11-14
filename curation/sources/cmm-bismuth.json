@@ -1,0 +1,49 @@
+{
+  "source_id": "cmm-bismuth",
+  "reference": "https://github.com/CultureBotAI/CMMMech/blob/df061de720fb9884dcc6e41369a3049cef52a059/data/records/bismuth.yaml",
+  "locators": {
+    "/id": "cmmmech:bismuth",
+    "/mechanisms/0": {
+      "id": "fusarium_bi_accumulation",
+      "name": "Bismuth accumulation associated with Fusarium BI phosphorus-rich granules",
+      "process": "other",
+      "description": "Fusarium sp. strain BI grew on bismuth subsalicylate and decreased the filtered soluble-Bi pool relative to an uninoculated suspension. TEM-EDS located Bi in intracellular phosphorus-rich granules, and polyphosphate-containing extracts also contained Bi. These observations support bioaccumulation with a proposed polyphosphate association; they do not identify crystalline bismuth phosphate, demonstrate Bi(III) reduction or establish the molecular transport route. No isolated-product recovery yield or industrial deployment was demonstrated.",
+      "context": "Dodge and Wackett isolated Fusarium sp. BI from activated sewage sludge by enrichment on bismuth subsalicylate. Morphology and partial gene sequences supported an unresolved Fusarium isolate, not a named species. For soluble-Bi analysis, 1.5 mM bismuth subsalicylate suspensions in 250 mL minimal medium were preincubated on a shaker at 30 degrees Celsius for 24 h. Experimental flasks then received 100 microlitres of a 48 h culture grown on 1.5 mM salicylate. The medium contained 15 mM potassium phosphate buffer at pH 7.0, mineral salts and vitamins. Daily samples from inoculated and uninoculated flasks passed through 0.2 micrometre polyethersulfone filters; acidified filtrates were analyzed for total Bi by ICP-OES with an yttrium internal standard. Replicate number and error estimates for this time course are not specified. Separate TEM-EDS preparations used washed 96 h biomass grown on 1.5 mM bismuth subsalicylate or salicylate. Polyphosphate fractionation used 0.4 g wet biomass from 72 h cultures; Figure 4 reports three replicates, without establishing independent culture replication. Defined laboratory reagent suspensions are not ore, waste leachate or a recovery installation.",
+      "microbial": true,
+      "organisms": [
+        {
+          "id": "NCBITaxon:292829",
+          "label": "Fusarium sp. BI"
+        }
+      ],
+      "evidence": [
+        {
+          "source_ref": "dodge_2005",
+          "supports": "support",
+          "explanation": "Methods, Assay for total soluble bismuth; Results, Depletion of bismuth; Figure 2: after 6 days the inoculated soluble-Bi pool decreased by approximately 0.4 mg/L, whereas the uninoculated control rose by approximately 0.2 mg/L. The source describes the decline as about 75% of initial soluble Bi. This denominator is the small filtered dissolved pool, not the total 1.5 mM bismuth-subsalicylate suspension, and no whole-feed mass balance or recovery percentage follows."
+        },
+        {
+          "source_ref": "dodge_2005",
+          "supports": "support",
+          "explanation": "Methods, Electron microscopy and elemental analysis; Results, Localization; Figure 3: TEM-EDS of 60 nm sections found Bi with P and other elements in cytoplasmic/vacuolar granules. Salicylate-grown controls also had granules but no detected Bi. The EDS spot exceeded granule diameter; adjacent material contributes to the spectrum. Extracellular Bi-rich regions were also observed and interpreted as undissolved feed. Localization does not establish a unique chemical phase."
+        },
+        {
+          "source_ref": "dodge_2005",
+          "supports": "partial",
+          "explanation": "Methods, Polyphosphate extraction and analysis; Results, Polyphosphate isolation; Figure 4: long-chain-soluble and granular fractions from Bi-fed biomass contained more Bi relative to phosphate than short-chain fractions and salicylate controls. Polyphosphate was measured as orthophosphate after hydrolysis. Co-fractionation and EDS support the proposed association but do not directly establish a Bi-polyphosphate molecular structure or show that polyphosphate causes tolerance."
+        },
+        {
+          "source_ref": "dodge_2005",
+          "supports": "partial",
+          "explanation": "Results, Depletion of bismuth and Degradation of the salicylate moiety; Table 1: Bi oxidation states were not resolved. Salicylate hydroxylase and catechol 1,2-dioxygenase assays in crude extracts support an organic-substrate catabolic pathway, not a Bi reductase. The paper extends the salicylate pathway to bismuth subsalicylate by inference. Separate glucose/bismuth-nitrate tolerance assays and equivalent endpoint growth on salicylate and bismuth subsalicylate do not prove quantitative Bi recovery; growth on the Bi compound reached stationary phase about 24 h later."
+        }
+      ]
+    },
+    "/sources/0": {
+      "id": "dodge_2005",
+      "title": "Dodge and Wackett (2005). Metabolism of Bismuth Subsalicylate and Intracellular Accumulation of Bismuth by Fusarium sp. Strain BI. Applied and Environmental Microbiology 71(2), 876-882. DOI 10.1128/AEM.71.2.876-882.2005; PMID 15691943; PMC546758.",
+      "url": "https://doi.org/10.1128/AEM.71.2.876-882.2005",
+      "accessed_on": "2026-10-11"
+    }
+  }
+}

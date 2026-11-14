@@ -3,10 +3,10 @@ set shell := ["bash", "-euo", "pipefail", "-c"]
 default:
     @just --list
 
-check: lint validate test
+check: lint validate audit-seed test
 
 lint:
-    uv run --locked ruff check src tests/test_native.py scripts/check_review_event_base.py tests/test_review_event_base.py
+    uv run --locked ruff check src tests/test_native.py scripts/check_review_event_base.py tests/test_review_event_base.py tests/test_seed_evidence.py tests/test_site.py scripts/adhoc/verify_site_browser.py
 
 validate:
     uv run --locked assaymech validate
@@ -32,3 +32,13 @@ validate-history:
 
 check-review-event-base:
     uv run --locked python scripts/check_review_event_base.py
+
+audit-seed:
+    uv run --locked python -m assaymech.seed_audit
+
+# Deterministic generated output stays under ignored build/site.
+build-site:
+    uv run --locked python -m assaymech.site
+
+check-site:
+    uv run --locked python -m assaymech.site --check

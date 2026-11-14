@@ -1,6 +1,6 @@
 # AssayMech
 
-AssayMech curates evidence-backed assay concepts and measurement methods for microbial characterization and critical-materials bioprocessing, biotransformation and bioaccumulation. The scaffold contains no scientific seed records; source-reviewed records arrive in a separate PR.
+AssayMech curates evidence-backed assay concepts and measurement methods for microbial characterization and critical-materials bioprocessing, biotransformation and bioaccumulation. The initial seed contains six named METPO assay concepts and three scoped operational assays, with four CMM mechanism links.
 
 METPO is the ontology seed source. Each mapping names the exact METPO term, entity type, source commit and file. Named tests, measured phenotypes and tested object properties have different relationships to an assay. A catalase-test definition does not establish a positive result for an organism, and an accumulation predicate is not an assay identity.
 
@@ -16,7 +16,7 @@ just check
 just check-vendored
 ```
 
-`just check` runs the same native lint, schema, records, history and test gate used in CI. `just check-vendored` verifies governed files against the immutable claw commit in `scripts/.vendored_canon_ref` and needs public GitHub access. The required `validate-strict` job runs both recipes on every pull request, push and merge group.
+`just check` runs the same native lint, schema, records, history, source-binding audit and test gate used in CI. `just check-vendored` verifies governed files against the immutable claw commit in `scripts/.vendored_canon_ref` and needs public GitHub access. The required `validate-strict` job runs both recipes on every pull request, push and merge group.
 
 Records live at `data/assays/<slug>.yaml`. The installed LinkML schema is `src/assaymech/schema/assaymech.yaml`. Validation rejects unknown fields throughout the document, incompatible ontology entity types, unbound source URLs, ambiguous source locators and inconsistent history. These checks do not establish source truth: curators still verify the cited ontology entities, methods and target evidence.
 
@@ -36,3 +36,16 @@ The bootstrap governance pin is an immutable published claw onboarding-branch co
 Each PR receives independent review, issue fixes, re-review and green checks before the user decides whether to merge. Merge queue automation is paused. Retained work and review evidence live under `~/agent-work/AssayMech/`; push committed work the same day.
 
 Original code and schemas are CC0. Scientific records are CC-BY-4.0 with source attribution; imported and governed files retain their own licences and notices. The native history command writes deterministic JSON, a strict subset of YAML. Shared `kg_microbe_write.dump_record` intentionally refuses the unverified fleet serialization profile; the native writer owns this representation and does not authorize general cross-corpus reserialization.
+
+See [seed provenance](docs/seed-provenance.md) for exact source pins, method limits and the bounded 21-term inventory. Run `just audit-seed` for the offline source-binding checks. Scientific data attribution is in [LICENSE-DATA](LICENSE-DATA).
+
+## Static catalogue
+
+Run `just build-site` and `just check-site` to generate the complete catalogue and
+record pages under `build/site/`. Search, categories and record-kind filters enhance
+static pages that remain readable without JavaScript. Assay concepts remain
+separate from scoped operational methods; measurement limits, controls, evidence,
+METPO source pins and CMM target locators are displayed without altering data.
+See [site development and deployment](docs/site.md) for the maintained sources,
+browser verification, future Pages configuration and rollback procedure.
+Pages is not enabled or deployed by this preparation.

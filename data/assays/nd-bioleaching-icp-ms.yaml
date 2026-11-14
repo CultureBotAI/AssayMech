@@ -1,0 +1,154 @@
+{
+  "id": "AssayMech:nd-bioleaching-icp-ms",
+  "name": "ICP-MS assay of Nd in synthetic-phosphate bioleachate",
+  "record_kind": "OPERATIONAL_ASSAY",
+  "categories": [
+    "BIOPROCESSING"
+  ],
+  "description": "Measure Nd released into filtered laboratory leachate following contact between synthetic Mon2 phosphate feed and biolixiviants produced by G. oxydans B58-derived cultures.",
+  "limitations": [
+    "The feed is a synthetic monazite-Nd/rhabdophane-Nd mixture; this method is not demonstrated here for natural ore or industrial operation.",
+    "Filtration is reported after leaching; cell removal before mineral contact is unspecified.",
+    "Measured solubilization does not establish a purified recovered product, whole-process recovery fraction or scale-transfer result.",
+    "The reported mass-normalized response uses the source-labelled NdPO4 denominator; it is not a percentage of total feed Nd.",
+    "Reported final pH is an outcome; a common fixed-pH treatment is not established."
+  ],
+  "evidence": [
+    {
+      "reference": "https://www.nature.com/articles/s42003-025-08061-4",
+      "title": "Direct genome-scale screening of Gluconobacter oxydans B58 for rare earth element bioleaching",
+      "claim": "Primary methods describe ICP-MS measurement of filtered leachate after synthetic Nd-phosphate contact with G. oxydans-derived biolixiviants.",
+      "locator": "html:#Sec16",
+      "source_license": "CC-BY-4.0"
+    },
+    {
+      "reference": "https://www.nature.com/articles/s42003-025-08061-4",
+      "title": "Direct genome-scale screening of Gluconobacter oxydans B58 for rare earth element bioleaching",
+      "claim": "The results distinguish Mon2 as the monazite-Nd/rhabdophane-Nd mixture, not pure monazite.",
+      "locator": "html:#Sec4",
+      "source_license": "CC-BY-4.0"
+    },
+    {
+      "reference": "https://media.springernature.com/original/springer-static/esm/art%3A10.1038%2Fs42003-025-08061-4/MediaObjects/42003_2025_8061_MOESM6_ESM.xlsx",
+      "title": "Marecos et al. (2025), Supplementary Data 4",
+      "claim": "The response column is labelled as micrograms of Nd per gram of NdPO4, not as percent extraction.",
+      "locator": "xlsx:4A!B2",
+      "source_license": "CC-BY-4.0"
+    },
+    {
+      "reference": "https://media.springernature.com/original/springer-static/esm/art%3A10.1038%2Fs42003-025-08061-4/MediaObjects/42003_2025_8061_MOESM6_ESM.xlsx",
+      "title": "Marecos et al. (2025), Supplementary Data 4",
+      "claim": "The response table reports final pH; the record does not infer a common fixed-pH treatment.",
+      "locator": "xlsx:4A!C2",
+      "source_license": "CC-BY-4.0"
+    }
+  ],
+  "method": {
+    "summary": "After laboratory contact with Mon2, filter leachates at 0.45 micrometres, dilute in 2% trace-metal-grade nitric acid and measure Nd using ICP-MS with a rare-earth calibration mix and Rh internal standard.",
+    "evidence": [
+      {
+        "reference": "https://www.nature.com/articles/s42003-025-08061-4",
+        "title": "Direct genome-scale screening of Gluconobacter oxydans B58 for rare earth element bioleaching",
+        "claim": "Primary methods describe ICP-MS measurement of filtered leachate after synthetic Nd-phosphate contact with G. oxydans-derived biolixiviants.",
+        "locator": "html:#Sec16",
+        "source_license": "CC-BY-4.0"
+      }
+    ]
+  },
+  "measurement": {
+    "target": "Nd in the post-leaching filtrate.",
+    "readout": "ICP-MS Nd signal converted using calibration; Supplementary Data 4 reports the response normalized to the source-labelled NdPO4 feed mass.",
+    "unit": "ug/g",
+    "interpretation": "Micrograms of Nd per gram of NdPO4 as labelled by the study; do not interpret as percent recovery.",
+    "evidence": [
+      {
+        "reference": "https://www.nature.com/articles/s42003-025-08061-4",
+        "title": "Direct genome-scale screening of Gluconobacter oxydans B58 for rare earth element bioleaching",
+        "claim": "Primary methods describe ICP-MS measurement of filtered leachate after synthetic Nd-phosphate contact with G. oxydans-derived biolixiviants.",
+        "locator": "html:#Sec16",
+        "source_license": "CC-BY-4.0"
+      },
+      {
+        "reference": "https://media.springernature.com/original/springer-static/esm/art%3A10.1038%2Fs42003-025-08061-4/MediaObjects/42003_2025_8061_MOESM6_ESM.xlsx",
+        "title": "Marecos et al. (2025), Supplementary Data 4",
+        "claim": "The response column is labelled as micrograms of Nd per gram of NdPO4, not as percent extraction.",
+        "locator": "xlsx:4A!B2",
+        "source_license": "CC-BY-4.0"
+      }
+    ]
+  },
+  "controls": [
+    {
+      "description": "Wild-type and proxy wild-type cultures, with no-bacteria controls; three biological replicates for selected bacterial strains.",
+      "evidence": [
+        {
+          "reference": "https://www.nature.com/articles/s42003-025-08061-4",
+          "title": "Direct genome-scale screening of Gluconobacter oxydans B58 for rare earth element bioleaching",
+          "claim": "Primary methods describe ICP-MS measurement of filtered leachate after synthetic Nd-phosphate contact with G. oxydans-derived biolixiviants.",
+          "locator": "html:#Sec16",
+          "source_license": "CC-BY-4.0"
+        }
+      ]
+    },
+    {
+      "description": "Calibration standards, blanks, analytical replicates and Rh internal standard support instrumental quality control.",
+      "evidence": [
+        {
+          "reference": "https://www.nature.com/articles/s42003-025-08061-4",
+          "title": "Direct genome-scale screening of Gluconobacter oxydans B58 for rare earth element bioleaching",
+          "claim": "Primary methods describe ICP-MS measurement of filtered leachate after synthetic Nd-phosphate contact with G. oxydans-derived biolixiviants.",
+          "locator": "html:#Sec16",
+          "source_license": "CC-BY-4.0"
+        }
+      ]
+    }
+  ],
+  "related_records": [
+    {
+      "corpus": "cmmmech",
+      "identifier": "cmmmech:neodymium",
+      "relation": "MEASURES_PROCESS",
+      "basis": "The target mechanism explicitly reports ICP-MS of post-leaching filtrates for the Marecos synthetic-phosphate experiment.",
+      "source_version": "df061de720fb9884dcc6e41369a3049cef52a059",
+      "source_path": "data/records/neodymium.yaml",
+      "source_url": "https://github.com/CultureBotAI/CMMMech/blob/df061de720fb9884dcc6e41369a3049cef52a059/data/records/neodymium.yaml",
+      "target_locator": "/mechanisms/1",
+      "scope": "G. oxydans B58-derived cultures and synthetic Mon2 feed; filtered-leachate Nd after laboratory bioleaching.",
+      "evidence": [
+        {
+          "reference": "https://github.com/CultureBotAI/CMMMech/blob/df061de720fb9884dcc6e41369a3049cef52a059/data/records/neodymium.yaml",
+          "title": "CMMMech neodymium mechanism at df061de720fb9884dcc6e41369a3049cef52a059",
+          "claim": "The target mechanism explicitly reports ICP-MS of post-leaching filtrates for the Marecos synthetic-phosphate experiment.",
+          "locator": "/mechanisms/1",
+          "source_license": "CC-BY-4.0"
+        },
+        {
+          "reference": "https://www.nature.com/articles/s42003-025-08061-4",
+          "title": "Direct genome-scale screening of Gluconobacter oxydans B58 for rare earth element bioleaching",
+          "claim": "Primary methods describe ICP-MS measurement of filtered leachate after synthetic Nd-phosphate contact with G. oxydans-derived biolixiviants.",
+          "locator": "html:#Sec16",
+          "source_license": "CC-BY-4.0"
+        }
+      ]
+    }
+  ],
+  "research_gaps": [
+    {
+      "scope": "metpo",
+      "reason": "No exact METPO assay identity or solubilization predicate was established for this operational assay; no generic process term is substituted."
+    },
+    {
+      "scope": "protocol_parameters",
+      "reason": "This record summarizes the cited method; complete culture preparation, sampling and instrument settings remain in the primary protocol."
+    }
+  ],
+  "curation_history": [
+    {
+      "timestamp": "2026-11-09T02:38:32Z",
+      "curator": "assay-stream-c",
+      "action": "CREATE",
+      "summary": "Curate initial sourced assay concept or scoped operational assay",
+      "history_file": "history/records/nd-bioleaching-icp-ms/2026-11-09T023832Z-assay-stream-c-26f319.yaml"
+    }
+  ]
+}

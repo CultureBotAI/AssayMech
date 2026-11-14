@@ -1,0 +1,39 @@
+{
+  "source_id": "cmm-iron",
+  "reference": "https://github.com/CultureBotAI/CMMMech/blob/df061de720fb9884dcc6e41369a3049cef52a059/data/records/iron.yaml",
+  "locators": {
+    "/id": "cmmmech:iron",
+    "/mechanisms/0": {
+      "id": "ax17_ferrihydrite_transformation",
+      "name": "Ferrihydrite reduction and magnetite-rich mineral formation by strain Ax17",
+      "process": "biomineralization",
+      "description": "Growing Desulfovulcanus ferrireducens Ax17 (DSM 111878) reduced synthetic two-line nanophase ferrihydrite and produced a black magnetic solid interpreted from complementary analyses as primarily cation-deficient magnetite. This is microbial Fe redox transformation with secondary mineral formation, not elemental iron production or a purified recovery product. The taxon identifier is species-level; the paper and DSMZ identify the experimental strain.",
+      "context": "Laboratory triplicates used 50 mL modified DSM 981 medium in 160 mL serum bottles, reported 100 mmol/L ferrihydrite, initial pH 6.80 +/- 0.05, 0.5 mM cysteine-HCl, and 1.3 mM FeCl2 supplementation. The headspace was H2:CO2 (80:20) at 200 kPa; cultures received a 1% logarithmic-phase inoculum previously transferred at least three times on the acceptor, and grew at 55 degrees C for about five days. Identically composed uninoculated controls were incubated at 55 degrees C or room temperature. Ferrozine after oxalate dissolution gave reported Fe(II) of 24 mM in the biotic medium versus 2-3 mM in controls; this extraction-based measurement is not a dissolved-iron concentration or a recovery percentage. No pilot, industrial, or natural-ore extraction operation was tested.",
+      "microbial": true,
+      "organisms": [
+        {
+          "id": "NCBITaxon:2831190",
+          "label": "Desulfovulcanus ferrireducens"
+        }
+      ],
+      "evidence": [
+        {
+          "source_ref": "sklute2023",
+          "supports": "support",
+          "explanation": "Methods and Results, Cell growth on ferrihydrite, link Ax17 growth, greater oxalate-extractable Fe(II), and the magnetic product to the inoculated treatment. Figures 1A, 2-4 and Supplementary Figures S2-S5 compare controls and mineral standards using reflectance, FTIR-ATR, Mossbauer spectroscopy, XRD, and TEM with electron diffraction."
+        },
+        {
+          "source_ref": "sklute2023",
+          "supports": "partial",
+          "explanation": "This supports a magnetite-rich mixed product, not pure stoichiometric magnetite or uniquely biological magnetite formation. Low-temperature Mossbauer spectra exclude a pure magnetite product; XRD alone cannot distinguish magnetite, maghemite, and cation-deficient magnetite. The heated abiotic control formed lepidocrocite and may contain minor magnetite. Cysteine and added Fe(II) were present in all arms. Akaganeite and lepidocrocite treatments gave different, nonmagnetic poorly resolved products, limiting extrapolation across iron minerals."
+        }
+      ]
+    },
+    "/sources/2": {
+      "id": "sklute2023",
+      "title": "Sklute et al. (2023). Fe(III) (oxyhydr)oxide reduction by the thermophilic iron-reducing bacterium Desulfovulcanus ferrireducens. Frontiers in Microbiology 14:1272245. Methods, ferrihydrite Results, Figures 1-4, and Supplementary Figures S2-S5.",
+      "url": "https://doi.org/10.3389/fmicb.2023.1272245",
+      "accessed_on": "2026-10-11"
+    }
+  }
+}

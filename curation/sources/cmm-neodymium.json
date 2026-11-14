@@ -1,0 +1,50 @@
+{
+  "source_id": "cmm-neodymium",
+  "reference": "https://github.com/CultureBotAI/CMMMech/blob/df061de720fb9884dcc6e41369a3049cef52a059/data/records/neodymium.yaml",
+  "locators": {
+    "/id": "cmmmech:neodymium",
+    "/mechanisms/1": {
+      "id": "gluconobacter_synthetic_phosphate_bioleaching",
+      "name": "Gluconobacter oxydans biolixiviant releases Nd from synthetic phosphate",
+      "process": "bioleaching",
+      "description": "Biolixiviants produced by Gluconobacter oxydans B58 and its engineered derivatives solubilized Nd from synthetic Nd-phosphate powder. Selected transposon disruption strains changed filtered-leachate Nd concentrations relative to wild-type comparators. These observations do not identify a unique non-acid lixiviant or establish a recovered Nd product.",
+      "context": "Laboratory bench-scale validation used Mon2, a synthetic mixture of monazite-Nd and rhabdophane-Nd phases, not pure monazite or a natural ore. Living B58-derived cultures grown in yeast-peptone-mannitol medium were diluted with glucose to 20% w/v and incubated for 48 h at 30 degrees C and 200 rpm to produce biolixiviant. Mon2 was contacted at 1% pulp density for 24 h at 30 degrees C and 200 rpm. The method reports filtration after leaching through 0.45 micrometre filters, but does not specify cell removal before contact with Mon2. ICP-MS measured Nd in the filtrate. Three biological replicates were used per selected strain; wild-type, an intergenic-transposon proxy wild-type, and no-bacteria controls were prepared. Supplementary Data 4A reports final pH for the bacterial assays from 2.17 to 2.84; pH was an outcome rather than a fixed common treatment. The taxonomy identifier is species-level; B58 and its derivatives are specified by the study, not separately identified by that CURIE. The study demonstrates laboratory solubilization, not industrial operation.",
+      "microbial": true,
+      "organisms": [
+        {
+          "id": "NCBITaxon:442",
+          "label": "Gluconobacter oxydans"
+        }
+      ],
+      "evidence": [
+        {
+          "source_ref": "marecos2025",
+          "supports": "support",
+          "explanation": "Results describing Mon2, Fig. 3, and Methods, Direct REE-bioleaching measurements, support the substrate, controls and Nd assay. Eight of twelve selected disruption strains increased extraction by 56-111% relative to proxy wild-type; these are relative improvements, not percentages of the substrate Nd recovered. No-bacteria controls are described in Methods but are not included in Supplementary Data 4A's 42 bacterial observations, limiting independent reconstruction of background-corrected absolute dissolution from that workbook alone."
+        },
+        {
+          "source_ref": "marecos2025_data4",
+          "supports": "support",
+          "explanation": "Sheet 4A contains three observations for each of twelve selected disruption strains, WT and pWT B, with extraction, final pH and final optical density. The pWT B and delta-GO_1598 triplicates support the reported approximately 111% relative improvement. Absolute workbook extraction values are not converted to a percent yield here."
+        },
+        {
+          "source_ref": "marecos2025",
+          "supports": "partial",
+          "explanation": "Figs. 3-5 and Discussion preserve limits on genetic and chemical causality: a GO_1096 transposon disruption strongly decreased extraction, but its clean deletion did not reproduce that effect. Nine of twelve selected mutants did not significantly change pH relative to proxy wild-type; this suggests additional contributions but does not identify a chelator, redox compound or single causal pathway. Synthetic mixed-phase results are not evidence for equivalent performance on natural monazite or Nd-bearing waste."
+        }
+      ]
+    },
+    "/sources/5": {
+      "id": "marecos2025",
+      "title": "Marecos et al. (2025). Direct genome-scale screening of Gluconobacter oxydans B58 for rare earth element bioleaching. Communications Biology 8:682.",
+      "url": "https://doi.org/10.1038/s42003-025-08061-4",
+      "accessed_on": "2026-10-09"
+    },
+    "/sources/6": {
+      "id": "marecos2025_data4",
+      "title": "Marecos et al. (2025), Supplementary Data 4. Direct bioleaching measurements for selected gene disruptions and engineered strains (sheets 4A and 4B).",
+      "url": "https://media.springernature.com/original/springer-static/esm/art%3A10.1038%2Fs42003-025-08061-4/MediaObjects/42003_2025_8061_MOESM6_ESM.xlsx",
+      "accessed_on": "2026-10-09"
+    }
+  }
+}

@@ -1,0 +1,1595 @@
+# Independent scientific review of the initial assay seed and bounded METPO selection
+
+- Review: 20261109T025518Z-independent-initial-assay-seed
+- Repository: CultureBotAI/AssayMech
+- Started UTC: 2026-11-09T02:41:28Z
+- Finished UTC: 2026-11-09T02:55:18Z
+- Reviewer: Codex independent seed reviewer (independent)
+- Completion: completed
+- Verdict: pass_with_limitations
+- Scientific review: true
+
+## Summary
+
+All nine records and all 21 rows of the bounded METPO selection inventory are assessed. The six assay concepts preserve protocol gaps; three operational examples support the intended bioprocessing, biotransformation and bioaccumulation scope with four precise CMM mechanism links. No unresolved scientific finding was confirmed in this scope. This is not a validation of general assay performance or full ontology coverage.
+
+## Scope And Provenance
+
+Nine maintained assay records plus every row of the 21-row bounded METPO role inventory, with primary-method support and all four CMM links.
+
+Selection: All data/assays/*.yaml records and all /rows/0 through /rows/20 entries in curation/metpo-role-inventory.json at the inspected commit.
+Coverage: full; 30 reviewed / 30 in the declared population.
+Source: git_commit at Git base 156f6a713df14be970b0262ee1c1df3eeccaf9b9.
+Working-tree hashes do not imply those bytes were committed.
+
+| Target | Path / selector | Kind | Label |
+| --- | --- | --- | --- |
+| AssayMech:ax17-extracted-feii-ferrozine | data/assays/ax17-extracted-feii-ferrozine.yaml | maintained | Oxalate-extracted Fe(II) ferrozine assay in Ax17 ferrihydrite cultures |
+| AssayMech:catalase-test | data/assays/catalase-test.yaml | maintained | catalase test |
+| AssayMech:fusarium-intracellular-bi-tem-eds | data/assays/fusarium-intracellular-bi-tem-eds.yaml | maintained | TEM-EDS localization assay for intracellular Bi in Fusarium sp. BI |
+| AssayMech:indole-test | data/assays/indole-test.yaml | maintained | indole test |
+| AssayMech:methyl-red-test | data/assays/methyl-red-test.yaml | maintained | methyl red test |
+| AssayMech:nd-bioleaching-icp-ms | data/assays/nd-bioleaching-icp-ms.yaml | maintained | ICP-MS assay of Nd in synthetic-phosphate bioleachate |
+| AssayMech:oxidase-test | data/assays/oxidase-test.yaml | maintained | oxidase test |
+| AssayMech:urease-test | data/assays/urease-test.yaml | maintained | urease test |
+| AssayMech:voges-proskauer-test | data/assays/voges-proskauer-test.yaml | maintained | Voges-Proskauer test |
+| selection:METPO:1000697 | curation/metpo-role-inventory.json # /rows/0 | snapshot_row | gram stain |
+| selection:METPO:1005010 | curation/metpo-role-inventory.json # /rows/1 | snapshot_row | indole test |
+| selection:METPO:1005011 | curation/metpo-role-inventory.json # /rows/2 | snapshot_row | indole test positive |
+| selection:METPO:1005012 | curation/metpo-role-inventory.json # /rows/3 | snapshot_row | indole test negative |
+| selection:METPO:1005013 | curation/metpo-role-inventory.json # /rows/4 | snapshot_row | methyl red test |
+| selection:METPO:1005014 | curation/metpo-role-inventory.json # /rows/5 | snapshot_row | methyl red test positive |
+| selection:METPO:1005015 | curation/metpo-role-inventory.json # /rows/6 | snapshot_row | methyl red test negative |
+| selection:METPO:1005016 | curation/metpo-role-inventory.json # /rows/7 | snapshot_row | Voges-Proskauer test |
+| selection:METPO:1005017 | curation/metpo-role-inventory.json # /rows/8 | snapshot_row | Voges-Proskauer test positive |
+| selection:METPO:1005018 | curation/metpo-role-inventory.json # /rows/9 | snapshot_row | Voges-Proskauer test negative |
+| selection:METPO:1007080 | curation/metpo-role-inventory.json # /rows/10 | snapshot_row | catalase test |
+| selection:METPO:1007081 | curation/metpo-role-inventory.json # /rows/11 | snapshot_row | oxidase test |
+| selection:METPO:1007082 | curation/metpo-role-inventory.json # /rows/12 | snapshot_row | urease test |
+| selection:METPO:1007083 | curation/metpo-role-inventory.json # /rows/13 | snapshot_row | catalase positive |
+| selection:METPO:1007084 | curation/metpo-role-inventory.json # /rows/14 | snapshot_row | catalase negative |
+| selection:METPO:1007085 | curation/metpo-role-inventory.json # /rows/15 | snapshot_row | oxidase positive |
+| selection:METPO:1007086 | curation/metpo-role-inventory.json # /rows/16 | snapshot_row | oxidase negative |
+| selection:METPO:1007087 | curation/metpo-role-inventory.json # /rows/17 | snapshot_row | urease positive |
+| selection:METPO:1007088 | curation/metpo-role-inventory.json # /rows/18 | snapshot_row | urease negative |
+| selection:METPO:2000017 | curation/metpo-role-inventory.json # /rows/19 | snapshot_row | reduces |
+| selection:METPO:2000210 | curation/metpo-role-inventory.json # /rows/20 | snapshot_row | accumulates |
+
+## Validation
+
+| Check | Status | Required | Targets | Result |
+| --- | --- | --- | --- | --- |
+| Native strict, source-binding and test gate | passed | True | AssayMech:ax17-extracted-feii-ferrozine, AssayMech:catalase-test, AssayMech:fusarium-intracellular-bi-tem-eds, AssayMech:indole-test, AssayMech:methyl-red-test, AssayMech:nd-bioleaching-icp-ms, AssayMech:oxidase-test, AssayMech:urease-test, AssayMech:voges-proskauer-test, selection:METPO:1000697, selection:METPO:1005010, selection:METPO:1005011, selection:METPO:1005012, selection:METPO:1005013, selection:METPO:1005014, selection:METPO:1005015, selection:METPO:1005016, selection:METPO:1005017, selection:METPO:1005018, selection:METPO:1007080, selection:METPO:1007081, selection:METPO:1007082, selection:METPO:1007083, selection:METPO:1007084, selection:METPO:1007085, selection:METPO:1007086, selection:METPO:1007087, selection:METPO:1007088, selection:METPO:2000017, selection:METPO:2000210 | 198 tests passed, three expected governed empty-command parameterizations skipped; nine records, 21 role rows, nine projections and four CMM links validated. |
+| Independent pinned-source and primary-method review | passed | True | AssayMech:ax17-extracted-feii-ferrozine, AssayMech:catalase-test, AssayMech:fusarium-intracellular-bi-tem-eds, AssayMech:indole-test, AssayMech:methyl-red-test, AssayMech:nd-bioleaching-icp-ms, AssayMech:oxidase-test, AssayMech:urease-test, AssayMech:voges-proskauer-test, selection:METPO:1000697, selection:METPO:1005010, selection:METPO:1005011, selection:METPO:1005012, selection:METPO:1005013, selection:METPO:1005014, selection:METPO:1005015, selection:METPO:1005016, selection:METPO:1005017, selection:METPO:1005018, selection:METPO:1007080, selection:METPO:1007081, selection:METPO:1007082, selection:METPO:1007083, selection:METPO:1007084, selection:METPO:1007085, selection:METPO:1007086, selection:METPO:1007087, selection:METPO:1007088, selection:METPO:2000017, selection:METPO:2000210 | Independently verified five original pinned repository-source digests and 53 retained locators; checked all four primary cache digests and read the cited primary methods and supplemental endpoints. |
+| Re-review external issue 4 evidence binding | passed | True | AssayMech:catalase-test | Four independent in-memory substitutions selecting the real indole node for a catalase field are all rejected; no maintained data was changed. |
+| Pinned governed artifact verification | passed | True | AssayMech:ax17-extracted-feii-ferrozine, AssayMech:catalase-test, AssayMech:fusarium-intracellular-bi-tem-eds, AssayMech:indole-test, AssayMech:methyl-red-test, AssayMech:nd-bioleaching-icp-ms, AssayMech:oxidase-test, AssayMech:urease-test, AssayMech:voges-proskauer-test, selection:METPO:1000697, selection:METPO:1005010, selection:METPO:1005011, selection:METPO:1005012, selection:METPO:1005013, selection:METPO:1005014, selection:METPO:1005015, selection:METPO:1005016, selection:METPO:1005017, selection:METPO:1005018, selection:METPO:1007080, selection:METPO:1007081, selection:METPO:1007082, selection:METPO:1007083, selection:METPO:1007084, selection:METPO:1007085, selection:METPO:1007086, selection:METPO:1007087, selection:METPO:1007088, selection:METPO:2000017, selection:METPO:2000210 | All 22 governed artifacts match the immutable bootstrap pin. |
+
+## Scientific And Domain Assessments
+
+### gram stain selection role
+
+grounding: supported. Targets: selection:METPO:1000697.
+
+A phenotype class retained as context, not an assay identity.
+
+### indole test selection role
+
+grounding: supported. Targets: selection:METPO:1005010.
+
+A named assay class; its separate outcome classes do not assert a result here.
+
+### indole test positive selection role
+
+grounding: supported. Targets: selection:METPO:1005011.
+
+An outcome class retained as context and excluded from assay identity seeds.
+
+### indole test negative selection role
+
+grounding: supported. Targets: selection:METPO:1005012.
+
+An outcome class retained as context and excluded from assay identity seeds.
+
+### methyl red test selection role
+
+grounding: supported. Targets: selection:METPO:1005013.
+
+A named assay class; its separate outcome classes do not assert a result here.
+
+### methyl red test positive selection role
+
+grounding: supported. Targets: selection:METPO:1005014.
+
+An outcome class retained as context and excluded from assay identity seeds.
+
+### methyl red test negative selection role
+
+grounding: supported. Targets: selection:METPO:1005015.
+
+An outcome class retained as context and excluded from assay identity seeds.
+
+### Voges-Proskauer test selection role
+
+grounding: supported. Targets: selection:METPO:1005016.
+
+A named assay class; its separate outcome classes do not assert a result here.
+
+### Voges-Proskauer test positive selection role
+
+grounding: supported. Targets: selection:METPO:1005017.
+
+An outcome class retained as context and excluded from assay identity seeds.
+
+### Voges-Proskauer test negative selection role
+
+grounding: supported. Targets: selection:METPO:1005018.
+
+An outcome class retained as context and excluded from assay identity seeds.
+
+### catalase test selection role
+
+grounding: supported. Targets: selection:METPO:1007080.
+
+A named assay class; its separate outcome classes do not assert a result here.
+
+### oxidase test selection role
+
+grounding: supported. Targets: selection:METPO:1007081.
+
+A named assay class; its separate outcome classes do not assert a result here.
+
+### urease test selection role
+
+grounding: supported. Targets: selection:METPO:1007082.
+
+A named assay class; its separate outcome classes do not assert a result here.
+
+### catalase positive selection role
+
+grounding: supported. Targets: selection:METPO:1007083.
+
+An outcome class retained as context and excluded from assay identity seeds.
+
+### catalase negative selection role
+
+grounding: supported. Targets: selection:METPO:1007084.
+
+An outcome class retained as context and excluded from assay identity seeds.
+
+### oxidase positive selection role
+
+grounding: supported. Targets: selection:METPO:1007085.
+
+An outcome class retained as context and excluded from assay identity seeds.
+
+### oxidase negative selection role
+
+grounding: supported. Targets: selection:METPO:1007086.
+
+An outcome class retained as context and excluded from assay identity seeds.
+
+### urease positive selection role
+
+grounding: supported. Targets: selection:METPO:1007087.
+
+An outcome class retained as context and excluded from assay identity seeds.
+
+### urease negative selection role
+
+grounding: supported. Targets: selection:METPO:1007088.
+
+An outcome class retained as context and excluded from assay identity seeds.
+
+### reduces selection role
+
+grounding: supported. Targets: selection:METPO:2000017.
+
+An OBJECT property used only as a scoped tested predicate, not an assay class.
+
+### accumulates selection role
+
+grounding: supported. Targets: selection:METPO:2000210.
+
+An OBJECT property used only as a scoped tested predicate, not an assay class.
+
+### catalase test concept boundary
+
+identity: supported. Targets: AssayMech:catalase-test.
+
+The native record denotes the cited assay class. Its definition and any concept-level readout stay within the ontology description, with missing executable protocol details explicit.
+
+This is an assay concept, not an organism observation. No concentrations, controls, performance estimates or complete protocol are inferred from the concept identity.
+
+### indole test concept boundary
+
+identity: supported. Targets: AssayMech:indole-test.
+
+The native record denotes the cited assay class. Its definition and any concept-level readout stay within the ontology description, with missing executable protocol details explicit.
+
+This is an assay concept, not an organism observation. No concentrations, controls, performance estimates or complete protocol are inferred from the concept identity.
+
+### methyl red test concept boundary
+
+identity: supported. Targets: AssayMech:methyl-red-test.
+
+The native record denotes the cited assay class. Its definition and any concept-level readout stay within the ontology description, with missing executable protocol details explicit.
+
+This is an assay concept, not an organism observation. No concentrations, controls, performance estimates or complete protocol are inferred from the concept identity.
+
+### oxidase test concept boundary
+
+identity: supported. Targets: AssayMech:oxidase-test.
+
+The native record denotes the cited assay class. Its definition and any concept-level readout stay within the ontology description, with missing executable protocol details explicit.
+
+This is an assay concept, not an organism observation. No concentrations, controls, performance estimates or complete protocol are inferred from the concept identity.
+
+### urease test concept boundary
+
+identity: supported. Targets: AssayMech:urease-test.
+
+The native record denotes the cited assay class. Its definition and any concept-level readout stay within the ontology description, with missing executable protocol details explicit.
+
+This is an assay concept, not an organism observation. No concentrations, controls, performance estimates or complete protocol are inferred from the concept identity.
+
+### Voges-Proskauer test concept boundary
+
+identity: supported. Targets: AssayMech:voges-proskauer-test.
+
+The native record denotes the cited assay class. Its definition and any concept-level readout stay within the ontology description, with missing executable protocol details explicit.
+
+This is an assay concept, not an organism observation. No concentrations, controls, performance estimates or complete protocol are inferred from the concept identity.
+
+### Nd bioleaching endpoint and normalization
+
+quantity: supported. Targets: AssayMech:nd-bioleaching-icp-ms.
+
+The filtered laboratory-leachate endpoint, synthetic Mon2 feed, ICP-MS method and source-labelled mass denominator are supported; the record does not turn the response into percent recovery or industrial performance.
+
+### Ax17 extraction-defined Fe(II)
+
+scope: supported. Targets: AssayMech:ax17-extracted-feii-ferrozine.
+
+The method defines an oxalate-extractable Fe(II) pool, records matched controls and preserves the Methods filtration value. The iron and ferrihydrite links correctly refer to one experiment.
+
+### Fusarium intracellular Bi localization
+
+evidence: supported. Targets: AssayMech:fusarium-intracellular-bi-tem-eds.
+
+TEM-EDS with the reported control supports scoped qualitative intracellular localization. Adjacent material in the beam, strain scope and absence of unique chemical-form or bulk-capacity inference are stated.
+
+### Exact source and rights boundaries
+
+provenance: supported. Targets: AssayMech:ax17-extracted-feii-ferrozine, AssayMech:catalase-test, AssayMech:fusarium-intracellular-bi-tem-eds, AssayMech:indole-test, AssayMech:methyl-red-test, AssayMech:nd-bioleaching-icp-ms, AssayMech:oxidase-test, AssayMech:urease-test, AssayMech:voges-proskauer-test.
+
+The nine source projections and catalogue retain exact pins or response digests and distinguish verbatim ontology selections from source-derived paraphrases. No record is represented as a new organism result.
+
+### Concept evidence remains bound to its own identity
+
+consistency: supported. Targets: AssayMech:catalase-test.
+
+The confirmed audit defect in external issue 4 is repaired and independently re-tested. Correct seed assertions did not need alteration; this review records the fixed observation rather than inventing a prior structured finding lineage.
+
+## Findings
+
+No findings recorded within this review's declared scope.
+
+## Recommended Actions And Acceptance Checks
+
+## Category Boundaries
+
+
+## Evidence
+
+| Evidence | Reference / locator | Support | Observation |
+| --- | --- | --- | --- |
+| metpo-METPO-1000697 | https://github.com/berkeleybop/metpo/blob/800c9d27913158efdf466edf2cd710dbf1ce893f/metpo.json; /graphs/0/nodes/1207 | supports | A phenotype class retained as context, not an assay identity. |
+| metpo-METPO-1005010 | https://github.com/berkeleybop/metpo/blob/800c9d27913158efdf466edf2cd710dbf1ce893f/metpo.json; /graphs/0/nodes/1400 | supports | A named assay class; its separate outcome classes do not assert a result here. |
+| metpo-METPO-1005011 | https://github.com/berkeleybop/metpo/blob/800c9d27913158efdf466edf2cd710dbf1ce893f/metpo.json; /graphs/0/nodes/1401 | supports | An outcome class retained as context and excluded from assay identity seeds. |
+| metpo-METPO-1005012 | https://github.com/berkeleybop/metpo/blob/800c9d27913158efdf466edf2cd710dbf1ce893f/metpo.json; /graphs/0/nodes/1402 | supports | An outcome class retained as context and excluded from assay identity seeds. |
+| metpo-METPO-1005013 | https://github.com/berkeleybop/metpo/blob/800c9d27913158efdf466edf2cd710dbf1ce893f/metpo.json; /graphs/0/nodes/1403 | supports | A named assay class; its separate outcome classes do not assert a result here. |
+| metpo-METPO-1005014 | https://github.com/berkeleybop/metpo/blob/800c9d27913158efdf466edf2cd710dbf1ce893f/metpo.json; /graphs/0/nodes/1404 | supports | An outcome class retained as context and excluded from assay identity seeds. |
+| metpo-METPO-1005015 | https://github.com/berkeleybop/metpo/blob/800c9d27913158efdf466edf2cd710dbf1ce893f/metpo.json; /graphs/0/nodes/1405 | supports | An outcome class retained as context and excluded from assay identity seeds. |
+| metpo-METPO-1005016 | https://github.com/berkeleybop/metpo/blob/800c9d27913158efdf466edf2cd710dbf1ce893f/metpo.json; /graphs/0/nodes/1406 | supports | A named assay class; its separate outcome classes do not assert a result here. |
+| metpo-METPO-1005017 | https://github.com/berkeleybop/metpo/blob/800c9d27913158efdf466edf2cd710dbf1ce893f/metpo.json; /graphs/0/nodes/1407 | supports | An outcome class retained as context and excluded from assay identity seeds. |
+| metpo-METPO-1005018 | https://github.com/berkeleybop/metpo/blob/800c9d27913158efdf466edf2cd710dbf1ce893f/metpo.json; /graphs/0/nodes/1408 | supports | An outcome class retained as context and excluded from assay identity seeds. |
+| metpo-METPO-1007080 | https://github.com/berkeleybop/metpo/blob/800c9d27913158efdf466edf2cd710dbf1ce893f/metpo.json; /graphs/0/nodes/1440 | supports | A named assay class; its separate outcome classes do not assert a result here. |
+| metpo-METPO-1007081 | https://github.com/berkeleybop/metpo/blob/800c9d27913158efdf466edf2cd710dbf1ce893f/metpo.json; /graphs/0/nodes/1441 | supports | A named assay class; its separate outcome classes do not assert a result here. |
+| metpo-METPO-1007082 | https://github.com/berkeleybop/metpo/blob/800c9d27913158efdf466edf2cd710dbf1ce893f/metpo.json; /graphs/0/nodes/1442 | supports | A named assay class; its separate outcome classes do not assert a result here. |
+| metpo-METPO-1007083 | https://github.com/berkeleybop/metpo/blob/800c9d27913158efdf466edf2cd710dbf1ce893f/metpo.json; /graphs/0/nodes/1443 | supports | An outcome class retained as context and excluded from assay identity seeds. |
+| metpo-METPO-1007084 | https://github.com/berkeleybop/metpo/blob/800c9d27913158efdf466edf2cd710dbf1ce893f/metpo.json; /graphs/0/nodes/1444 | supports | An outcome class retained as context and excluded from assay identity seeds. |
+| metpo-METPO-1007085 | https://github.com/berkeleybop/metpo/blob/800c9d27913158efdf466edf2cd710dbf1ce893f/metpo.json; /graphs/0/nodes/1445 | supports | An outcome class retained as context and excluded from assay identity seeds. |
+| metpo-METPO-1007086 | https://github.com/berkeleybop/metpo/blob/800c9d27913158efdf466edf2cd710dbf1ce893f/metpo.json; /graphs/0/nodes/1446 | supports | An outcome class retained as context and excluded from assay identity seeds. |
+| metpo-METPO-1007087 | https://github.com/berkeleybop/metpo/blob/800c9d27913158efdf466edf2cd710dbf1ce893f/metpo.json; /graphs/0/nodes/1447 | supports | An outcome class retained as context and excluded from assay identity seeds. |
+| metpo-METPO-1007088 | https://github.com/berkeleybop/metpo/blob/800c9d27913158efdf466edf2cd710dbf1ce893f/metpo.json; /graphs/0/nodes/1448 | supports | An outcome class retained as context and excluded from assay identity seeds. |
+| metpo-METPO-2000017 | https://github.com/berkeleybop/metpo/blob/800c9d27913158efdf466edf2cd710dbf1ce893f/metpo.json; /graphs/0/nodes/1472 | supports | An OBJECT property used only as a scoped tested predicate, not an assay class. |
+| metpo-METPO-2000210 | https://github.com/berkeleybop/metpo/blob/800c9d27913158efdf466edf2cd710dbf1ce893f/metpo.json; /graphs/0/nodes/1530 | supports | An OBJECT property used only as a scoped tested predicate, not an assay class. |
+| cmm-neodymium | https://github.com/CultureBotAI/CMMMech/blob/df061de720fb9884dcc6e41369a3049cef52a059/data/records/neodymium.yaml; /mechanisms/1 | supports | Independently downloaded the exact pinned source bytes, verified the catalogue digest and read the selected mechanism and bibliography. The assay link is scoped to that reported experiment. |
+| cmm-iron | https://github.com/CultureBotAI/CMMMech/blob/df061de720fb9884dcc6e41369a3049cef52a059/data/records/iron.yaml; /mechanisms/0 | supports | Independently downloaded the exact pinned source bytes, verified the catalogue digest and read the selected mechanism and bibliography. The assay link is scoped to that reported experiment. |
+| cmm-ferrihydrite | https://github.com/CultureBotAI/CMMMech/blob/df061de720fb9884dcc6e41369a3049cef52a059/data/records/ferrihydrite.yaml; /mechanisms/0 | supports | Independently downloaded the exact pinned source bytes, verified the catalogue digest and read the selected mechanism and bibliography. The assay link is scoped to that reported experiment. |
+| cmm-bismuth | https://github.com/CultureBotAI/CMMMech/blob/df061de720fb9884dcc6e41369a3049cef52a059/data/records/bismuth.yaml; /mechanisms/0 | supports | Independently downloaded the exact pinned source bytes, verified the catalogue digest and read the selected mechanism and bibliography. The assay link is scoped to that reported experiment. |
+| marecos2025 | https://www.nature.com/articles/s42003-025-08061-4; html:#Sec4; html:#Sec16 | supports | Read the primary article via official NCBI full-text API and the exact retained publisher HTML. Mon2 composition, post-leaching filtration, ICP-MS preparation, calibration and stated controls support the laboratory-scoped assay. |
+| marecos2025_data4 | https://media.springernature.com/original/springer-static/esm/art%3A10.1038%2Fs42003-025-08061-4/MediaObjects/42003_2025_8061_MOESM6_ESM.xlsx; xlsx:4A!B2; xlsx:4A!C2 | supports | Independently retrieved and parsed the supplementary workbook. B2 labels a mass-normalized Nd response; C2 labels final pH. Neither establishes percentage recovery or a common fixed-pH treatment. |
+| sklute2023 | https://www.frontiersin.org/journals/microbiology/articles/10.3389/fmicb.2023.1272245/full; html:#s2; html:#s3 | supports | Read the issuing publisher article and exact retained HTML. Oxalate dissolution, pre-dissolution filtering, ferrozine response and matched controls define the measured Fe(II) fraction; mineral identification requires separate methods. |
+| dodge2005 | https://pmc.ncbi.nlm.nih.gov/articles/PMC546758/; html:#sec7; html:#sec15 | supports | Independently read exact retained primary HTML. Sample preparation, salicylate control, intracellular TEM-EDS localization and the larger-beam limitation support qualitative localization without a unique chemical-phase or uptake-capacity inference. |
+| native-gate | https://github.com/CultureBotAI/AssayMech/tree/156f6a713df14be970b0262ee1c1df3eeccaf9b9; justfile; tests/test_seed_evidence.py | supports | Independent full native gate passed at the inspected revision; the exact command and test counts are recorded below. |
+| concept-binding-rereview | https://github.com/CultureBotAI/AssayMech/issues/4; src/assaymech/seed_audit.py; tests/test_seed_evidence.py | supports | Independently replayed four real wrong-node evidence substitutions for catalase description, method, measurement and optional control. The fixed audit rejects all four while the original scientific files remain byte-identical. |
+| source-rights | LICENSE-DATA; curation/source-catalogue.json | supports | Source attribution is preserved. The Dodge paper has no established CC licence; only factual paraphrase and citation are redistributed. Review verified original and projection digests without treating them as scientific proof. |
+
+## Limits And Additional Notes
+
+- Full coverage means 30 selected targets, not every METPO term or CMM record.
+- The six ontology assay concepts are not complete executable protocols and assert no organism outcome; methodological gaps remain explicit.
+- Operational records describe specific laboratory studies, not independently reproduced performance, detection limits, industrial scale transfer or general strain capabilities.
+- The live Nature page redirected through an inaccessible identity endpoint; the same open-access article was read through the official NCBI API and exact retained publisher HTML. Live PMC retrieval for Dodge presented a CAPTCHA and its BioC endpoint did not return usable full text; that paper was independently read from the retained primary HTML whose digest matches the catalogue.
+- Offline seed audit establishes bounded source binding, selected roles and required invariants; it cannot establish arbitrary scientific prose. The redundant aggregate CMM target list is documentary and was manually checked, while operational target bindings are enforced.
+- Hosted CI and independent scaffold review are separate release gates. This scientific review does not authorize a merge or promote a record status.
+- The earlier initial inspection was at f4a7ffbfa95c5a550cfca62caf31bd37b1c01563. External issue 4 identified an audit-code defect; ff94b029d4b5a81815946e5197faafcf64f1ce9b fixed it without changing records, history, selection or source snapshots. The final inspection binds this report to the later normal-merge seed commit shown in source.git_revision.
+- No previous structured scientific review is superseded and no GitHub issue is closed by this clean observation.
+
+## Complete Structured Record
+
+The sibling review.yaml is authoritative.
+
+```yaml
+schema_version: 1.0.0
+review_id: 20261109T025518Z-independent-initial-assay-seed
+kind: batch
+repository: CultureBotAI/AssayMech
+title: Independent scientific review of the initial assay seed and bounded METPO selection
+started_at: '2026-11-09T02:41:28Z'
+finished_at: '2026-11-09T02:55:18Z'
+reviewer:
+  identity: Codex independent seed reviewer
+  kind: agent
+  independence: independent
+  independence_basis: This reviewer authored the repository scaffold but did not author
+    or edit the seed records, seed projections, selection inventory or seed audit
+    fix. Another agent authored the seed. Scientific assertions and seed audit behavior
+    were assessed independently; the scaffold itself has a separate independent root
+    review.
+skill: .claude/skills/curate-assay/SKILL.md
+completion: completed
+verdict: pass_with_limitations
+scientific_review: true
+summary: All nine records and all 21 rows of the bounded METPO selection inventory
+  are assessed. The six assay concepts preserve protocol gaps; three operational examples
+  support the intended bioprocessing, biotransformation and bioaccumulation scope
+  with four precise CMM mechanism links. No unresolved scientific finding was confirmed
+  in this scope. This is not a validation of general assay performance or full ontology
+  coverage.
+source:
+  git_revision: 156f6a713df14be970b0262ee1c1df3eeccaf9b9
+  state: git_commit
+  inputs:
+  - path: LICENSE-DATA
+    sha256: d03c1cd2f880424abc966230e6d96aa9acaf946cfcaedc933d4c2fef64cbf0a0
+    role: context
+  - path: curation/metpo-role-inventory.json
+    sha256: 46bf56fcaf4000dc0a80e2d896c9c533e8f6e7ca0a9e9e26768e295e8bc852ef
+    role: target
+  - path: curation/seed-selection.json
+    sha256: 9e84911d5e9147824cb81d4c7db14b0b3444c64e356cde459e056ac0735247c8
+    role: context
+  - path: curation/source-catalogue.json
+    sha256: 6973edd0a1c518e0e53dbf7df7f041b575efed123ecda5115409bcb4df5282de
+    role: context
+  - path: curation/sources/cmm-bismuth.json
+    sha256: b4003813be7ab2cc6ce4ee50e3cdd5e559629de562ddedd386330fc47ee0e745
+    role: context
+  - path: curation/sources/cmm-ferrihydrite.json
+    sha256: 86a3b386236c3c69711d68d8b3a51ee215a9926c0a0cc17b626710bb845673c5
+    role: context
+  - path: curation/sources/cmm-iron.json
+    sha256: 5804ac25875e1132c98c84d01b1d201cab6f3d526060f43f2cacf48c345fa9cc
+    role: context
+  - path: curation/sources/cmm-neodymium.json
+    sha256: 0ae1e3f8bc6f48886edd41f6d32a59e8a5a5061f5531abae65fdfc8df76c4b23
+    role: context
+  - path: curation/sources/dodge2005.json
+    sha256: 04c71e3ebe2a26f3fde9a06e7412a48cefac17efd5a525a7d6acbd96f4f9d5e1
+    role: context
+  - path: curation/sources/marecos2025.json
+    sha256: f0ecc12ffbb70c9b23007bf07e2039e4ac025cd3ceb9dde7b82025f6f837c3c6
+    role: context
+  - path: curation/sources/marecos2025_data4.json
+    sha256: 7736628b88257cc7605eda334f683686dc34e5d3eb85165d49b0110c1cb1afba
+    role: context
+  - path: curation/sources/metpo.json
+    sha256: 53dd75f4e296752e63092d25b52e131059460079a77c7f8c2b154e343c982fad
+    role: context
+  - path: curation/sources/sklute2023.json
+    sha256: f1ce356d0bb89d87a9f22c941c5f4c59bc73b06f7ed7c4dd16ad303992d6c18e
+    role: context
+  - path: data/assays/ax17-extracted-feii-ferrozine.yaml
+    sha256: 4e0a61fffaff977d91ad46eb707988ca4fa178a2fbaedb3c8d315c509c5d9c9e
+    role: target
+  - path: data/assays/catalase-test.yaml
+    sha256: e44184b81f819fa187508a6125ed3274b53041983dafb524ff3542488459a926
+    role: target
+  - path: data/assays/fusarium-intracellular-bi-tem-eds.yaml
+    sha256: 51aca0631bdeb1336090228e15a7d9a4543c67133b3a3162ed355af57e1d9144
+    role: target
+  - path: data/assays/indole-test.yaml
+    sha256: 161de216a77d6940c32b9894a932b262cf1a4c8432325f8f8e9004a4ea47b62a
+    role: target
+  - path: data/assays/methyl-red-test.yaml
+    sha256: d93bc3473fead16b5a7e0a9712789a2ad5de3a452870d18f210745857f79d1de
+    role: target
+  - path: data/assays/nd-bioleaching-icp-ms.yaml
+    sha256: c66523bc1fc115eb64d06ab157a632c8f378e7de7cd426d159430ebf0ec08df6
+    role: target
+  - path: data/assays/oxidase-test.yaml
+    sha256: 3306dc6f23e771e91a7ad01f839ec69780bbfbe749bc2f4e98618efdf38350c5
+    role: target
+  - path: data/assays/urease-test.yaml
+    sha256: 9a6cb54ade2efde3761e1d029f75b01b3ef03d015b427218d0b7c5a61ad478e2
+    role: target
+  - path: data/assays/voges-proskauer-test.yaml
+    sha256: c18a8d1c9e2ccf7f92a97cc2b67aa16214b1f2c52eddbcdbd58022893435e9ac
+    role: target
+  - path: docs/seed-provenance.md
+    sha256: b39300afeddd25b9b344c593f78db1730f371f2b8b05b666bee38cd4fa8ed8a3
+    role: context
+  - path: history/records/ax17-extracted-feii-ferrozine/2026-11-09T023832Z-assay-stream-c-381808.yaml
+    sha256: f47fb4098249f2cc45365c17b8bd229ba1acedc44a800887a555cd0e66374f1f
+    role: context
+  - path: history/records/catalase-test/2026-11-09T023832Z-assay-stream-c-8407c5.yaml
+    sha256: 2838a979217fafbc21d5506ab41dd2f28da22e73f0b1dfc9d451e6ec93b337f3
+    role: context
+  - path: history/records/fusarium-intracellular-bi-tem-eds/2026-11-09T023832Z-assay-stream-c-a2281d.yaml
+    sha256: e72f2ad4f0c0e4bab7f12f6ac9366c66ceaa5b32e2075a60717aafff9e235ef7
+    role: context
+  - path: history/records/indole-test/2026-11-09T023832Z-assay-stream-c-529036.yaml
+    sha256: 555788c1c3714157ae1109b92d55a20f18c613f98cd2e7cc5fa5618d1ab7cbfd
+    role: context
+  - path: history/records/methyl-red-test/2026-11-09T023832Z-assay-stream-c-2cb5df.yaml
+    sha256: 17bfdddcca03b83ff35e531eec76ba35a2bc7298fe44624c7c251939c95f4b78
+    role: context
+  - path: history/records/nd-bioleaching-icp-ms/2026-11-09T023832Z-assay-stream-c-26f319.yaml
+    sha256: 3ab8053f5d2bca891446d7c2d589f1b3f537734ffd4dfd313d8e781c8fc118c5
+    role: context
+  - path: history/records/oxidase-test/2026-11-09T023832Z-assay-stream-c-3faaa7.yaml
+    sha256: 3f38cc824c63345f411b45291e8696f9f383f5c4d95ad13366c54ba1d6f7bcce
+    role: context
+  - path: history/records/urease-test/2026-11-09T023832Z-assay-stream-c-0fe536.yaml
+    sha256: 8721d5bd861351964ed3f812f1935ceb92703a6c8c7502e8e03bb97532a13d4e
+    role: context
+  - path: history/records/voges-proskauer-test/2026-11-09T023833Z-assay-stream-c-3f6983.yaml
+    sha256: e03fbd4c84a9c9d2274fde2d362b7ef3a1502cc05cee4d66255783ff5b3712df
+    role: context
+  - path: src/assaymech/cli.py
+    sha256: 4f7ce9ad2b92e6365c1e3f14c400d7674a077261cec806c958475a2c84f0723a
+    role: context
+  - path: src/assaymech/schema/assaymech.yaml
+    sha256: 6c460886731a10e803c2143a04930d9c3791b722f083d243395a918dbf8f3d85
+    role: context
+  - path: src/assaymech/seed_audit.py
+    sha256: d902b44a2c038b665e401cd73058b1de857ff04847274fe1a05e155bf5d83fc9
+    role: context
+  - path: src/assaymech/validate.py
+    sha256: 547afc5693ea2de8367d27ca18f84f6748272c12378d45d5f98c1881601f6944
+    role: context
+  - path: tests/test_seed_evidence.py
+    sha256: f4c99a0fdbf024675b4f2d17ec9fa53ee71ffa5cc2dbe3b7c730bae03d2e75ab
+    role: context
+scope:
+  description: Nine maintained assay records plus every row of the 21-row bounded
+    METPO role inventory, with primary-method support and all four CMM links.
+  selection: All data/assays/*.yaml records and all /rows/0 through /rows/20 entries
+    in curation/metpo-role-inventory.json at the inspected commit.
+  coverage: full
+  population_size: 30
+  reviewed_target_ids:
+  - AssayMech:ax17-extracted-feii-ferrozine
+  - AssayMech:catalase-test
+  - AssayMech:fusarium-intracellular-bi-tem-eds
+  - AssayMech:indole-test
+  - AssayMech:methyl-red-test
+  - AssayMech:nd-bioleaching-icp-ms
+  - AssayMech:oxidase-test
+  - AssayMech:urease-test
+  - AssayMech:voges-proskauer-test
+  - selection:METPO:1000697
+  - selection:METPO:1005010
+  - selection:METPO:1005011
+  - selection:METPO:1005012
+  - selection:METPO:1005013
+  - selection:METPO:1005014
+  - selection:METPO:1005015
+  - selection:METPO:1005016
+  - selection:METPO:1005017
+  - selection:METPO:1005018
+  - selection:METPO:1007080
+  - selection:METPO:1007081
+  - selection:METPO:1007082
+  - selection:METPO:1007083
+  - selection:METPO:1007084
+  - selection:METPO:1007085
+  - selection:METPO:1007086
+  - selection:METPO:1007087
+  - selection:METPO:1007088
+  - selection:METPO:2000017
+  - selection:METPO:2000210
+  exclusions:
+  - target: Other METPO terms and unselected CMM records
+    reason: The review denominator is the explicitly selected initial seed and 21-row
+      inventory, not a full upstream ontology or corpus census.
+targets:
+- target_id: AssayMech:ax17-extracted-feii-ferrozine
+  path: data/assays/ax17-extracted-feii-ferrozine.yaml
+  label: Oxalate-extracted Fe(II) ferrozine assay in Ax17 ferrihydrite cultures
+  kind: maintained
+  record_class: AssayRecord
+  owner_paths:
+  - repository: CultureBotAI/AssayMech
+    path: data/assays/ax17-extracted-feii-ferrozine.yaml
+    role: native assay record authored through just new-history
+- target_id: AssayMech:catalase-test
+  path: data/assays/catalase-test.yaml
+  label: catalase test
+  kind: maintained
+  record_class: AssayRecord
+  owner_paths:
+  - repository: CultureBotAI/AssayMech
+    path: data/assays/catalase-test.yaml
+    role: native assay record authored through just new-history
+- target_id: AssayMech:fusarium-intracellular-bi-tem-eds
+  path: data/assays/fusarium-intracellular-bi-tem-eds.yaml
+  label: TEM-EDS localization assay for intracellular Bi in Fusarium sp. BI
+  kind: maintained
+  record_class: AssayRecord
+  owner_paths:
+  - repository: CultureBotAI/AssayMech
+    path: data/assays/fusarium-intracellular-bi-tem-eds.yaml
+    role: native assay record authored through just new-history
+- target_id: AssayMech:indole-test
+  path: data/assays/indole-test.yaml
+  label: indole test
+  kind: maintained
+  record_class: AssayRecord
+  owner_paths:
+  - repository: CultureBotAI/AssayMech
+    path: data/assays/indole-test.yaml
+    role: native assay record authored through just new-history
+- target_id: AssayMech:methyl-red-test
+  path: data/assays/methyl-red-test.yaml
+  label: methyl red test
+  kind: maintained
+  record_class: AssayRecord
+  owner_paths:
+  - repository: CultureBotAI/AssayMech
+    path: data/assays/methyl-red-test.yaml
+    role: native assay record authored through just new-history
+- target_id: AssayMech:nd-bioleaching-icp-ms
+  path: data/assays/nd-bioleaching-icp-ms.yaml
+  label: ICP-MS assay of Nd in synthetic-phosphate bioleachate
+  kind: maintained
+  record_class: AssayRecord
+  owner_paths:
+  - repository: CultureBotAI/AssayMech
+    path: data/assays/nd-bioleaching-icp-ms.yaml
+    role: native assay record authored through just new-history
+- target_id: AssayMech:oxidase-test
+  path: data/assays/oxidase-test.yaml
+  label: oxidase test
+  kind: maintained
+  record_class: AssayRecord
+  owner_paths:
+  - repository: CultureBotAI/AssayMech
+    path: data/assays/oxidase-test.yaml
+    role: native assay record authored through just new-history
+- target_id: AssayMech:urease-test
+  path: data/assays/urease-test.yaml
+  label: urease test
+  kind: maintained
+  record_class: AssayRecord
+  owner_paths:
+  - repository: CultureBotAI/AssayMech
+    path: data/assays/urease-test.yaml
+    role: native assay record authored through just new-history
+- target_id: AssayMech:voges-proskauer-test
+  path: data/assays/voges-proskauer-test.yaml
+  label: Voges-Proskauer test
+  kind: maintained
+  record_class: AssayRecord
+  owner_paths:
+  - repository: CultureBotAI/AssayMech
+    path: data/assays/voges-proskauer-test.yaml
+    role: native assay record authored through just new-history
+- target_id: selection:METPO:1000697
+  path: curation/metpo-role-inventory.json
+  selector: /rows/0
+  label: gram stain
+  kind: snapshot_row
+  owner_paths:
+  - repository: CultureBotAI/AssayMech
+    path: curation/metpo-role-inventory.json
+    role: maintained bounded ontology selection and role inventory
+- target_id: selection:METPO:1005010
+  path: curation/metpo-role-inventory.json
+  selector: /rows/1
+  label: indole test
+  kind: snapshot_row
+  owner_paths:
+  - repository: CultureBotAI/AssayMech
+    path: curation/metpo-role-inventory.json
+    role: maintained bounded ontology selection and role inventory
+- target_id: selection:METPO:1005011
+  path: curation/metpo-role-inventory.json
+  selector: /rows/2
+  label: indole test positive
+  kind: snapshot_row
+  owner_paths:
+  - repository: CultureBotAI/AssayMech
+    path: curation/metpo-role-inventory.json
+    role: maintained bounded ontology selection and role inventory
+- target_id: selection:METPO:1005012
+  path: curation/metpo-role-inventory.json
+  selector: /rows/3
+  label: indole test negative
+  kind: snapshot_row
+  owner_paths:
+  - repository: CultureBotAI/AssayMech
+    path: curation/metpo-role-inventory.json
+    role: maintained bounded ontology selection and role inventory
+- target_id: selection:METPO:1005013
+  path: curation/metpo-role-inventory.json
+  selector: /rows/4
+  label: methyl red test
+  kind: snapshot_row
+  owner_paths:
+  - repository: CultureBotAI/AssayMech
+    path: curation/metpo-role-inventory.json
+    role: maintained bounded ontology selection and role inventory
+- target_id: selection:METPO:1005014
+  path: curation/metpo-role-inventory.json
+  selector: /rows/5
+  label: methyl red test positive
+  kind: snapshot_row
+  owner_paths:
+  - repository: CultureBotAI/AssayMech
+    path: curation/metpo-role-inventory.json
+    role: maintained bounded ontology selection and role inventory
+- target_id: selection:METPO:1005015
+  path: curation/metpo-role-inventory.json
+  selector: /rows/6
+  label: methyl red test negative
+  kind: snapshot_row
+  owner_paths:
+  - repository: CultureBotAI/AssayMech
+    path: curation/metpo-role-inventory.json
+    role: maintained bounded ontology selection and role inventory
+- target_id: selection:METPO:1005016
+  path: curation/metpo-role-inventory.json
+  selector: /rows/7
+  label: Voges-Proskauer test
+  kind: snapshot_row
+  owner_paths:
+  - repository: CultureBotAI/AssayMech
+    path: curation/metpo-role-inventory.json
+    role: maintained bounded ontology selection and role inventory
+- target_id: selection:METPO:1005017
+  path: curation/metpo-role-inventory.json
+  selector: /rows/8
+  label: Voges-Proskauer test positive
+  kind: snapshot_row
+  owner_paths:
+  - repository: CultureBotAI/AssayMech
+    path: curation/metpo-role-inventory.json
+    role: maintained bounded ontology selection and role inventory
+- target_id: selection:METPO:1005018
+  path: curation/metpo-role-inventory.json
+  selector: /rows/9
+  label: Voges-Proskauer test negative
+  kind: snapshot_row
+  owner_paths:
+  - repository: CultureBotAI/AssayMech
+    path: curation/metpo-role-inventory.json
+    role: maintained bounded ontology selection and role inventory
+- target_id: selection:METPO:1007080
+  path: curation/metpo-role-inventory.json
+  selector: /rows/10
+  label: catalase test
+  kind: snapshot_row
+  owner_paths:
+  - repository: CultureBotAI/AssayMech
+    path: curation/metpo-role-inventory.json
+    role: maintained bounded ontology selection and role inventory
+- target_id: selection:METPO:1007081
+  path: curation/metpo-role-inventory.json
+  selector: /rows/11
+  label: oxidase test
+  kind: snapshot_row
+  owner_paths:
+  - repository: CultureBotAI/AssayMech
+    path: curation/metpo-role-inventory.json
+    role: maintained bounded ontology selection and role inventory
+- target_id: selection:METPO:1007082
+  path: curation/metpo-role-inventory.json
+  selector: /rows/12
+  label: urease test
+  kind: snapshot_row
+  owner_paths:
+  - repository: CultureBotAI/AssayMech
+    path: curation/metpo-role-inventory.json
+    role: maintained bounded ontology selection and role inventory
+- target_id: selection:METPO:1007083
+  path: curation/metpo-role-inventory.json
+  selector: /rows/13
+  label: catalase positive
+  kind: snapshot_row
+  owner_paths:
+  - repository: CultureBotAI/AssayMech
+    path: curation/metpo-role-inventory.json
+    role: maintained bounded ontology selection and role inventory
+- target_id: selection:METPO:1007084
+  path: curation/metpo-role-inventory.json
+  selector: /rows/14
+  label: catalase negative
+  kind: snapshot_row
+  owner_paths:
+  - repository: CultureBotAI/AssayMech
+    path: curation/metpo-role-inventory.json
+    role: maintained bounded ontology selection and role inventory
+- target_id: selection:METPO:1007085
+  path: curation/metpo-role-inventory.json
+  selector: /rows/15
+  label: oxidase positive
+  kind: snapshot_row
+  owner_paths:
+  - repository: CultureBotAI/AssayMech
+    path: curation/metpo-role-inventory.json
+    role: maintained bounded ontology selection and role inventory
+- target_id: selection:METPO:1007086
+  path: curation/metpo-role-inventory.json
+  selector: /rows/16
+  label: oxidase negative
+  kind: snapshot_row
+  owner_paths:
+  - repository: CultureBotAI/AssayMech
+    path: curation/metpo-role-inventory.json
+    role: maintained bounded ontology selection and role inventory
+- target_id: selection:METPO:1007087
+  path: curation/metpo-role-inventory.json
+  selector: /rows/17
+  label: urease positive
+  kind: snapshot_row
+  owner_paths:
+  - repository: CultureBotAI/AssayMech
+    path: curation/metpo-role-inventory.json
+    role: maintained bounded ontology selection and role inventory
+- target_id: selection:METPO:1007088
+  path: curation/metpo-role-inventory.json
+  selector: /rows/18
+  label: urease negative
+  kind: snapshot_row
+  owner_paths:
+  - repository: CultureBotAI/AssayMech
+    path: curation/metpo-role-inventory.json
+    role: maintained bounded ontology selection and role inventory
+- target_id: selection:METPO:2000017
+  path: curation/metpo-role-inventory.json
+  selector: /rows/19
+  label: reduces
+  kind: snapshot_row
+  owner_paths:
+  - repository: CultureBotAI/AssayMech
+    path: curation/metpo-role-inventory.json
+    role: maintained bounded ontology selection and role inventory
+- target_id: selection:METPO:2000210
+  path: curation/metpo-role-inventory.json
+  selector: /rows/20
+  label: accumulates
+  kind: snapshot_row
+  owner_paths:
+  - repository: CultureBotAI/AssayMech
+    path: curation/metpo-role-inventory.json
+    role: maintained bounded ontology selection and role inventory
+checks:
+- check_id: native
+  name: Native strict, source-binding and test gate
+  status: passed
+  required: true
+  summary: 198 tests passed, three expected governed empty-command parameterizations
+    skipped; nine records, 21 role rows, nine projections and four CMM links validated.
+  target_ids:
+  - AssayMech:ax17-extracted-feii-ferrozine
+  - AssayMech:catalase-test
+  - AssayMech:fusarium-intracellular-bi-tem-eds
+  - AssayMech:indole-test
+  - AssayMech:methyl-red-test
+  - AssayMech:nd-bioleaching-icp-ms
+  - AssayMech:oxidase-test
+  - AssayMech:urease-test
+  - AssayMech:voges-proskauer-test
+  - selection:METPO:1000697
+  - selection:METPO:1005010
+  - selection:METPO:1005011
+  - selection:METPO:1005012
+  - selection:METPO:1005013
+  - selection:METPO:1005014
+  - selection:METPO:1005015
+  - selection:METPO:1005016
+  - selection:METPO:1005017
+  - selection:METPO:1005018
+  - selection:METPO:1007080
+  - selection:METPO:1007081
+  - selection:METPO:1007082
+  - selection:METPO:1007083
+  - selection:METPO:1007084
+  - selection:METPO:1007085
+  - selection:METPO:1007086
+  - selection:METPO:1007087
+  - selection:METPO:1007088
+  - selection:METPO:2000017
+  - selection:METPO:2000210
+  command: PYTEST_ADDOPTS='--basetemp=.temp/final-review-tests' just check
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - native-gate
+- check_id: source-reading
+  name: Independent pinned-source and primary-method review
+  status: passed
+  required: true
+  summary: Independently verified five original pinned repository-source digests and
+    53 retained locators; checked all four primary cache digests and read the cited
+    primary methods and supplemental endpoints.
+  target_ids:
+  - AssayMech:ax17-extracted-feii-ferrozine
+  - AssayMech:catalase-test
+  - AssayMech:fusarium-intracellular-bi-tem-eds
+  - AssayMech:indole-test
+  - AssayMech:methyl-red-test
+  - AssayMech:nd-bioleaching-icp-ms
+  - AssayMech:oxidase-test
+  - AssayMech:urease-test
+  - AssayMech:voges-proskauer-test
+  - selection:METPO:1000697
+  - selection:METPO:1005010
+  - selection:METPO:1005011
+  - selection:METPO:1005012
+  - selection:METPO:1005013
+  - selection:METPO:1005014
+  - selection:METPO:1005015
+  - selection:METPO:1005016
+  - selection:METPO:1005017
+  - selection:METPO:1005018
+  - selection:METPO:1007080
+  - selection:METPO:1007081
+  - selection:METPO:1007082
+  - selection:METPO:1007083
+  - selection:METPO:1007084
+  - selection:METPO:1007085
+  - selection:METPO:1007086
+  - selection:METPO:1007087
+  - selection:METPO:1007088
+  - selection:METPO:2000017
+  - selection:METPO:2000210
+  evidence_ids:
+  - marecos2025
+  - marecos2025_data4
+  - sklute2023
+  - dodge2005
+- check_id: concept-binding
+  name: Re-review external issue 4 evidence binding
+  status: passed
+  required: true
+  summary: Four independent in-memory substitutions selecting the real indole node
+    for a catalase field are all rejected; no maintained data was changed.
+  target_ids:
+  - AssayMech:catalase-test
+  evidence_ids:
+  - concept-binding-rereview
+- check_id: governance
+  name: Pinned governed artifact verification
+  status: passed
+  required: true
+  summary: All 22 governed artifacts match the immutable bootstrap pin.
+  target_ids:
+  - AssayMech:ax17-extracted-feii-ferrozine
+  - AssayMech:catalase-test
+  - AssayMech:fusarium-intracellular-bi-tem-eds
+  - AssayMech:indole-test
+  - AssayMech:methyl-red-test
+  - AssayMech:nd-bioleaching-icp-ms
+  - AssayMech:oxidase-test
+  - AssayMech:urease-test
+  - AssayMech:voges-proskauer-test
+  - selection:METPO:1000697
+  - selection:METPO:1005010
+  - selection:METPO:1005011
+  - selection:METPO:1005012
+  - selection:METPO:1005013
+  - selection:METPO:1005014
+  - selection:METPO:1005015
+  - selection:METPO:1005016
+  - selection:METPO:1005017
+  - selection:METPO:1005018
+  - selection:METPO:1007080
+  - selection:METPO:1007081
+  - selection:METPO:1007082
+  - selection:METPO:1007083
+  - selection:METPO:1007084
+  - selection:METPO:1007085
+  - selection:METPO:1007086
+  - selection:METPO:1007087
+  - selection:METPO:1007088
+  - selection:METPO:2000017
+  - selection:METPO:2000210
+  command: just check-vendored
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - native-gate
+evidence:
+- evidence_id: metpo-METPO-1000697
+  kind: authority
+  reference: https://github.com/berkeleybop/metpo/blob/800c9d27913158efdf466edf2cd710dbf1ce893f/metpo.json
+  locator: /graphs/0/nodes/1207
+  accessed_at: '2026-11-09T02:42:30Z'
+  support: supports
+  summary: A phenotype class retained as context, not an assay identity.
+  snapshot_sha256: 24fbb07b0e3e4594155750add1e15c77faeadc24e909cdfc8632105687b59946
+- evidence_id: metpo-METPO-1005010
+  kind: authority
+  reference: https://github.com/berkeleybop/metpo/blob/800c9d27913158efdf466edf2cd710dbf1ce893f/metpo.json
+  locator: /graphs/0/nodes/1400
+  accessed_at: '2026-11-09T02:42:30Z'
+  support: supports
+  summary: A named assay class; its separate outcome classes do not assert a result
+    here.
+  snapshot_sha256: 24fbb07b0e3e4594155750add1e15c77faeadc24e909cdfc8632105687b59946
+- evidence_id: metpo-METPO-1005011
+  kind: authority
+  reference: https://github.com/berkeleybop/metpo/blob/800c9d27913158efdf466edf2cd710dbf1ce893f/metpo.json
+  locator: /graphs/0/nodes/1401
+  accessed_at: '2026-11-09T02:42:30Z'
+  support: supports
+  summary: An outcome class retained as context and excluded from assay identity seeds.
+  snapshot_sha256: 24fbb07b0e3e4594155750add1e15c77faeadc24e909cdfc8632105687b59946
+- evidence_id: metpo-METPO-1005012
+  kind: authority
+  reference: https://github.com/berkeleybop/metpo/blob/800c9d27913158efdf466edf2cd710dbf1ce893f/metpo.json
+  locator: /graphs/0/nodes/1402
+  accessed_at: '2026-11-09T02:42:30Z'
+  support: supports
+  summary: An outcome class retained as context and excluded from assay identity seeds.
+  snapshot_sha256: 24fbb07b0e3e4594155750add1e15c77faeadc24e909cdfc8632105687b59946
+- evidence_id: metpo-METPO-1005013
+  kind: authority
+  reference: https://github.com/berkeleybop/metpo/blob/800c9d27913158efdf466edf2cd710dbf1ce893f/metpo.json
+  locator: /graphs/0/nodes/1403
+  accessed_at: '2026-11-09T02:42:30Z'
+  support: supports
+  summary: A named assay class; its separate outcome classes do not assert a result
+    here.
+  snapshot_sha256: 24fbb07b0e3e4594155750add1e15c77faeadc24e909cdfc8632105687b59946
+- evidence_id: metpo-METPO-1005014
+  kind: authority
+  reference: https://github.com/berkeleybop/metpo/blob/800c9d27913158efdf466edf2cd710dbf1ce893f/metpo.json
+  locator: /graphs/0/nodes/1404
+  accessed_at: '2026-11-09T02:42:30Z'
+  support: supports
+  summary: An outcome class retained as context and excluded from assay identity seeds.
+  snapshot_sha256: 24fbb07b0e3e4594155750add1e15c77faeadc24e909cdfc8632105687b59946
+- evidence_id: metpo-METPO-1005015
+  kind: authority
+  reference: https://github.com/berkeleybop/metpo/blob/800c9d27913158efdf466edf2cd710dbf1ce893f/metpo.json
+  locator: /graphs/0/nodes/1405
+  accessed_at: '2026-11-09T02:42:30Z'
+  support: supports
+  summary: An outcome class retained as context and excluded from assay identity seeds.
+  snapshot_sha256: 24fbb07b0e3e4594155750add1e15c77faeadc24e909cdfc8632105687b59946
+- evidence_id: metpo-METPO-1005016
+  kind: authority
+  reference: https://github.com/berkeleybop/metpo/blob/800c9d27913158efdf466edf2cd710dbf1ce893f/metpo.json
+  locator: /graphs/0/nodes/1406
+  accessed_at: '2026-11-09T02:42:30Z'
+  support: supports
+  summary: A named assay class; its separate outcome classes do not assert a result
+    here.
+  snapshot_sha256: 24fbb07b0e3e4594155750add1e15c77faeadc24e909cdfc8632105687b59946
+- evidence_id: metpo-METPO-1005017
+  kind: authority
+  reference: https://github.com/berkeleybop/metpo/blob/800c9d27913158efdf466edf2cd710dbf1ce893f/metpo.json
+  locator: /graphs/0/nodes/1407
+  accessed_at: '2026-11-09T02:42:30Z'
+  support: supports
+  summary: An outcome class retained as context and excluded from assay identity seeds.
+  snapshot_sha256: 24fbb07b0e3e4594155750add1e15c77faeadc24e909cdfc8632105687b59946
+- evidence_id: metpo-METPO-1005018
+  kind: authority
+  reference: https://github.com/berkeleybop/metpo/blob/800c9d27913158efdf466edf2cd710dbf1ce893f/metpo.json
+  locator: /graphs/0/nodes/1408
+  accessed_at: '2026-11-09T02:42:30Z'
+  support: supports
+  summary: An outcome class retained as context and excluded from assay identity seeds.
+  snapshot_sha256: 24fbb07b0e3e4594155750add1e15c77faeadc24e909cdfc8632105687b59946
+- evidence_id: metpo-METPO-1007080
+  kind: authority
+  reference: https://github.com/berkeleybop/metpo/blob/800c9d27913158efdf466edf2cd710dbf1ce893f/metpo.json
+  locator: /graphs/0/nodes/1440
+  accessed_at: '2026-11-09T02:42:30Z'
+  support: supports
+  summary: A named assay class; its separate outcome classes do not assert a result
+    here.
+  snapshot_sha256: 24fbb07b0e3e4594155750add1e15c77faeadc24e909cdfc8632105687b59946
+- evidence_id: metpo-METPO-1007081
+  kind: authority
+  reference: https://github.com/berkeleybop/metpo/blob/800c9d27913158efdf466edf2cd710dbf1ce893f/metpo.json
+  locator: /graphs/0/nodes/1441
+  accessed_at: '2026-11-09T02:42:30Z'
+  support: supports
+  summary: A named assay class; its separate outcome classes do not assert a result
+    here.
+  snapshot_sha256: 24fbb07b0e3e4594155750add1e15c77faeadc24e909cdfc8632105687b59946
+- evidence_id: metpo-METPO-1007082
+  kind: authority
+  reference: https://github.com/berkeleybop/metpo/blob/800c9d27913158efdf466edf2cd710dbf1ce893f/metpo.json
+  locator: /graphs/0/nodes/1442
+  accessed_at: '2026-11-09T02:42:30Z'
+  support: supports
+  summary: A named assay class; its separate outcome classes do not assert a result
+    here.
+  snapshot_sha256: 24fbb07b0e3e4594155750add1e15c77faeadc24e909cdfc8632105687b59946
+- evidence_id: metpo-METPO-1007083
+  kind: authority
+  reference: https://github.com/berkeleybop/metpo/blob/800c9d27913158efdf466edf2cd710dbf1ce893f/metpo.json
+  locator: /graphs/0/nodes/1443
+  accessed_at: '2026-11-09T02:42:30Z'
+  support: supports
+  summary: An outcome class retained as context and excluded from assay identity seeds.
+  snapshot_sha256: 24fbb07b0e3e4594155750add1e15c77faeadc24e909cdfc8632105687b59946
+- evidence_id: metpo-METPO-1007084
+  kind: authority
+  reference: https://github.com/berkeleybop/metpo/blob/800c9d27913158efdf466edf2cd710dbf1ce893f/metpo.json
+  locator: /graphs/0/nodes/1444
+  accessed_at: '2026-11-09T02:42:30Z'
+  support: supports
+  summary: An outcome class retained as context and excluded from assay identity seeds.
+  snapshot_sha256: 24fbb07b0e3e4594155750add1e15c77faeadc24e909cdfc8632105687b59946
+- evidence_id: metpo-METPO-1007085
+  kind: authority
+  reference: https://github.com/berkeleybop/metpo/blob/800c9d27913158efdf466edf2cd710dbf1ce893f/metpo.json
+  locator: /graphs/0/nodes/1445
+  accessed_at: '2026-11-09T02:42:30Z'
+  support: supports
+  summary: An outcome class retained as context and excluded from assay identity seeds.
+  snapshot_sha256: 24fbb07b0e3e4594155750add1e15c77faeadc24e909cdfc8632105687b59946
+- evidence_id: metpo-METPO-1007086
+  kind: authority
+  reference: https://github.com/berkeleybop/metpo/blob/800c9d27913158efdf466edf2cd710dbf1ce893f/metpo.json
+  locator: /graphs/0/nodes/1446
+  accessed_at: '2026-11-09T02:42:30Z'
+  support: supports
+  summary: An outcome class retained as context and excluded from assay identity seeds.
+  snapshot_sha256: 24fbb07b0e3e4594155750add1e15c77faeadc24e909cdfc8632105687b59946
+- evidence_id: metpo-METPO-1007087
+  kind: authority
+  reference: https://github.com/berkeleybop/metpo/blob/800c9d27913158efdf466edf2cd710dbf1ce893f/metpo.json
+  locator: /graphs/0/nodes/1447
+  accessed_at: '2026-11-09T02:42:30Z'
+  support: supports
+  summary: An outcome class retained as context and excluded from assay identity seeds.
+  snapshot_sha256: 24fbb07b0e3e4594155750add1e15c77faeadc24e909cdfc8632105687b59946
+- evidence_id: metpo-METPO-1007088
+  kind: authority
+  reference: https://github.com/berkeleybop/metpo/blob/800c9d27913158efdf466edf2cd710dbf1ce893f/metpo.json
+  locator: /graphs/0/nodes/1448
+  accessed_at: '2026-11-09T02:42:30Z'
+  support: supports
+  summary: An outcome class retained as context and excluded from assay identity seeds.
+  snapshot_sha256: 24fbb07b0e3e4594155750add1e15c77faeadc24e909cdfc8632105687b59946
+- evidence_id: metpo-METPO-2000017
+  kind: authority
+  reference: https://github.com/berkeleybop/metpo/blob/800c9d27913158efdf466edf2cd710dbf1ce893f/metpo.json
+  locator: /graphs/0/nodes/1472
+  accessed_at: '2026-11-09T02:42:30Z'
+  support: supports
+  summary: An OBJECT property used only as a scoped tested predicate, not an assay
+    class.
+  snapshot_sha256: 24fbb07b0e3e4594155750add1e15c77faeadc24e909cdfc8632105687b59946
+- evidence_id: metpo-METPO-2000210
+  kind: authority
+  reference: https://github.com/berkeleybop/metpo/blob/800c9d27913158efdf466edf2cd710dbf1ce893f/metpo.json
+  locator: /graphs/0/nodes/1530
+  accessed_at: '2026-11-09T02:42:30Z'
+  support: supports
+  summary: An OBJECT property used only as a scoped tested predicate, not an assay
+    class.
+  snapshot_sha256: 24fbb07b0e3e4594155750add1e15c77faeadc24e909cdfc8632105687b59946
+- evidence_id: cmm-neodymium
+  kind: database
+  reference: https://github.com/CultureBotAI/CMMMech/blob/df061de720fb9884dcc6e41369a3049cef52a059/data/records/neodymium.yaml
+  locator: /mechanisms/1
+  accessed_at: '2026-11-09T02:42:30Z'
+  support: supports
+  summary: Independently downloaded the exact pinned source bytes, verified the catalogue
+    digest and read the selected mechanism and bibliography. The assay link is scoped
+    to that reported experiment.
+  snapshot_sha256: 91a74a542eb1dbd45aeb4cbd24f3ced3f382854dc7e7e3d2292effcded89341f
+- evidence_id: cmm-iron
+  kind: database
+  reference: https://github.com/CultureBotAI/CMMMech/blob/df061de720fb9884dcc6e41369a3049cef52a059/data/records/iron.yaml
+  locator: /mechanisms/0
+  accessed_at: '2026-11-09T02:42:30Z'
+  support: supports
+  summary: Independently downloaded the exact pinned source bytes, verified the catalogue
+    digest and read the selected mechanism and bibliography. The assay link is scoped
+    to that reported experiment.
+  snapshot_sha256: 92f6792df8c1b65d3377d91b9cf7817b42a4558cb0618e4db8f2f97382aad62d
+- evidence_id: cmm-ferrihydrite
+  kind: database
+  reference: https://github.com/CultureBotAI/CMMMech/blob/df061de720fb9884dcc6e41369a3049cef52a059/data/records/ferrihydrite.yaml
+  locator: /mechanisms/0
+  accessed_at: '2026-11-09T02:42:30Z'
+  support: supports
+  summary: Independently downloaded the exact pinned source bytes, verified the catalogue
+    digest and read the selected mechanism and bibliography. The assay link is scoped
+    to that reported experiment.
+  snapshot_sha256: 4ef266f47c11833c25999d545382bdc9831259541c720884bd07330f05ee1de3
+- evidence_id: cmm-bismuth
+  kind: database
+  reference: https://github.com/CultureBotAI/CMMMech/blob/df061de720fb9884dcc6e41369a3049cef52a059/data/records/bismuth.yaml
+  locator: /mechanisms/0
+  accessed_at: '2026-11-09T02:42:30Z'
+  support: supports
+  summary: Independently downloaded the exact pinned source bytes, verified the catalogue
+    digest and read the selected mechanism and bibliography. The assay link is scoped
+    to that reported experiment.
+  snapshot_sha256: 1df7276c9545a4cc13a9a289e3aca1bb68da4794f59034c04a625cb1f86984ea
+- evidence_id: marecos2025
+  kind: primary_source
+  reference: https://www.nature.com/articles/s42003-025-08061-4
+  locator: html:#Sec4; html:#Sec16
+  accessed_at: '2026-11-09T02:53:25Z'
+  support: supports
+  summary: Read the primary article via official NCBI full-text API and the exact
+    retained publisher HTML. Mon2 composition, post-leaching filtration, ICP-MS preparation,
+    calibration and stated controls support the laboratory-scoped assay.
+  snapshot_sha256: 49ae89a60c59dcbe69e5607f741cf949a00daac9753651a16c55face20dcdd26
+- evidence_id: marecos2025_data4
+  kind: primary_source
+  reference: https://media.springernature.com/original/springer-static/esm/art%3A10.1038%2Fs42003-025-08061-4/MediaObjects/42003_2025_8061_MOESM6_ESM.xlsx
+  locator: xlsx:4A!B2; xlsx:4A!C2
+  accessed_at: '2026-11-09T02:53:25Z'
+  support: supports
+  summary: Independently retrieved and parsed the supplementary workbook. B2 labels
+    a mass-normalized Nd response; C2 labels final pH. Neither establishes percentage
+    recovery or a common fixed-pH treatment.
+  snapshot_sha256: 3e9725efe640ee5a510a5f0f733145172b7473c586a54e4fb1b1f2bcd685d07c
+- evidence_id: sklute2023
+  kind: primary_source
+  reference: https://www.frontiersin.org/journals/microbiology/articles/10.3389/fmicb.2023.1272245/full
+  locator: html:#s2; html:#s3
+  accessed_at: '2026-11-09T02:53:25Z'
+  support: supports
+  summary: Read the issuing publisher article and exact retained HTML. Oxalate dissolution,
+    pre-dissolution filtering, ferrozine response and matched controls define the
+    measured Fe(II) fraction; mineral identification requires separate methods.
+  snapshot_sha256: f7f211b7ad2dda867976e492a8ae0290237e68fc73e6d2006a72c71e1e35076e
+- evidence_id: dodge2005
+  kind: primary_source
+  reference: https://pmc.ncbi.nlm.nih.gov/articles/PMC546758/
+  locator: html:#sec7; html:#sec15
+  accessed_at: '2026-11-09T02:53:25Z'
+  support: supports
+  summary: Independently read exact retained primary HTML. Sample preparation, salicylate
+    control, intracellular TEM-EDS localization and the larger-beam limitation support
+    qualitative localization without a unique chemical-phase or uptake-capacity inference.
+  snapshot_sha256: c372ba2b122ced03b0fd188b0ff92d0f4daf819dbbdcbc86672b13a1f2511959
+- evidence_id: native-gate
+  kind: validation
+  reference: https://github.com/CultureBotAI/AssayMech/tree/156f6a713df14be970b0262ee1c1df3eeccaf9b9
+  locator: justfile; tests/test_seed_evidence.py
+  accessed_at: '2026-11-09T02:55:18Z'
+  support: supports
+  summary: Independent full native gate passed at the inspected revision; the exact
+    command and test counts are recorded below.
+- evidence_id: concept-binding-rereview
+  kind: validation
+  reference: https://github.com/CultureBotAI/AssayMech/issues/4
+  locator: src/assaymech/seed_audit.py; tests/test_seed_evidence.py
+  accessed_at: '2026-11-09T02:53:07Z'
+  support: supports
+  summary: Independently replayed four real wrong-node evidence substitutions for
+    catalase description, method, measurement and optional control. The fixed audit
+    rejects all four while the original scientific files remain byte-identical.
+- evidence_id: source-rights
+  kind: record_content
+  reference: LICENSE-DATA
+  locator: curation/source-catalogue.json
+  accessed_at: '2026-11-09T02:55:18Z'
+  support: supports
+  summary: Source attribution is preserved. The Dodge paper has no established CC
+    licence; only factual paraphrase and citation are redistributed. Review verified
+    original and projection digests without treating them as scientific proof.
+assessments:
+- assessment_id: role-METPO-1000697
+  area: grounding
+  topic: gram stain selection role
+  outcome: supported
+  summary: A phenotype class retained as context, not an assay identity.
+  target_ids:
+  - selection:METPO:1000697
+  evidence_ids:
+  - metpo-METPO-1000697
+- assessment_id: role-METPO-1005010
+  area: grounding
+  topic: indole test selection role
+  outcome: supported
+  summary: A named assay class; its separate outcome classes do not assert a result
+    here.
+  target_ids:
+  - selection:METPO:1005010
+  evidence_ids:
+  - metpo-METPO-1005010
+- assessment_id: role-METPO-1005011
+  area: grounding
+  topic: indole test positive selection role
+  outcome: supported
+  summary: An outcome class retained as context and excluded from assay identity seeds.
+  target_ids:
+  - selection:METPO:1005011
+  evidence_ids:
+  - metpo-METPO-1005011
+- assessment_id: role-METPO-1005012
+  area: grounding
+  topic: indole test negative selection role
+  outcome: supported
+  summary: An outcome class retained as context and excluded from assay identity seeds.
+  target_ids:
+  - selection:METPO:1005012
+  evidence_ids:
+  - metpo-METPO-1005012
+- assessment_id: role-METPO-1005013
+  area: grounding
+  topic: methyl red test selection role
+  outcome: supported
+  summary: A named assay class; its separate outcome classes do not assert a result
+    here.
+  target_ids:
+  - selection:METPO:1005013
+  evidence_ids:
+  - metpo-METPO-1005013
+- assessment_id: role-METPO-1005014
+  area: grounding
+  topic: methyl red test positive selection role
+  outcome: supported
+  summary: An outcome class retained as context and excluded from assay identity seeds.
+  target_ids:
+  - selection:METPO:1005014
+  evidence_ids:
+  - metpo-METPO-1005014
+- assessment_id: role-METPO-1005015
+  area: grounding
+  topic: methyl red test negative selection role
+  outcome: supported
+  summary: An outcome class retained as context and excluded from assay identity seeds.
+  target_ids:
+  - selection:METPO:1005015
+  evidence_ids:
+  - metpo-METPO-1005015
+- assessment_id: role-METPO-1005016
+  area: grounding
+  topic: Voges-Proskauer test selection role
+  outcome: supported
+  summary: A named assay class; its separate outcome classes do not assert a result
+    here.
+  target_ids:
+  - selection:METPO:1005016
+  evidence_ids:
+  - metpo-METPO-1005016
+- assessment_id: role-METPO-1005017
+  area: grounding
+  topic: Voges-Proskauer test positive selection role
+  outcome: supported
+  summary: An outcome class retained as context and excluded from assay identity seeds.
+  target_ids:
+  - selection:METPO:1005017
+  evidence_ids:
+  - metpo-METPO-1005017
+- assessment_id: role-METPO-1005018
+  area: grounding
+  topic: Voges-Proskauer test negative selection role
+  outcome: supported
+  summary: An outcome class retained as context and excluded from assay identity seeds.
+  target_ids:
+  - selection:METPO:1005018
+  evidence_ids:
+  - metpo-METPO-1005018
+- assessment_id: role-METPO-1007080
+  area: grounding
+  topic: catalase test selection role
+  outcome: supported
+  summary: A named assay class; its separate outcome classes do not assert a result
+    here.
+  target_ids:
+  - selection:METPO:1007080
+  evidence_ids:
+  - metpo-METPO-1007080
+- assessment_id: role-METPO-1007081
+  area: grounding
+  topic: oxidase test selection role
+  outcome: supported
+  summary: A named assay class; its separate outcome classes do not assert a result
+    here.
+  target_ids:
+  - selection:METPO:1007081
+  evidence_ids:
+  - metpo-METPO-1007081
+- assessment_id: role-METPO-1007082
+  area: grounding
+  topic: urease test selection role
+  outcome: supported
+  summary: A named assay class; its separate outcome classes do not assert a result
+    here.
+  target_ids:
+  - selection:METPO:1007082
+  evidence_ids:
+  - metpo-METPO-1007082
+- assessment_id: role-METPO-1007083
+  area: grounding
+  topic: catalase positive selection role
+  outcome: supported
+  summary: An outcome class retained as context and excluded from assay identity seeds.
+  target_ids:
+  - selection:METPO:1007083
+  evidence_ids:
+  - metpo-METPO-1007083
+- assessment_id: role-METPO-1007084
+  area: grounding
+  topic: catalase negative selection role
+  outcome: supported
+  summary: An outcome class retained as context and excluded from assay identity seeds.
+  target_ids:
+  - selection:METPO:1007084
+  evidence_ids:
+  - metpo-METPO-1007084
+- assessment_id: role-METPO-1007085
+  area: grounding
+  topic: oxidase positive selection role
+  outcome: supported
+  summary: An outcome class retained as context and excluded from assay identity seeds.
+  target_ids:
+  - selection:METPO:1007085
+  evidence_ids:
+  - metpo-METPO-1007085
+- assessment_id: role-METPO-1007086
+  area: grounding
+  topic: oxidase negative selection role
+  outcome: supported
+  summary: An outcome class retained as context and excluded from assay identity seeds.
+  target_ids:
+  - selection:METPO:1007086
+  evidence_ids:
+  - metpo-METPO-1007086
+- assessment_id: role-METPO-1007087
+  area: grounding
+  topic: urease positive selection role
+  outcome: supported
+  summary: An outcome class retained as context and excluded from assay identity seeds.
+  target_ids:
+  - selection:METPO:1007087
+  evidence_ids:
+  - metpo-METPO-1007087
+- assessment_id: role-METPO-1007088
+  area: grounding
+  topic: urease negative selection role
+  outcome: supported
+  summary: An outcome class retained as context and excluded from assay identity seeds.
+  target_ids:
+  - selection:METPO:1007088
+  evidence_ids:
+  - metpo-METPO-1007088
+- assessment_id: role-METPO-2000017
+  area: grounding
+  topic: reduces selection role
+  outcome: supported
+  summary: An OBJECT property used only as a scoped tested predicate, not an assay
+    class.
+  target_ids:
+  - selection:METPO:2000017
+  evidence_ids:
+  - metpo-METPO-2000017
+- assessment_id: role-METPO-2000210
+  area: grounding
+  topic: accumulates selection role
+  outcome: supported
+  summary: An OBJECT property used only as a scoped tested predicate, not an assay
+    class.
+  target_ids:
+  - selection:METPO:2000210
+  evidence_ids:
+  - metpo-METPO-2000210
+- assessment_id: concept-catalase-test
+  area: identity
+  topic: catalase test concept boundary
+  outcome: supported
+  summary: The native record denotes the cited assay class. Its definition and any
+    concept-level readout stay within the ontology description, with missing executable
+    protocol details explicit.
+  target_ids:
+  - AssayMech:catalase-test
+  evidence_ids:
+  - metpo-METPO-1007080
+  details: This is an assay concept, not an organism observation. No concentrations,
+    controls, performance estimates or complete protocol are inferred from the concept
+    identity.
+- assessment_id: concept-indole-test
+  area: identity
+  topic: indole test concept boundary
+  outcome: supported
+  summary: The native record denotes the cited assay class. Its definition and any
+    concept-level readout stay within the ontology description, with missing executable
+    protocol details explicit.
+  target_ids:
+  - AssayMech:indole-test
+  evidence_ids:
+  - metpo-METPO-1005010
+  details: This is an assay concept, not an organism observation. No concentrations,
+    controls, performance estimates or complete protocol are inferred from the concept
+    identity.
+- assessment_id: concept-methyl-red-test
+  area: identity
+  topic: methyl red test concept boundary
+  outcome: supported
+  summary: The native record denotes the cited assay class. Its definition and any
+    concept-level readout stay within the ontology description, with missing executable
+    protocol details explicit.
+  target_ids:
+  - AssayMech:methyl-red-test
+  evidence_ids:
+  - metpo-METPO-1005013
+  details: This is an assay concept, not an organism observation. No concentrations,
+    controls, performance estimates or complete protocol are inferred from the concept
+    identity.
+- assessment_id: concept-oxidase-test
+  area: identity
+  topic: oxidase test concept boundary
+  outcome: supported
+  summary: The native record denotes the cited assay class. Its definition and any
+    concept-level readout stay within the ontology description, with missing executable
+    protocol details explicit.
+  target_ids:
+  - AssayMech:oxidase-test
+  evidence_ids:
+  - metpo-METPO-1007081
+  details: This is an assay concept, not an organism observation. No concentrations,
+    controls, performance estimates or complete protocol are inferred from the concept
+    identity.
+- assessment_id: concept-urease-test
+  area: identity
+  topic: urease test concept boundary
+  outcome: supported
+  summary: The native record denotes the cited assay class. Its definition and any
+    concept-level readout stay within the ontology description, with missing executable
+    protocol details explicit.
+  target_ids:
+  - AssayMech:urease-test
+  evidence_ids:
+  - metpo-METPO-1007082
+  details: This is an assay concept, not an organism observation. No concentrations,
+    controls, performance estimates or complete protocol are inferred from the concept
+    identity.
+- assessment_id: concept-voges-proskauer-test
+  area: identity
+  topic: Voges-Proskauer test concept boundary
+  outcome: supported
+  summary: The native record denotes the cited assay class. Its definition and any
+    concept-level readout stay within the ontology description, with missing executable
+    protocol details explicit.
+  target_ids:
+  - AssayMech:voges-proskauer-test
+  evidence_ids:
+  - metpo-METPO-1005016
+  details: This is an assay concept, not an organism observation. No concentrations,
+    controls, performance estimates or complete protocol are inferred from the concept
+    identity.
+- assessment_id: nd-measurement
+  area: quantity
+  topic: Nd bioleaching endpoint and normalization
+  outcome: supported
+  summary: The filtered laboratory-leachate endpoint, synthetic Mon2 feed, ICP-MS
+    method and source-labelled mass denominator are supported; the record does not
+    turn the response into percent recovery or industrial performance.
+  target_ids:
+  - AssayMech:nd-bioleaching-icp-ms
+  evidence_ids:
+  - marecos2025
+  - marecos2025_data4
+  - cmm-neodymium
+- assessment_id: feii-measurement
+  area: scope
+  topic: Ax17 extraction-defined Fe(II)
+  outcome: supported
+  summary: The method defines an oxalate-extractable Fe(II) pool, records matched
+    controls and preserves the Methods filtration value. The iron and ferrihydrite
+    links correctly refer to one experiment.
+  target_ids:
+  - AssayMech:ax17-extracted-feii-ferrozine
+  evidence_ids:
+  - sklute2023
+  - cmm-iron
+  - cmm-ferrihydrite
+  - metpo-METPO-2000017
+- assessment_id: bi-measurement
+  area: evidence
+  topic: Fusarium intracellular Bi localization
+  outcome: supported
+  summary: TEM-EDS with the reported control supports scoped qualitative intracellular
+    localization. Adjacent material in the beam, strain scope and absence of unique
+    chemical-form or bulk-capacity inference are stated.
+  target_ids:
+  - AssayMech:fusarium-intracellular-bi-tem-eds
+  evidence_ids:
+  - dodge2005
+  - cmm-bismuth
+  - metpo-METPO-2000210
+- assessment_id: provenance-rights
+  area: provenance
+  topic: Exact source and rights boundaries
+  outcome: supported
+  summary: The nine source projections and catalogue retain exact pins or response
+    digests and distinguish verbatim ontology selections from source-derived paraphrases.
+    No record is represented as a new organism result.
+  target_ids:
+  - AssayMech:ax17-extracted-feii-ferrozine
+  - AssayMech:catalase-test
+  - AssayMech:fusarium-intracellular-bi-tem-eds
+  - AssayMech:indole-test
+  - AssayMech:methyl-red-test
+  - AssayMech:nd-bioleaching-icp-ms
+  - AssayMech:oxidase-test
+  - AssayMech:urease-test
+  - AssayMech:voges-proskauer-test
+  evidence_ids:
+  - source-rights
+  - native-gate
+- assessment_id: audit-repair
+  area: consistency
+  topic: Concept evidence remains bound to its own identity
+  outcome: supported
+  summary: The confirmed audit defect in external issue 4 is repaired and independently
+    re-tested. Correct seed assertions did not need alteration; this review records
+    the fixed observation rather than inventing a prior structured finding lineage.
+  target_ids:
+  - AssayMech:catalase-test
+  evidence_ids:
+  - concept-binding-rereview
+findings: []
+actions: []
+limitations:
+- Full coverage means 30 selected targets, not every METPO term or CMM record.
+- The six ontology assay concepts are not complete executable protocols and assert
+  no organism outcome; methodological gaps remain explicit.
+- Operational records describe specific laboratory studies, not independently reproduced
+  performance, detection limits, industrial scale transfer or general strain capabilities.
+- The live Nature page redirected through an inaccessible identity endpoint; the same
+  open-access article was read through the official NCBI API and exact retained publisher
+  HTML. Live PMC retrieval for Dodge presented a CAPTCHA and its BioC endpoint did
+  not return usable full text; that paper was independently read from the retained
+  primary HTML whose digest matches the catalogue.
+- Offline seed audit establishes bounded source binding, selected roles and required
+  invariants; it cannot establish arbitrary scientific prose. The redundant aggregate
+  CMM target list is documentary and was manually checked, while operational target
+  bindings are enforced.
+- Hosted CI and independent scaffold review are separate release gates. This scientific
+  review does not authorize a merge or promote a record status.
+notes:
+- The earlier initial inspection was at f4a7ffbfa95c5a550cfca62caf31bd37b1c01563.
+  External issue 4 identified an audit-code defect; ff94b029d4b5a81815946e5197faafcf64f1ce9b
+  fixed it without changing records, history, selection or source snapshots. The final
+  inspection binds this report to the later normal-merge seed commit shown in source.git_revision.
+- No previous structured scientific review is superseded and no GitHub issue is closed
+  by this clean observation.
+links:
+- https://github.com/CultureBotAI/AssayMech/pull/2
+- https://github.com/CultureBotAI/AssayMech/issues/4
+tags:
+- initial-seed
+- scientific-review
+- bounded-selection
+```
